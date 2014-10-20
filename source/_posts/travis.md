@@ -5,9 +5,9 @@ categories: Blogging
 description: Auto publish to github, hexo blog
 toc: false
 ---
-# My Travis Config
 
-My Kind of Hello World
+#My Kind of Hello World
+Travis Config to deploy hexo blog automatically using Travis-CI
 
 
 ```

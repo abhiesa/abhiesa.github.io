@@ -15,6 +15,7 @@
 * git checkout source 
 * git merge origin/source 
 * git push git@github.com:abhiesa/abhiesa.github.io.git HEAD:source
+* python -m SimpleHTTPServer
 ```
 We recommend every repository include a README, LICENSE, and .gitignore.
 …or create a new repository on the command line
