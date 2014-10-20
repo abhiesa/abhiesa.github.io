@@ -1,3 +1,5 @@
+> some thing
+> 
 * npm install hexo -g 
 * hexo init . 
 * npm install 
