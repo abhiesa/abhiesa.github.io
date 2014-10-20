@@ -1,14 +1,13 @@
-title: My Travis Config
+title: Hexo Travis Config
 date: 2014-10-20 16:56:00
 tags: ["Hexo", "github"] 
 categories: Blogging
 description: Auto publish to github, hexo blog
-toc: false
 ---
 
 #My Kind of Hello World
-Travis Config to deploy hexo blog automatically using Travis-CI
 
+Travis Config to deploy hexo blog automatically using Travis-CI
 
 ```
 language: node_js
