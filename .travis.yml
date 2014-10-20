@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - "0.10"
+branches:
+  only:
+  - source
+before_install:
+- npm install -g hexo
+install:
+- npm install
+before_script:
+- git config --global user.name 'Abhishek Prashant Pandey'
+- git config --global user.email 'abhiesa@gmail.com'
+script:
+- hexo generate
+after_success:
+ - mkdir .deploy
+ - cd .deploy
+ - cp -r ../public/* .
+ - git add -A .
+ - git commit -m 'TRAVIS-CI'
+ - git branch -m master
+ - git push -q -u $DEPLOY_REPO HEAD:master
+ 

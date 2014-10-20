@@ -1,0 +1,33 @@
+bootswatch: lumen
+
+slogan: "Dream Design Desire Develop"
+
+menu:
+  - title: Archives
+    url: archives
+    intro: "All the articles."
+    icon: "fa fa-archive"
+
+links:
+  - title: Github Repo
+    url: https://github.com/abhiesa/
+    intro: "Abhiesa's Github repository."
+    icon: "fa fa-github"
+  - title: "Home Site"
+    url: http://www.abhiesa.com/
+    intro: "My Home Page"
+    icon: "fa fa-home"
+
+widgets:
+- search
+- category
+- tagcloud
+- recent_posts
+- links
+
+rss: true
+fancybox: true
+favicon: favicon.png
+google_analytics:
+twitter:
+google_plus:
