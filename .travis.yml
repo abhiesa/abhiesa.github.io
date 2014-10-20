@@ -14,11 +14,13 @@ before_script:
 script:
 - hexo generate
 after_success:
- - mkdir .deploy
- - cd .deploy
- - cp -r ../public/* .
- - git add -A .
- - git commit -m 'TRAVIS-CI'
- - git branch -m master
- - git push -q -u $DEPLOY_REPO HEAD:master
+- mkdir .deploy
+- cd .deploy
+- git clone --depth 1 --branch gh-pages --single-branch $DEPLOY_REPO . || (git init && git remote add -t master origin $DEPLOY_REPO)
+- rm -rf ./*
+- cp -r ../public/* .
+- git add -A .
+- git commit -m 'Auto Update from TRAVIS-CI'
+- git branch -m master
+- git push -q $DEPLOY_REPO HEAD:master
  
