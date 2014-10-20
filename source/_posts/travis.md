@@ -1,11 +1,14 @@
 title: My Travis Config
 date: 2014-10-20 16:56:00
-tags: plugins
-categories: Hexo
-description: Travis Config for Hexo
+tags: ["Hexo", "github"] 
+categories: Blogging
+description: Auto publish to github, hexo blog
 toc: false
 ---
 # My Travis Config
+
+My Kind of Hello World
+
 
 ```
 language: node_js
@@ -26,11 +29,11 @@ script:
 after_success:
 - mkdir .deploy
 - cd .deploy
-- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init && git remote add -t gh-pages origin $DEPLOY_REPO)
+- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init && git remote add -t master origin $DEPLOY_REPO)
 - rm -rf ./*
 - cp -r ../public/* .
 - git add -A .
-- git commit -m 'Site updated'
-- git branch -m source
-- git push -q -u origin source
+- git commit -m 'Auto Update from TRAVIS-CI'
+- git branch -m master
+- git push -q $DEPLOY_REPO HEAD:master
 ```
