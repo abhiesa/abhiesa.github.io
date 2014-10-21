@@ -1,3 +1,5 @@
+![Travis Bild](https://travis-ci.org/abhiesa/abhiesa.github.io.svg?branch=source)
+
 * npm install hexo -g 
 * hexo init . 
 * npm install 
