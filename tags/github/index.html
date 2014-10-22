@@ -108,7 +108,7 @@
 	
 	  <h1 id="My_Kind_of_Hello_World">My Kind of Hello World</h1>
 <p>Travis Config to deploy hexo blog automatically using Travis-CI</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">language: node_js</div><div class="line">node_js:</div><div class="line">  -<span class="ruby"> <span class="string">"0.10"</span></span></div><div class="line">branches:</div><div class="line">  only:</div><div class="line">  -<span class="ruby"> source</span></div><div class="line">before_install:</div><div class="line">-<span class="ruby"> npm install -g hexo</span></div><div class="line">install:</div><div class="line">-<span class="ruby"> npm install</span></div><div class="line">before_script:</div><div class="line">-<span class="ruby"> git config --global user.name <span class="string">'Abhishek Prashant Pandey'</span></span></div><div class="line">-<span class="ruby"> git config --global user.email <span class="string">'abhiesa@gmail.com'</span></span></div><div class="line">script:</div><div class="line">-<span class="ruby"> hexo generate</span></div><div class="line">after_success:</div><div class="line">-<span class="ruby"> mkdir .deploy</span></div><div class="line">-<span class="ruby"> cd .deploy</span></div><div class="line">-<span class="ruby"> git clone --depth <span class="number">1</span> --branch master --single-branch <span class="variable">$DEPLOY_REPO</span> . || (git init && git remote add -t master origin <span class="variable">$DEPLOY_REPO</span>)</span></div><div class="line">-<span class="ruby"> rm -rf ./*</span></div><div class="line">-<span class="ruby"> cp -r ../public/* .</span></div><div class="line">-<span class="ruby"> git add -<span class="constant">A</span> .</span></div><div class="line">-<span class="ruby"> git commit -m <span class="string">'Auto Update from TRAVIS-CI'</span></span></div><div class="line">-<span class="ruby"> git branch -m master</span></div><div class="line">-<span class="ruby"> git push -q <span class="variable">$DEPLOY_REPO</span> <span class="constant">HEAD</span><span class="symbol">:master</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">language: node_js</div><div class="line">node_js:</div><div class="line">  -<span class="ruby"> <span class="string">"0.10"</span></span></div><div class="line">branches:</div><div class="line">  only:</div><div class="line">  -<span class="ruby"> source</span></div><div class="line">before_install:</div><div class="line">-<span class="ruby"> npm install -g hexo</span></div><div class="line">install:</div><div class="line">-<span class="ruby"> npm install</span></div><div class="line">before_script:</div><div class="line">-<span class="ruby"> git config --global user.name <span class="string">'Abhishek Prashant Pandey'</span></span></div><div class="line">-<span class="ruby"> git config --global user.email <span class="string">'abhiesa@gmail.com'</span></span></div><div class="line">script:</div><div class="line">-<span class="ruby"> hexo generate</span></div><div class="line">after_success:</div><div class="line">-<span class="ruby"> mkdir .deploy</span></div><div class="line">-<span class="ruby"> cd .deploy</span></div><div class="line">-<span class="ruby"> git clone --depth <span class="number">1</span> --branch master --single-branch <span class="variable">$DEPLOY_REPO</span> . || (git init && git remote add -t master origin <span class="variable">$DEPLOY_REPO</span>)</span></div><div class="line">-<span class="ruby"> rm -rf ./*</span></div><div class="line">-<span class="ruby"> cp -r ../public/* .</span></div><div class="line">-<span class="ruby"> git add -<span class="constant">A</span> .</span></div><div class="line">-<span class="ruby"> git commit -m <span class="string">'Auto Update from TRAVIS-CI'</span></span></div><div class="line">-<span class="ruby"> git branch -m master</span></div><div class="line">-<span class="ruby"> git push -q <span class="variable">$DEPLOY_REPO</span> <span class="constant">HEAD</span><span class="symbol">:master</span></span></div></pre></td></tr></table></figure>
 
 
 	
@@ -153,7 +153,7 @@
 		<h4>Categories</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/Blogging/">Blogging<span>2</span></a></li>
+			<li><a href="/categories/Blogging/">Blogging<span>3</span></a></li>
 		
 		</ul>
 	</div>
@@ -166,7 +166,7 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/tags/projection/">projection<span>1</span></a></li>
+			<li><a href="/tags/projection/">projection<span>2</span></a></li>
 		
 			<li><a href="/tags/Hexo/">Hexo<span>1</span></a></li>
 		
@@ -183,6 +183,10 @@
 <div class="widget">
   <h4>Recent Posts</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2014/10/21/projection/" ><i class="fa fa-file-o"></i>What is my Projection for t...</a>
+      </li>
     
       <li>
         <a href="/2014/10/21/things-to-write/"  title="Why this blog is impossible." ><i class="fa fa-file-o"></i>Why this blog is impossible ?</a>

@@ -4,7 +4,7 @@
   
   <link href="/rss2.xml" rel="self"/>
   <link href="http://abhiesa.github.io/"/>
-  <updated>2014-10-20T22:26:38.633Z</updated>
+  <updated>2014-10-22T14:40:05.329Z</updated>
   <id>http://abhiesa.github.io/</id>
   
   <author>
@@ -15,11 +15,51 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[What is my Projection for this blog?]]></title>
+    <link href="http://abhiesa.github.io/2014/10/21/projection/"/>
+    <id>http://abhiesa.github.io/2014/10/21/projection/</id>
+    <published>2014-10-21T07:14:00.000Z</published>
+    <updated>2014-10-22T14:38:22.000Z</updated>
+    <content type="html"><![CDATA[<p>As i mentioned back, I am good at some projections. So, lets do that thing first.</p>
+<ol>
+<li>Need list of target sources, which were influencing me</li>
+<li>Need Bookmarking for targeted sources</li>
+<li>Categorize the domains, call them in category, on which i want to write</li>
+<li>Write synopsis of what to write, for sake of category</li>
+<li>Drill down to sub-category if any</li>
+<li>Go to 4, till needed</li>
+<li>Prepare some initial topics for all categories</li>
+<li>again write statement of work kind of proposal</li>
+<li>start working, enough listing, go with the flow :)</li>
+</ol>
+<p><strong>Completely Random:</strong></p>
+<p>Java Language, Java Data Type, Java Collection, Java Date,Java I/O, Java Reflection, Java JDBC, Java Thread, Java XML, JDK Misc, EJB3, JPA, Java Web Services,Java SOA, Email, Spring, Hibernate, JSP, Servlet, JSTL, JSP EL,Java RegEx,Java I18N, Java Network, Java Design Patterns, Java Security, Java Genrics, AWS, Heroku, Cloud Foundry, MongoDB, Redis, Oracle, MapReduce, Spring Data, Spring Social, Spring Security, Spring Batch, Spring HATEOAS, Spring AMQP, OpenShift, Spring Web Services, REST, Scheduling, Spring MVC, ASYNC, WebSocket, YAML, JSON, SAP HANA, Caching, NGINX, Java Script, ECMA 5, ECMA 6, Maven, jQuery, DOM Manipulation, Web Components, Polymer, Adobe Spry, Octopress, JKyll, Hexo, Sublime Text 2, jQuery Mobile, Appcelerator Titanium Mobile, IONOC, Backbone, Underscore, LoDash, Require Js, Node.JS, NPM, Bower, Moments, Angular JS, Marioonette JS, Chaplin, ExoSkeletion,Socket IO,  Phantom JS, Jasmine, Mocha, Chai, Sinon, Istanbul, Karma JS, Should JS, When JS, Q js, Mustache, Hogan JS, Dust JS, EJS, Handlebars, Jade, Browserify, Twitter Boostrap, Foundation, HTML5 Boiler plate, jQuery UI, Magnific Popup, Reveeal JS, Nyro.Model, Mousetrap, keyboard js, Masonry js, ISOTope, impress js, d3 js, chart js, raphael, faker js,pdf js, Modernizer, html5 shim, grunt, brunch, Klass, axis2, junit, CXF, Camel, Common-Colleection, commons lang, commons http-client, logging, JULI, Log4j, SLF4j, Logback, commons pool, DBCP, C3P0, erby, Maria DB, Postgress SQL, Apache HttpComponents Client, Apache HttpComponents Core, Lucene, SOLR, Elastic Search, JSF, Rich Faces, My Faces, ODE, Tiles, TomEE, TomCat, vFabric, JBoss, velocity, wicket, Spring Test Conetxt, JBoss logging, Kibana, Logstach, Guava, Mockito, Easy Mock, Jackson, GSON, Jettison, xerces, JAXB, JAXP, JAXR, commons io, play, jetty, netty, cgilb, asm, javassist, h2, hsql, mckoi, google collections, aspect j, aop alliance, FEST Reflection, resin, freemaker, thymleaf, JTA, Joda Time, UML, SVN, GIT, GitHub,Findbug, checkstyle, pmd, sonar, fortify, contrast, eclemma, cobetura, Codepro, mylyn, xtext, jaspersoft, properties, pl-sql, triggers, soapui, ivyde, gradle, selenium, cucumber, TDDD, BDD, jBeehive, apache directory, hex editing, java profiling, groovy, grails, eclipse rcp, markdown, OPPE, terminal, ubuntu, lua, HTML5, CSS3, hudson, jenkis, travis-ci, agile, scrum, EMF, GMF, Activiti, glass fish, Java EE7, mysql, DB2, SQLLite, riak, drools, wildfly, arquilian, infispan, jBPM, resteasy jeresy, XSD, DTD, </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TODO</div></pre></td></tr></table></figure>
+
+<blockquote>
+<h1 id="Its_a_non_ending_job-">Its a non ending job.</h1>
+<p><img src="https://octodex.github.com/images/nyantocat.gif" align="left"></p>
+<h6 id="credits:_Github">credits: Github</h6>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>As i mentioned back, I am good at some projections. So, lets do that thing first.</p>
+<ol>
+<li>Need list of target sources, which were in]]>
+    </summary>
+    
+      <category term="projection" scheme="http://abhiesa.github.io/tags/projection/"/>
+    
+      <category term="Blogging" scheme="http://abhiesa.github.io/categories/Blogging/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Why this blog is impossible ?]]></title>
     <link href="http://abhiesa.github.io/2014/10/21/things-to-write/"/>
     <id>http://abhiesa.github.io/2014/10/21/things-to-write/</id>
-    <published>2014-10-21T11:26:00.000Z</published>
-    <updated>2014-10-20T22:24:37.000Z</updated>
+    <published>2014-10-20T20:26:00.000Z</published>
+    <updated>2014-10-22T07:43:15.000Z</updated>
     <content type="html"><![CDATA[<p>I want to write about lot of things, but, i lack the strength for writing. I know, I am lazy, Still projection is a good thing. And this is the best thing, i am good at. Another thing, where i am best, is thinking about the worse.<br>I took a very long time, to start this blog. 7 + years, in the making. What made this delay is a lot of things, but most importantly the comfort. I was not comfortable with the blogging platforms, i didn’t had control.<br>I can’t be online all the time, and working offline was almost impossible for blogspot, wordpress, tumbler etc. Believe it or not, i have tested all.<br>choose any blogging engine, and put subdomain abhiesa, in front of it, and i am there. But that was out of my comfort zone. Too many options in editing, and not having control on output, like css, js, html etc.</p>
 <p>After my long patience, i moved to jkyll like system last year, and still, it was tough for me. Ruby, Rake, RVM, etc etc. Yes i am a nerd, but not for ruby, python, jade etc. Also, i needed my home laptop for doing anything on it. I was unable to write, at office (whenever i was free), on the move, at night (when my little daughter, goes to sleep, and illumination is another problem.), etc etc.</p>
 <p>Recently i found out something called <a href="http://hexo.io" target="_blank" rel="external">Hexo.IO</a>, and <a href="http://travis-ci.org" target="_blank" rel="external">Travis-CI</a>, and i combined both of them.<br>Now I have tweaked theme, control over output generation, and automated builds. That means, i office i can just write something on notepad, and in evening, i can create a new file on github and paste its content it.<br>I can do the same thing from my Nexus 7, and my cheap Micromax Canvas phone.<br>Whenever I check in, I get my blog updated. I can always revert, and change anything a lot.</p>
@@ -50,10 +90,10 @@
     <link href="http://abhiesa.github.io/2014/10/20/travis/"/>
     <id>http://abhiesa.github.io/2014/10/20/travis/</id>
     <published>2014-10-20T11:26:00.000Z</published>
-    <updated>2014-10-20T21:29:16.000Z</updated>
+    <updated>2014-10-22T09:32:54.000Z</updated>
     <content type="html"><![CDATA[<h1 id="My_Kind_of_Hello_World">My Kind of Hello World</h1>
 <p>Travis Config to deploy hexo blog automatically using Travis-CI</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">language: node_js</div><div class="line">node_js:</div><div class="line">  -<span class="ruby"> <span class="string">"0.10"</span></span></div><div class="line">branches:</div><div class="line">  only:</div><div class="line">  -<span class="ruby"> source</span></div><div class="line">before_install:</div><div class="line">-<span class="ruby"> npm install -g hexo</span></div><div class="line">install:</div><div class="line">-<span class="ruby"> npm install</span></div><div class="line">before_script:</div><div class="line">-<span class="ruby"> git config --global user.name <span class="string">'Abhishek Prashant Pandey'</span></span></div><div class="line">-<span class="ruby"> git config --global user.email <span class="string">'abhiesa@gmail.com'</span></span></div><div class="line">script:</div><div class="line">-<span class="ruby"> hexo generate</span></div><div class="line">after_success:</div><div class="line">-<span class="ruby"> mkdir .deploy</span></div><div class="line">-<span class="ruby"> cd .deploy</span></div><div class="line">-<span class="ruby"> git clone --depth <span class="number">1</span> --branch master --single-branch <span class="variable">$DEPLOY_REPO</span> . || (git init && git remote add -t master origin <span class="variable">$DEPLOY_REPO</span>)</span></div><div class="line">-<span class="ruby"> rm -rf ./*</span></div><div class="line">-<span class="ruby"> cp -r ../public/* .</span></div><div class="line">-<span class="ruby"> git add -<span class="constant">A</span> .</span></div><div class="line">-<span class="ruby"> git commit -m <span class="string">'Auto Update from TRAVIS-CI'</span></span></div><div class="line">-<span class="ruby"> git branch -m master</span></div><div class="line">-<span class="ruby"> git push -q <span class="variable">$DEPLOY_REPO</span> <span class="constant">HEAD</span><span class="symbol">:master</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">language: node_js</div><div class="line">node_js:</div><div class="line">  -<span class="ruby"> <span class="string">"0.10"</span></span></div><div class="line">branches:</div><div class="line">  only:</div><div class="line">  -<span class="ruby"> source</span></div><div class="line">before_install:</div><div class="line">-<span class="ruby"> npm install -g hexo</span></div><div class="line">install:</div><div class="line">-<span class="ruby"> npm install</span></div><div class="line">before_script:</div><div class="line">-<span class="ruby"> git config --global user.name <span class="string">'Abhishek Prashant Pandey'</span></span></div><div class="line">-<span class="ruby"> git config --global user.email <span class="string">'abhiesa@gmail.com'</span></span></div><div class="line">script:</div><div class="line">-<span class="ruby"> hexo generate</span></div><div class="line">after_success:</div><div class="line">-<span class="ruby"> mkdir .deploy</span></div><div class="line">-<span class="ruby"> cd .deploy</span></div><div class="line">-<span class="ruby"> git clone --depth <span class="number">1</span> --branch master --single-branch <span class="variable">$DEPLOY_REPO</span> . || (git init && git remote add -t master origin <span class="variable">$DEPLOY_REPO</span>)</span></div><div class="line">-<span class="ruby"> rm -rf ./*</span></div><div class="line">-<span class="ruby"> cp -r ../public/* .</span></div><div class="line">-<span class="ruby"> git add -<span class="constant">A</span> .</span></div><div class="line">-<span class="ruby"> git commit -m <span class="string">'Auto Update from TRAVIS-CI'</span></span></div><div class="line">-<span class="ruby"> git branch -m master</span></div><div class="line">-<span class="ruby"> git push -q <span class="variable">$DEPLOY_REPO</span> <span class="constant">HEAD</span><span class="symbol">:master</span></span></div></pre></td></tr></table></figure>
 
 ]]></content>
     <summary type="html">
