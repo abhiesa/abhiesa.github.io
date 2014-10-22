@@ -9,7 +9,7 @@ description: Auto publish to github, hexo blog
 
 Travis Config to deploy hexo blog automatically using Travis-CI
 
-```
+```yaml
 language: node_js
 node_js:
   - "0.10"
