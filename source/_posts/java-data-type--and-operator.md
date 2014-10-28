@@ -1,10 +1,10 @@
 title: Java Data Types and Operators
-date: 2014-10-21 12:44:00
+date: 2014-10-28 14:44:00
 tags: Java
 categories: Technical Notes
 ---
 
-*data types in java*
+**data types in java**
 
 |Type   |Explanation                                         |Default|Wrapper|Min Value           |Max Value          |
 |-------|----------------------------------------------------|-------|-------|--------------------|-------------------|
@@ -17,18 +17,11 @@ categories: Technical Notes
 |char   |A 16-bit character using the Unicode encoding scheme|\u0000 |Char   |                    |                   |
 |boolean|A true or false value                               |false  |Boolean|false               |true               |
 
-*keywords in Java*
+**keywords in Java**
 
-|abstract |class    |extends |implements |null      |strictfp     |true     |
-|assert   |const    |false   |import     |package   |super        |try      |
-|boolean  |continue |final   |instanceof |private   |switch       |void     |
-|break    |default  |finally |int        |protected |synchronized |volatile |
-|byte     |do       |float   |interface  |public    |this         |while    |
-|case     |double   |for     |long       |return    |throw        |         |
-|catch    |else     |goto    |native     |short     |throws       |         |
-|char     |enum     |if      |new        |static    |transient    |         |
+|abstract |class    |extends |implements |null      |strictfp     |true     |assert   |const    |false   |import     |package   |super        |try      |boolean  |continue |final   |instanceof |private   |switch       |void     |break    |default  |finally |int        |protected |synchronized |volatile |byte     |do       |float   |interface  |public    |this         |while    |case     |double   |for     |long       |return    |throw        |catch    |else     |goto    |native     |short     |throws        |char     |enum     |if      |new        |static    |transient
 
-*All Arithmetic Operators*
+**All Arithmetic Operators**
 
 |Operator|Result                   |
 |--------|-------------------------|
