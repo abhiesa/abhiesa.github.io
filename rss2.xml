@@ -4,7 +4,7 @@
   
   <link href="/rss2.xml" rel="self"/>
   <link href="http://abhiesa.github.io/"/>
-  <updated>2014-10-22T18:26:50.475Z</updated>
+  <updated>2014-10-28T09:19:54.597Z</updated>
   <id>http://abhiesa.github.io/</id>
   
   <author>
@@ -16,10 +16,27 @@
   
   <entry>
     <title><![CDATA[What is my Projection for this blog?]]></title>
+    <link href="http://abhiesa.github.io/2014/10/21/java-data-type--and-operator/"/>
+    <id>http://abhiesa.github.io/2014/10/21/java-data-type--and-operator/</id>
+    <published>2014-10-21T12:44:00.000Z</published>
+    <updated>2014-10-28T09:19:40.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+      <category term="projection" scheme="http://abhiesa.github.io/tags/projection/"/>
+    
+      <category term="Blogging" scheme="http://abhiesa.github.io/categories/Blogging/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[What is my Projection for this blog?]]></title>
     <link href="http://abhiesa.github.io/2014/10/21/projection/"/>
     <id>http://abhiesa.github.io/2014/10/21/projection/</id>
     <published>2014-10-21T12:44:00.000Z</published>
-    <updated>2014-10-22T18:26:27.000Z</updated>
+    <updated>2014-10-28T09:19:40.000Z</updated>
     <content type="html"><![CDATA[<p>As i mentioned back, I am good at some projections. So, lets do that thing first.</p>
 <ol>
 <li>Need list of target sources, which were influencing me</li>
@@ -59,7 +76,7 @@
     <link href="http://abhiesa.github.io/2014/10/21/things-to-write/"/>
     <id>http://abhiesa.github.io/2014/10/21/things-to-write/</id>
     <published>2014-10-21T01:56:00.000Z</published>
-    <updated>2014-10-22T18:26:27.000Z</updated>
+    <updated>2014-10-28T09:19:40.000Z</updated>
     <content type="html"><![CDATA[<p>I want to write about lot of things, but, i lack the strength for writing. I know, I am lazy, Still projection is a good thing. And this is the best thing, i am good at. Another thing, where i am best, is thinking about the worse.<br>I took a very long time, to start this blog. 7 + years, in the making. What made this delay is a lot of things, but most importantly the comfort. I was not comfortable with the blogging platforms, i didn’t had control.<br>I can’t be online all the time, and working offline was almost impossible for blogspot, wordpress, tumbler etc. Believe it or not, i have tested all.<br>choose any blogging engine, and put subdomain abhiesa, in front of it, and i am there. But that was out of my comfort zone. Too many options in editing, and not having control on output, like css, js, html etc.</p>
 <p>After my long patience, i moved to jkyll like system last year, and still, it was tough for me. Ruby, Rake, RVM, etc etc. Yes i am a nerd, but not for ruby, python, jade etc. Also, i needed my home laptop for doing anything on it. I was unable to write, at office (whenever i was free), on the move, at night (when my little daughter, goes to sleep, and illumination is another problem.), etc etc.</p>
 <p>Recently i found out something called <a href="http://hexo.io" target="_blank" rel="external">Hexo.IO</a>, and <a href="http://travis-ci.org" target="_blank" rel="external">Travis-CI</a>, and i combined both of them.<br>Now I have tweaked theme, control over output generation, and automated builds. That means, i office i can just write something on notepad, and in evening, i can create a new file on github and paste its content it.<br>I can do the same thing from my Nexus 7, and my cheap Micromax Canvas phone.<br>Whenever I check in, I get my blog updated. I can always revert, and change anything a lot.</p>
@@ -90,7 +107,7 @@
     <link href="http://abhiesa.github.io/2014/10/20/travis/"/>
     <id>http://abhiesa.github.io/2014/10/20/travis/</id>
     <published>2014-10-20T16:56:00.000Z</published>
-    <updated>2014-10-22T18:26:27.000Z</updated>
+    <updated>2014-10-28T09:19:40.000Z</updated>
     <content type="html"><![CDATA[<h1 id="My_Kind_of_Hello_World">My Kind of Hello World</h1>
 <p>Travis Config to deploy hexo blog automatically using Travis-CI</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">language: node_js</div><div class="line">node_js:</div><div class="line">  -<span class="ruby"> <span class="string">"0.10"</span></span></div><div class="line">branches:</div><div class="line">  only:</div><div class="line">  -<span class="ruby"> source</span></div><div class="line">before_install:</div><div class="line">-<span class="ruby"> npm install -g hexo</span></div><div class="line">install:</div><div class="line">-<span class="ruby"> npm install</span></div><div class="line">before_script:</div><div class="line">-<span class="ruby"> git config --global user.name <span class="string">'Abhishek Prashant Pandey'</span></span></div><div class="line">-<span class="ruby"> git config --global user.email <span class="string">'abhiesa@gmail.com'</span></span></div><div class="line">script:</div><div class="line">-<span class="ruby"> hexo generate</span></div><div class="line">after_success:</div><div class="line">-<span class="ruby"> mkdir .deploy</span></div><div class="line">-<span class="ruby"> cd .deploy</span></div><div class="line">-<span class="ruby"> git clone --depth <span class="number">1</span> --branch master --single-branch <span class="variable">$DEPLOY_REPO</span> . || (git init && git remote add -t master origin <span class="variable">$DEPLOY_REPO</span>)</span></div><div class="line">-<span class="ruby"> rm -rf ./*</span></div><div class="line">-<span class="ruby"> cp -r ../public/* .</span></div><div class="line">-<span class="ruby"> git add -<span class="constant">A</span> .</span></div><div class="line">-<span class="ruby"> git commit -m <span class="string">'Auto Update from TRAVIS-CI'</span></span></div><div class="line">-<span class="ruby"> git branch -m master</span></div><div class="line">-<span class="ruby"> git push -q <span class="variable">$DEPLOY_REPO</span> <span class="constant">HEAD</span><span class="symbol">:master</span></span></div></pre></td></tr></table></figure>
