@@ -5,6 +5,7 @@ categories: Technical Notes
 ---
 
 *data types in java*
+
 |Type   |Explanation                                         |Default|Wrapper|Min Value           |Max Value          |
 |-------|----------------------------------------------------|-------|-------|--------------------|-------------------|
 |int    |A 32-bit (4-byte) integer value                     |0      |Integer|-2147483648         |2147483647         |
@@ -17,6 +18,7 @@ categories: Technical Notes
 |boolean|A true or false value                               |false  |Boolean|false               |true               |
 
 *keywords in Java*
+
 |abstract |class    |extends |implements |null      |strictfp     |true     |
 |assert   |const    |false   |import     |package   |super        |try      |
 |boolean  |continue |final   |instanceof |private   |switch       |void     |
@@ -27,6 +29,7 @@ categories: Technical Notes
 |char     |enum     |if      |new        |static    |transient    |         |
 
 *All Arithmetic Operators*
+
 |Operator|Result                   |
 |--------|-------------------------|
 |+	     |Addition                 |
@@ -47,7 +50,7 @@ categories: Technical Notes
 
 ```java
 public final class Interesting {
-  
+
   /**
    * Get a Boolean from a boolean, equivalent to the java 1.4 method Boolean.valueOf(boolean)
    * @param value the boolean
