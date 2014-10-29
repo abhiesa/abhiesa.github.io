@@ -246,6 +246,65 @@
 </tr>
 </tbody>
 </table>
+<p><strong>All Logical Operators</strong></p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>Logical AND</td>
+</tr>
+<tr>
+<td><code>&#124;</code></td>
+<td>Logical OR</td>
+</tr>
+<tr>
+<td>^</td>
+<td>Logical XOR (exclusive OR)</td>
+</tr>
+<tr>
+<td><code>&#124;&#124;</code></td>
+<td>Short-circuit OR</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>Short-circuit AND</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Logical unary NOT</td>
+</tr>
+<tr>
+<td>&amp;=</td>
+<td>AND assignment</td>
+</tr>
+<tr>
+<td><code>&#124;=</code></td>
+<td>OR assignment</td>
+</tr>
+<tr>
+<td>^=</td>
+<td>XOR assignment</td>
+</tr>
+<tr>
+<td>==</td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal to</td>
+</tr>
+<tr>
+<td>? :</td>
+<td>ernary if-then-else</td>
+</tr>
+</tbody>
+</table>
 <h3 id="Some_Interesting_Utilities">Some Interesting Utilities</h3>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Interesting</span> </span>{</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Get a Boolean from a boolean, equivalent to the java 1.4 method Boolean.valueOf(boolean)</div><div class="line">   *<span class="javadoctag"> @param</span> value the boolean</div><div class="line">   *<span class="javadoctag"> @return</span> the Boolean equivalent</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> Boolean <span class="title">valueOf</span>(<span class="keyword">boolean</span> value) {</div><div class="line">    <span class="keyword">if</span> (value)</div><div class="line">      <span class="keyword">return</span> Boolean.TRUE;</div><div class="line">    <span class="keyword">else</span></div><div class="line">      <span class="keyword">return</span> Boolean.FALSE;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Test the equality of two doubles by converting their values into IEEE 754 floating-point "double format" long values.</div><div class="line">   *<span class="javadoctag"> @param</span> a Double to check equality with.</div><div class="line">   *<span class="javadoctag"> @param</span> b Double to check equality with.</div><div class="line">   *<span class="javadoctag"> @return</span> True if a equals b.</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">equals</span>(<span class="keyword">final</span> <span class="keyword">double</span> a, <span class="keyword">final</span> <span class="keyword">double</span> b) {</div><div class="line">    <span class="keyword">return</span> Double.doubleToLongBits(a) == Double.doubleToLongBits(b);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Test the equality of two doubles by converting their values into IEEE 754 floating-point "single precision" bit layouts.</div><div class="line">   *<span class="javadoctag"> @param</span> a Float to check equality with.</div><div class="line">   *<span class="javadoctag"> @param</span> b Float to check equality with.</div><div class="line">   *<span class="javadoctag"> @return</span> True if a equals b.</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">equals</span>(<span class="keyword">final</span> <span class="keyword">float</span> a, <span class="keyword">final</span> <span class="keyword">float</span> b) {</div><div class="line">    <span class="keyword">return</span> Float.floatToIntBits(a) == Float.floatToIntBits(b);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Test the equality of a given sub-section of two byte arrays.</div><div class="line">   * </div><div class="line">   *<span class="javadoctag"> @param</span> a The first byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> abegin The begining index of the first byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> b The second byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> bbegin The begining index of the second byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> length The length of the sub-section.</div><div class="line">   *<span class="javadoctag"> @return</span> True if sub-sections are equal.</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">equals</span>(<span class="keyword">final</span> <span class="keyword">byte</span> a[], <span class="keyword">final</span> <span class="keyword">int</span> abegin, <span class="keyword">final</span> <span class="keyword">byte</span> b[], <span class="keyword">final</span> <span class="keyword">int</span> bbegin,<span class="keyword">final</span> <span class="keyword">int</span> length) {</div><div class="line">    <span class="keyword">try</span> {</div><div class="line">      <span class="keyword">int</span> i = length;</div><div class="line">      <span class="keyword">while</span> (--i &gt;= <span class="number">0</span>) {</div><div class="line">        <span class="keyword">if</span> (a[abegin + i] != b[bbegin + i]) {</div><div class="line">          <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        }</div><div class="line">      }</div><div class="line">    } <span class="keyword">catch</span> (ArrayIndexOutOfBoundsException e) {</div><div class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Test the equality of two byte arrays.</div><div class="line">   *<span class="javadoctag"> @param</span> a The first byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> b The second byte array.</div><div class="line">   *<span class="javadoctag"> @return</span> True if the byte arrays are equal.</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">equals</span>(<span class="keyword">final</span> <span class="keyword">byte</span> a[], <span class="keyword">final</span> <span class="keyword">byte</span> b[]) {</div><div class="line">    <span class="keyword">if</span> (a == b)</div><div class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    <span class="keyword">if</span> (a == <span class="keyword">null</span> || b == <span class="keyword">null</span>)</div><div class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    <span class="keyword">if</span> (a.length != b.length)</div><div class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    <span class="keyword">try</span> {</div><div class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) {</div><div class="line">        <span class="keyword">if</span> (a[i] != b[i]) {</div><div class="line">          <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        }</div><div class="line">      }</div><div class="line">    } <span class="keyword">catch</span> (ArrayIndexOutOfBoundsException e) {</div><div class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">  }</div><div class="line">  </div><div class="line">}</div></pre></td></tr></table></figure>
 
@@ -432,13 +491,13 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/tags/projection/">projection<span>2</span></a></li>
-		
-			<li><a href="/tags/github/">github<span>1</span></a></li>
+			<li><a href="/tags/Hexo/">Hexo<span>1</span></a></li>
 		
 			<li><a href="/tags/Java/">Java<span>1</span></a></li>
 		
-			<li><a href="/tags/Hexo/">Hexo<span>1</span></a></li>
+			<li><a href="/tags/projection/">projection<span>2</span></a></li>
+		
+			<li><a href="/tags/github/">github<span>1</span></a></li>
 		
 		
 		</ul>
