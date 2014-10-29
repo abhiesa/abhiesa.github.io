@@ -38,6 +38,22 @@ categories: Technical Notes
 |%=	     |Modulus assignment       |
 |--	     |Decrement                |
 
+**All Logical Operators**
+
+|Operator|Result                      |
+|--------|----------------------------|
+| &	     | Logical AND                |
+| <code>&#124;</code> | Logical OR                 |
+| ^	     | Logical XOR (exclusive OR) |
+| <code>&#124;&#124;</code>	   | Short-circuit OR           |
+| &&	   | Short-circuit AND          |
+| !		   | Logical unary NOT          |
+| &=	   | AND assignment             |
+| <code>&#124;=</code>	   | OR assignment              |
+| ^=	   | XOR assignment             |
+| ==	   | Equal to                   |
+| !=	   | Not equal to               |
+| ? :		 | ernary if-then-else        |
 
 ###Some Interesting Utilities
 
