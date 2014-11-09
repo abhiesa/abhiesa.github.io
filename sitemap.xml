@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://abhiesa.github.io/2014/10/21/projection/</loc>
+    <lastmod>2014-11-09T06:48:12.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://abhiesa.github.io/2014/10/21/things-to-write/</loc>
-    <lastmod>2014-10-29T09:29:02.000Z</lastmod>
+    <lastmod>2014-11-09T06:48:12.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://abhiesa.github.io/2014/10/20/travis/</loc>
-    <lastmod>2014-10-29T09:29:02.000Z</lastmod>
+    <lastmod>2014-11-09T06:48:12.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://abhiesa.github.io/2014/10/28/java-data-type--and-operator/</loc>
-    <lastmod>2014-10-29T09:29:02.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://abhiesa.github.io/2014/10/21/projection/</loc>
-    <lastmod>2014-10-29T09:29:02.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://abhiesa.github.io/categories/index.html</loc>
-    <lastmod>2014-10-29T09:29:02.000Z</lastmod>
+    <lastmod>2014-11-09T06:48:12.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://abhiesa.github.io/page/index.html</loc>
-    <lastmod>2014-10-29T09:29:02.000Z</lastmod>
+    <lastmod>2014-11-09T06:48:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://abhiesa.github.io/categories/index.html</loc>
+    <lastmod>2014-11-09T06:48:12.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://abhiesa.github.io/tags/index.html</loc>
-    <lastmod>2014-10-29T09:29:02.000Z</lastmod>
+    <lastmod>2014-11-09T06:48:12.000Z</lastmod>
   </url>
   
 </urlset>
