@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog @ abhiesa</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Blog @ abhiesa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).</copyright>
+    <lastBuildDate>Tue, 28 Oct 2014 14:44:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Java Data Types and Operators</title>
+      <link>http://localhost:1313/2014/10/28/java-data-type--and-operator/</link>
+      <pubDate>Tue, 28 Oct 2014 14:44:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/28/java-data-type--and-operator/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;data types in java&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th&gt;Wrapper&lt;/th&gt;
+&lt;th&gt;Min Value&lt;/th&gt;
+&lt;th&gt;Max Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;int&lt;/td&gt;
+&lt;td&gt;A 32-bit (4-byte) integer value&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;-2147483648&lt;/td&gt;
+&lt;td&gt;2147483647&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;short&lt;/td&gt;
+&lt;td&gt;A 16-bit (2-byte) integer value&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;Short&lt;/td&gt;
+&lt;td&gt;-32768&lt;/td&gt;
+&lt;td&gt;32767&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;long&lt;/td&gt;
+&lt;td&gt;A 64-bit (8-byte) integer value&lt;/td&gt;
+&lt;td&gt;0L&lt;/td&gt;
+&lt;td&gt;Long&lt;/td&gt;
+&lt;td&gt;-9223372036854775808&lt;/td&gt;
+&lt;td&gt;9223372036854775807&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;byte&lt;/td&gt;
+&lt;td&gt;An 8-bit (1-byte) integer value&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;Byte&lt;/td&gt;
+&lt;td&gt;-128&lt;/td&gt;
+&lt;td&gt;+127&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;float&lt;/td&gt;
+&lt;td&gt;A 32-bit (4-byte) floating-point value&lt;/td&gt;
+&lt;td&gt;0.0f&lt;/td&gt;
+&lt;td&gt;Float&lt;/td&gt;
+&lt;td&gt;1.4e-045&lt;/td&gt;
+&lt;td&gt;3.4e+038&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;double&lt;/td&gt;
+&lt;td&gt;A 64-bit (8-byte) floating-point value&lt;/td&gt;
+&lt;td&gt;0.0d&lt;/td&gt;
+&lt;td&gt;Double&lt;/td&gt;
+&lt;td&gt;4.9e-324&lt;/td&gt;
+&lt;td&gt;1.8e+308&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;char&lt;/td&gt;
+&lt;td&gt;A 16-bit character using the Unicode encoding scheme&lt;/td&gt;
+&lt;td&gt;\u0000&lt;/td&gt;
+&lt;td&gt;Char&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;A true or false value&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;keywords in Java&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;|abstract |class    |extends |implements |null      |strictfp     |true     |assert   |const    |false   |import     |package   |super        |try      |boolean  |continue |final   |instanceof |private   |switch       |void     |break    |default  |finally |int        |protected |synchronized |volatile |byte     |do       |float   |interface  |public    |this         |while    |case     |double   |for     |long       |return    |throw        |catch    |else     |goto    |native     |short     |throws        |char     |enum     |if      |new        |static    |transient&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;All Arithmetic Operators&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operator&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;+&lt;/td&gt;
+&lt;td&gt;Addition&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;Subtraction (unary minus)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;*&lt;/td&gt;
+&lt;td&gt;Multiplication&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/&lt;/td&gt;
+&lt;td&gt;Division&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%&lt;/td&gt;
+&lt;td&gt;Modulus&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;++&lt;/td&gt;
+&lt;td&gt;Increment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;+=&lt;/td&gt;
+&lt;td&gt;Addition assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;-=&lt;/td&gt;
+&lt;td&gt;Subtraction assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;*=&lt;/td&gt;
+&lt;td&gt;Multiplication assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/=&lt;/td&gt;
+&lt;td&gt;Division assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%=&lt;/td&gt;
+&lt;td&gt;Modulus assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;&lt;/td&gt;
+&lt;td&gt;Decrement&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;All Logical Operators&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operator&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;Logical AND&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#124;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Logical OR&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;^&lt;/td&gt;
+&lt;td&gt;Logical XOR (exclusive OR)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#124;&amp;#124;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Short-circuit OR&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&amp;amp;&lt;/td&gt;
+&lt;td&gt;Short-circuit AND&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;!&lt;/td&gt;
+&lt;td&gt;Logical unary NOT&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;=&lt;/td&gt;
+&lt;td&gt;AND assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#124;=&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;OR assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;^=&lt;/td&gt;
+&lt;td&gt;XOR assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;==&lt;/td&gt;
+&lt;td&gt;Equal to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;!=&lt;/td&gt;
+&lt;td&gt;Not equal to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;? :&lt;/td&gt;
+&lt;td&gt;ernary if-then-else&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;###Some Interesting Utilities&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public final class Interesting {
+
+  /**
+   * Get a Boolean from a boolean, equivalent to the java 1.4 method Boolean.valueOf(boolean)
+   * @param value the boolean
+   * @return the Boolean equivalent
+   */
+  public static Boolean valueOf(boolean value) {
+    if (value)
+      return Boolean.TRUE;
+    else
+      return Boolean.FALSE;
+  }
+
+  /**
+   * Test the equality of two doubles by converting their values into IEEE 754 floating-point &amp;quot;double format&amp;quot; long values.
+   * @param a Double to check equality with.
+   * @param b Double to check equality with.
+   * @return True if a equals b.
+   */
+  public static boolean equals(final double a, final double b) {
+    return Double.doubleToLongBits(a) == Double.doubleToLongBits(b);
+  }
+
+  /**
+   * Test the equality of two doubles by converting their values into IEEE 754 floating-point &amp;quot;single precision&amp;quot; bit layouts.
+   * @param a Float to check equality with.
+   * @param b Float to check equality with.
+   * @return True if a equals b.
+   */
+  public static boolean equals(final float a, final float b) {
+    return Float.floatToIntBits(a) == Float.floatToIntBits(b);
+  }
+
+  /**
+   * Test the equality of a given sub-section of two byte arrays.
+   * 
+   * @param a The first byte array.
+   * @param abegin The begining index of the first byte array.
+   * @param b The second byte array.
+   * @param bbegin The begining index of the second byte array.
+   * @param length The length of the sub-section.
+   * @return True if sub-sections are equal.
+   */
+  public static boolean equals(final byte a[], final int abegin, final byte b[], final int bbegin,final int length) {
+    try {
+      int i = length;
+      while (--i &amp;gt;= 0) {
+        if (a[abegin + i] != b[bbegin + i]) {
+          return false;
+        }
+      }
+    } catch (ArrayIndexOutOfBoundsException e) {
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * Test the equality of two byte arrays.
+   * @param a The first byte array.
+   * @param b The second byte array.
+   * @return True if the byte arrays are equal.
+   */
+  public static boolean equals(final byte a[], final byte b[]) {
+    if (a == b)
+      return true;
+    if (a == null || b == null)
+      return false;
+    if (a.length != b.length)
+      return false;
+    try {
+      for (int i = 0; i &amp;lt; a.length; i++) {
+        if (a[i] != b[i]) {
+          return false;
+        }
+      }
+    } catch (ArrayIndexOutOfBoundsException e) {
+      return false;
+    }
+    return true;
+  }
+  
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is my Projection for this blog?</title>
+      <link>http://localhost:1313/2014/10/21/projection/</link>
+      <pubDate>Tue, 21 Oct 2014 12:44:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/21/projection/</guid>
+      <description>&lt;p&gt;As i mentioned back, I am good at some projections. So, lets do that thing first.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Need list of target sources, which were influencing me&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Need Bookmarking for targeted sources&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Categorize the domains, call them in category, on which i want to write&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Write synopsis of what to write, for sake of category&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Drill down to sub-category if any&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Go to 4, till needed&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Prepare some initial topics for all categories&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;again write statement of work kind of proposal&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;start working, enough listing, go with the flow :)&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Completely Random:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Java Language, Java Data Type, Java Collection, Java Date,Java I/O, Java Reflection, Java JDBC, Java Thread, Java XML, JDK Misc, EJB3, JPA, Java Web Services,Java SOA, Email, Spring, Hibernate, JSP, Servlet, JSTL, JSP EL,Java RegEx,Java I18N, Java Network, Java Design Patterns, Java Security, Java Genrics, AWS, Heroku, Cloud Foundry, MongoDB, Redis, Oracle, MapReduce, Spring Data, Spring Social, Spring Security, Spring Batch, Spring HATEOAS, Spring AMQP, OpenShift, Spring Web Services, REST, Scheduling, Spring MVC, ASYNC, WebSocket, YAML, JSON, SAP HANA, Caching, NGINX, Java Script, ECMA 5, ECMA 6, Maven, jQuery, DOM Manipulation, Web Components, Polymer, Adobe Spry, Octopress, JKyll, Hexo, Sublime Text 2, jQuery Mobile, Appcelerator Titanium Mobile, IONOC, Backbone, Underscore, LoDash, Require Js, Node.JS, NPM, Bower, Moments, Angular JS, Marioonette JS, Chaplin, ExoSkeletion,Socket IO,  Phantom JS, Jasmine, Mocha, Chai, Sinon, Istanbul, Karma JS, Should JS, When JS, Q js, Mustache, Hogan JS, Dust JS, EJS, Handlebars, Jade, Browserify, Twitter Boostrap, Foundation, HTML5 Boiler plate, jQuery UI, Magnific Popup, Reveeal JS, Nyro.Model, Mousetrap, keyboard js, Masonry js, ISOTope, impress js, d3 js, chart js, raphael, faker js,pdf js, Modernizer, html5 shim, grunt, brunch, Klass, axis2, junit, CXF, Camel, Common-Colleection, commons lang, commons http-client, logging, JULI, Log4j, SLF4j, Logback, commons pool, DBCP, C3P0, erby, Maria DB, Postgress SQL, Apache HttpComponents Client, Apache HttpComponents Core, Lucene, SOLR, Elastic Search, JSF, Rich Faces, My Faces, ODE, Tiles, TomEE, TomCat, vFabric, JBoss, velocity, wicket, Spring Test Conetxt, JBoss logging, Kibana, Logstach, Guava, Mockito, Easy Mock, Jackson, GSON, Jettison, xerces, JAXB, JAXP, JAXR, commons io, play, jetty, netty, cgilb, asm, javassist, h2, hsql, mckoi, google collections, aspect j, aop alliance, FEST Reflection, resin, freemaker, thymleaf, JTA, Joda Time, UML, SVN, GIT, GitHub,Findbug, checkstyle, pmd, sonar, fortify, contrast, eclemma, cobetura, Codepro, mylyn, xtext, jaspersoft, properties, pl-sql, triggers, soapui, ivyde, gradle, selenium, cucumber, TDDD, BDD, jBeehive, apache directory, hex editing, java profiling, groovy, grails, eclipse rcp, markdown, OPPE, terminal, ubuntu, lua, HTML5, CSS3, hudson, jenkis, travis-ci, agile, scrum, EMF, GMF, Activiti, glass fish, Java EE7, mysql, DB2, SQLLite, riak, drools, wildfly, arquilian, infispan, jBPM, resteasy jeresy, XSD, DTD, SPEL, dropwizard, classcyle, jDepend, FEST, Eclipse Link, BoneCP, HikariCP, Proxool, Protocol Buffer Java API, apache thrift, EHCache, mule, fabric8, sevicemix, JOOQ, Spring JMS, Rabbit MQ, Hornet MQ, Active MQ, Hessian, Apache Shiro, Acegi, XPath, Dough Lea&amp;rsquo;s Util.concurrent Package, Backport Of JSR 166,  Disruptor Framework, oro,  Bouncy Castle Provider, JASYPT: Java Simplified Encryption,  MX4J, WSDL4J, Metrics Com.codahale.metrics » metrics-core, poi, quartz, iText, sankeYaml, drools, leveldb, liferay, jmeter&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;TODO
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;#Its a non ending job.&lt;br /&gt;
+&lt;img src=&#34;https://octodex.github.com/images/nyantocat.gif&#34; align=&#34;left&#34; /&gt;&lt;br /&gt;
+######credits: Github&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why this blog is impossible ?</title>
+      <link>http://localhost:1313/2014/10/21/things-to-write/</link>
+      <pubDate>Tue, 21 Oct 2014 01:56:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/21/things-to-write/</guid>
+      <description>
+
+&lt;p&gt;title:&lt;br /&gt;
+date:&lt;br /&gt;
+tags:&lt;br /&gt;
+categories:&lt;/p&gt;
+
+&lt;h2 id=&#34;description-why-this-blog-is-impossible&#34;&gt;description: Why this blog is impossible!&lt;/h2&gt;
+
+&lt;p&gt;I want to write about lot of things, but, i lack the strength for writing. I know, I am lazy, Still projection is a good thing. And this is the best thing, i am good at. Another thing, where i am best, is thinking about the worse.&lt;br /&gt;
+I took a very long time, to start this blog. 7 + years, in the making. What made this delay is a lot of things, but most importantly the comfort. I was not comfortable with the blogging platforms, i didn&amp;rsquo;t had control.&lt;br /&gt;
+I can&amp;rsquo;t be online all the time, and working offline was almost impossible for blogspot, wordpress, tumbler etc. Believe it or not, i have tested all.&lt;/p&gt;
+
+&lt;p&gt;choose any blogging engine, and put subdomain abhiesa, in front of it, and i am there. But that was out of my comfort zone. Too many options in editing, and not having control on output, like css, js, html etc.&lt;/p&gt;
+
+&lt;p&gt;After my long patience, i moved to jkyll like system last year, and still, it was tough for me. Ruby, Rake, RVM, etc etc. Yes i am a nerd, but not for ruby, python, jade etc. Also, i needed my home laptop for doing anything on it. I was unable to write, at office (whenever i was free), on the move, at night (when my little daughter, goes to sleep, and illumination is another problem.), etc etc.&lt;/p&gt;
+
+&lt;p&gt;Recently i found out something called &lt;a href=&#34;http://hexo.io&#34;&gt;Hexo.IO&lt;/a&gt;, and &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis-CI&lt;/a&gt;, and i combined both of them.&lt;br /&gt;
+Now I have tweaked theme, control over output generation, and automated builds. That means, i office i can just write something on notepad, and in evening, i can create a new file on github and paste its content it.&lt;br /&gt;
+I can do the same thing from my Nexus 7, and my cheap Micromax Canvas phone.&lt;br /&gt;
+Whenever I check in, I get my blog updated. I can always revert, and change anything a lot.&lt;/p&gt;
+
+&lt;p&gt;Still, somethings are left.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;learn markdown as pro&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;optimize css&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;move from ejs theme to handlebar theme&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;optimize site for speed, currently speed is very bad&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;have total control on output&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;find a place to host images&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am using sublime text 3 for typing, this blog, most of the time.&lt;br /&gt;
+I don&amp;rsquo;t know right know, how good this setup is going to be, but for now, this looks ok, but still impossible.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hexo Travis Config</title>
+      <link>http://localhost:1313/2014/10/20/travis/</link>
+      <pubDate>Mon, 20 Oct 2014 16:56:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/20/travis/</guid>
+      <description>&lt;p&gt;#My Kind of Hello World&lt;/p&gt;
+
+&lt;p&gt;Travis Config to deploy hexo blog automatically using Travis-CI&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;language: node_js
+node_js:
+  - &amp;quot;0.10&amp;quot;
+branches:
+  only:
+  - source
+before_install:
+- npm install -g hexo
+install:
+- npm install
+before_script:
+- git config --global user.name &#39;Abhishek Prashant Pandey&#39;
+- git config --global user.email &#39;abhiesa@gmail.com&#39;
+script:
+- hexo generate
+after_success:
+- mkdir .deploy
+- cd .deploy
+- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init &amp;amp;&amp;amp; git remote add -t master origin $DEPLOY_REPO)
+- rm -rf ./*
+- cp -r ../public/* .
+- git add -A .
+- git commit -m &#39;Auto Update from TRAVIS-CI&#39;
+- git branch -m master
+- git push -q $DEPLOY_REPO HEAD:master
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

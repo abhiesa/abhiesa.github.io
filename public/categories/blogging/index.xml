@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on Blog @ abhiesa</title>
+    <link>http://localhost:1313/categories/blogging/</link>
+    <description>Recent content in Blogging on Blog @ abhiesa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).</copyright>
+    <lastBuildDate>Tue, 21 Oct 2014 12:44:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What is my Projection for this blog?</title>
+      <link>http://localhost:1313/2014/10/21/projection/</link>
+      <pubDate>Tue, 21 Oct 2014 12:44:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/21/projection/</guid>
+      <description>&lt;p&gt;As i mentioned back, I am good at some projections. So, lets do that thing first.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Need list of target sources, which were influencing me&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Need Bookmarking for targeted sources&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Categorize the domains, call them in category, on which i want to write&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Write synopsis of what to write, for sake of category&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Drill down to sub-category if any&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Go to 4, till needed&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Prepare some initial topics for all categories&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;again write statement of work kind of proposal&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;start working, enough listing, go with the flow :)&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Completely Random:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Java Language, Java Data Type, Java Collection, Java Date,Java I/O, Java Reflection, Java JDBC, Java Thread, Java XML, JDK Misc, EJB3, JPA, Java Web Services,Java SOA, Email, Spring, Hibernate, JSP, Servlet, JSTL, JSP EL,Java RegEx,Java I18N, Java Network, Java Design Patterns, Java Security, Java Genrics, AWS, Heroku, Cloud Foundry, MongoDB, Redis, Oracle, MapReduce, Spring Data, Spring Social, Spring Security, Spring Batch, Spring HATEOAS, Spring AMQP, OpenShift, Spring Web Services, REST, Scheduling, Spring MVC, ASYNC, WebSocket, YAML, JSON, SAP HANA, Caching, NGINX, Java Script, ECMA 5, ECMA 6, Maven, jQuery, DOM Manipulation, Web Components, Polymer, Adobe Spry, Octopress, JKyll, Hexo, Sublime Text 2, jQuery Mobile, Appcelerator Titanium Mobile, IONOC, Backbone, Underscore, LoDash, Require Js, Node.JS, NPM, Bower, Moments, Angular JS, Marioonette JS, Chaplin, ExoSkeletion,Socket IO,  Phantom JS, Jasmine, Mocha, Chai, Sinon, Istanbul, Karma JS, Should JS, When JS, Q js, Mustache, Hogan JS, Dust JS, EJS, Handlebars, Jade, Browserify, Twitter Boostrap, Foundation, HTML5 Boiler plate, jQuery UI, Magnific Popup, Reveeal JS, Nyro.Model, Mousetrap, keyboard js, Masonry js, ISOTope, impress js, d3 js, chart js, raphael, faker js,pdf js, Modernizer, html5 shim, grunt, brunch, Klass, axis2, junit, CXF, Camel, Common-Colleection, commons lang, commons http-client, logging, JULI, Log4j, SLF4j, Logback, commons pool, DBCP, C3P0, erby, Maria DB, Postgress SQL, Apache HttpComponents Client, Apache HttpComponents Core, Lucene, SOLR, Elastic Search, JSF, Rich Faces, My Faces, ODE, Tiles, TomEE, TomCat, vFabric, JBoss, velocity, wicket, Spring Test Conetxt, JBoss logging, Kibana, Logstach, Guava, Mockito, Easy Mock, Jackson, GSON, Jettison, xerces, JAXB, JAXP, JAXR, commons io, play, jetty, netty, cgilb, asm, javassist, h2, hsql, mckoi, google collections, aspect j, aop alliance, FEST Reflection, resin, freemaker, thymleaf, JTA, Joda Time, UML, SVN, GIT, GitHub,Findbug, checkstyle, pmd, sonar, fortify, contrast, eclemma, cobetura, Codepro, mylyn, xtext, jaspersoft, properties, pl-sql, triggers, soapui, ivyde, gradle, selenium, cucumber, TDDD, BDD, jBeehive, apache directory, hex editing, java profiling, groovy, grails, eclipse rcp, markdown, OPPE, terminal, ubuntu, lua, HTML5, CSS3, hudson, jenkis, travis-ci, agile, scrum, EMF, GMF, Activiti, glass fish, Java EE7, mysql, DB2, SQLLite, riak, drools, wildfly, arquilian, infispan, jBPM, resteasy jeresy, XSD, DTD, SPEL, dropwizard, classcyle, jDepend, FEST, Eclipse Link, BoneCP, HikariCP, Proxool, Protocol Buffer Java API, apache thrift, EHCache, mule, fabric8, sevicemix, JOOQ, Spring JMS, Rabbit MQ, Hornet MQ, Active MQ, Hessian, Apache Shiro, Acegi, XPath, Dough Lea&amp;rsquo;s Util.concurrent Package, Backport Of JSR 166,  Disruptor Framework, oro,  Bouncy Castle Provider, JASYPT: Java Simplified Encryption,  MX4J, WSDL4J, Metrics Com.codahale.metrics » metrics-core, poi, quartz, iText, sankeYaml, drools, leveldb, liferay, jmeter&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;TODO
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;#Its a non ending job.&lt;br /&gt;
+&lt;img src=&#34;https://octodex.github.com/images/nyantocat.gif&#34; align=&#34;left&#34; /&gt;&lt;br /&gt;
+######credits: Github&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why this blog is impossible ?</title>
+      <link>http://localhost:1313/2014/10/21/things-to-write/</link>
+      <pubDate>Tue, 21 Oct 2014 01:56:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/21/things-to-write/</guid>
+      <description>
+
+&lt;p&gt;title:&lt;br /&gt;
+date:&lt;br /&gt;
+tags:&lt;br /&gt;
+categories:&lt;/p&gt;
+
+&lt;h2 id=&#34;description-why-this-blog-is-impossible&#34;&gt;description: Why this blog is impossible!&lt;/h2&gt;
+
+&lt;p&gt;I want to write about lot of things, but, i lack the strength for writing. I know, I am lazy, Still projection is a good thing. And this is the best thing, i am good at. Another thing, where i am best, is thinking about the worse.&lt;br /&gt;
+I took a very long time, to start this blog. 7 + years, in the making. What made this delay is a lot of things, but most importantly the comfort. I was not comfortable with the blogging platforms, i didn&amp;rsquo;t had control.&lt;br /&gt;
+I can&amp;rsquo;t be online all the time, and working offline was almost impossible for blogspot, wordpress, tumbler etc. Believe it or not, i have tested all.&lt;/p&gt;
+
+&lt;p&gt;choose any blogging engine, and put subdomain abhiesa, in front of it, and i am there. But that was out of my comfort zone. Too many options in editing, and not having control on output, like css, js, html etc.&lt;/p&gt;
+
+&lt;p&gt;After my long patience, i moved to jkyll like system last year, and still, it was tough for me. Ruby, Rake, RVM, etc etc. Yes i am a nerd, but not for ruby, python, jade etc. Also, i needed my home laptop for doing anything on it. I was unable to write, at office (whenever i was free), on the move, at night (when my little daughter, goes to sleep, and illumination is another problem.), etc etc.&lt;/p&gt;
+
+&lt;p&gt;Recently i found out something called &lt;a href=&#34;http://hexo.io&#34;&gt;Hexo.IO&lt;/a&gt;, and &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis-CI&lt;/a&gt;, and i combined both of them.&lt;br /&gt;
+Now I have tweaked theme, control over output generation, and automated builds. That means, i office i can just write something on notepad, and in evening, i can create a new file on github and paste its content it.&lt;br /&gt;
+I can do the same thing from my Nexus 7, and my cheap Micromax Canvas phone.&lt;br /&gt;
+Whenever I check in, I get my blog updated. I can always revert, and change anything a lot.&lt;/p&gt;
+
+&lt;p&gt;Still, somethings are left.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;learn markdown as pro&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;optimize css&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;move from ejs theme to handlebar theme&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;optimize site for speed, currently speed is very bad&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;have total control on output&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;find a place to host images&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am using sublime text 3 for typing, this blog, most of the time.&lt;br /&gt;
+I don&amp;rsquo;t know right know, how good this setup is going to be, but for now, this looks ok, but still impossible.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hexo Travis Config</title>
+      <link>http://localhost:1313/2014/10/20/travis/</link>
+      <pubDate>Mon, 20 Oct 2014 16:56:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/20/travis/</guid>
+      <description>&lt;p&gt;#My Kind of Hello World&lt;/p&gt;
+
+&lt;p&gt;Travis Config to deploy hexo blog automatically using Travis-CI&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;language: node_js
+node_js:
+  - &amp;quot;0.10&amp;quot;
+branches:
+  only:
+  - source
+before_install:
+- npm install -g hexo
+install:
+- npm install
+before_script:
+- git config --global user.name &#39;Abhishek Prashant Pandey&#39;
+- git config --global user.email &#39;abhiesa@gmail.com&#39;
+script:
+- hexo generate
+after_success:
+- mkdir .deploy
+- cd .deploy
+- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init &amp;amp;&amp;amp; git remote add -t master origin $DEPLOY_REPO)
+- rm -rf ./*
+- cp -r ../public/* .
+- git add -A .
+- git commit -m &#39;Auto Update from TRAVIS-CI&#39;
+- git branch -m master
+- git push -q $DEPLOY_REPO HEAD:master
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

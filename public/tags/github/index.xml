@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Blog @ abhiesa</title>
+    <link>http://localhost:1313/tags/github/</link>
+    <description>Recent content in Github on Blog @ abhiesa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).</copyright>
+    <lastBuildDate>Mon, 20 Oct 2014 16:56:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hexo Travis Config</title>
+      <link>http://localhost:1313/2014/10/20/travis/</link>
+      <pubDate>Mon, 20 Oct 2014 16:56:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/20/travis/</guid>
+      <description>&lt;p&gt;#My Kind of Hello World&lt;/p&gt;
+
+&lt;p&gt;Travis Config to deploy hexo blog automatically using Travis-CI&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;language: node_js
+node_js:
+  - &amp;quot;0.10&amp;quot;
+branches:
+  only:
+  - source
+before_install:
+- npm install -g hexo
+install:
+- npm install
+before_script:
+- git config --global user.name &#39;Abhishek Prashant Pandey&#39;
+- git config --global user.email &#39;abhiesa@gmail.com&#39;
+script:
+- hexo generate
+after_success:
+- mkdir .deploy
+- cd .deploy
+- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init &amp;amp;&amp;amp; git remote add -t master origin $DEPLOY_REPO)
+- rm -rf ./*
+- cp -r ../public/* .
+- git add -A .
+- git commit -m &#39;Auto Update from TRAVIS-CI&#39;
+- git branch -m master
+- git push -q $DEPLOY_REPO HEAD:master
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

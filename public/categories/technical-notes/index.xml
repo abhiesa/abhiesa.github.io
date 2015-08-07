@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical Notes on Blog @ abhiesa</title>
+    <link>http://localhost:1313/categories/technical-notes/</link>
+    <description>Recent content in Technical Notes on Blog @ abhiesa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).</copyright>
+    <lastBuildDate>Tue, 28 Oct 2014 14:44:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/technical-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Java Data Types and Operators</title>
+      <link>http://localhost:1313/2014/10/28/java-data-type--and-operator/</link>
+      <pubDate>Tue, 28 Oct 2014 14:44:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/2014/10/28/java-data-type--and-operator/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;data types in java&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th&gt;Wrapper&lt;/th&gt;
+&lt;th&gt;Min Value&lt;/th&gt;
+&lt;th&gt;Max Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;int&lt;/td&gt;
+&lt;td&gt;A 32-bit (4-byte) integer value&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;-2147483648&lt;/td&gt;
+&lt;td&gt;2147483647&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;short&lt;/td&gt;
+&lt;td&gt;A 16-bit (2-byte) integer value&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;Short&lt;/td&gt;
+&lt;td&gt;-32768&lt;/td&gt;
+&lt;td&gt;32767&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;long&lt;/td&gt;
+&lt;td&gt;A 64-bit (8-byte) integer value&lt;/td&gt;
+&lt;td&gt;0L&lt;/td&gt;
+&lt;td&gt;Long&lt;/td&gt;
+&lt;td&gt;-9223372036854775808&lt;/td&gt;
+&lt;td&gt;9223372036854775807&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;byte&lt;/td&gt;
+&lt;td&gt;An 8-bit (1-byte) integer value&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;Byte&lt;/td&gt;
+&lt;td&gt;-128&lt;/td&gt;
+&lt;td&gt;+127&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;float&lt;/td&gt;
+&lt;td&gt;A 32-bit (4-byte) floating-point value&lt;/td&gt;
+&lt;td&gt;0.0f&lt;/td&gt;
+&lt;td&gt;Float&lt;/td&gt;
+&lt;td&gt;1.4e-045&lt;/td&gt;
+&lt;td&gt;3.4e+038&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;double&lt;/td&gt;
+&lt;td&gt;A 64-bit (8-byte) floating-point value&lt;/td&gt;
+&lt;td&gt;0.0d&lt;/td&gt;
+&lt;td&gt;Double&lt;/td&gt;
+&lt;td&gt;4.9e-324&lt;/td&gt;
+&lt;td&gt;1.8e+308&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;char&lt;/td&gt;
+&lt;td&gt;A 16-bit character using the Unicode encoding scheme&lt;/td&gt;
+&lt;td&gt;\u0000&lt;/td&gt;
+&lt;td&gt;Char&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;A true or false value&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;keywords in Java&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;|abstract |class    |extends |implements |null      |strictfp     |true     |assert   |const    |false   |import     |package   |super        |try      |boolean  |continue |final   |instanceof |private   |switch       |void     |break    |default  |finally |int        |protected |synchronized |volatile |byte     |do       |float   |interface  |public    |this         |while    |case     |double   |for     |long       |return    |throw        |catch    |else     |goto    |native     |short     |throws        |char     |enum     |if      |new        |static    |transient&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;All Arithmetic Operators&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operator&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;+&lt;/td&gt;
+&lt;td&gt;Addition&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;Subtraction (unary minus)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;*&lt;/td&gt;
+&lt;td&gt;Multiplication&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/&lt;/td&gt;
+&lt;td&gt;Division&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%&lt;/td&gt;
+&lt;td&gt;Modulus&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;++&lt;/td&gt;
+&lt;td&gt;Increment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;+=&lt;/td&gt;
+&lt;td&gt;Addition assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;-=&lt;/td&gt;
+&lt;td&gt;Subtraction assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;*=&lt;/td&gt;
+&lt;td&gt;Multiplication assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/=&lt;/td&gt;
+&lt;td&gt;Division assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%=&lt;/td&gt;
+&lt;td&gt;Modulus assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;&lt;/td&gt;
+&lt;td&gt;Decrement&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;All Logical Operators&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operator&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;Logical AND&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#124;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Logical OR&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;^&lt;/td&gt;
+&lt;td&gt;Logical XOR (exclusive OR)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#124;&amp;#124;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Short-circuit OR&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&amp;amp;&lt;/td&gt;
+&lt;td&gt;Short-circuit AND&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;!&lt;/td&gt;
+&lt;td&gt;Logical unary NOT&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;=&lt;/td&gt;
+&lt;td&gt;AND assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#124;=&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;OR assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;^=&lt;/td&gt;
+&lt;td&gt;XOR assignment&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;==&lt;/td&gt;
+&lt;td&gt;Equal to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;!=&lt;/td&gt;
+&lt;td&gt;Not equal to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;? :&lt;/td&gt;
+&lt;td&gt;ernary if-then-else&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;###Some Interesting Utilities&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public final class Interesting {
+
+  /**
+   * Get a Boolean from a boolean, equivalent to the java 1.4 method Boolean.valueOf(boolean)
+   * @param value the boolean
+   * @return the Boolean equivalent
+   */
+  public static Boolean valueOf(boolean value) {
+    if (value)
+      return Boolean.TRUE;
+    else
+      return Boolean.FALSE;
+  }
+
+  /**
+   * Test the equality of two doubles by converting their values into IEEE 754 floating-point &amp;quot;double format&amp;quot; long values.
+   * @param a Double to check equality with.
+   * @param b Double to check equality with.
+   * @return True if a equals b.
+   */
+  public static boolean equals(final double a, final double b) {
+    return Double.doubleToLongBits(a) == Double.doubleToLongBits(b);
+  }
+
+  /**
+   * Test the equality of two doubles by converting their values into IEEE 754 floating-point &amp;quot;single precision&amp;quot; bit layouts.
+   * @param a Float to check equality with.
+   * @param b Float to check equality with.
+   * @return True if a equals b.
+   */
+  public static boolean equals(final float a, final float b) {
+    return Float.floatToIntBits(a) == Float.floatToIntBits(b);
+  }
+
+  /**
+   * Test the equality of a given sub-section of two byte arrays.
+   * 
+   * @param a The first byte array.
+   * @param abegin The begining index of the first byte array.
+   * @param b The second byte array.
+   * @param bbegin The begining index of the second byte array.
+   * @param length The length of the sub-section.
+   * @return True if sub-sections are equal.
+   */
+  public static boolean equals(final byte a[], final int abegin, final byte b[], final int bbegin,final int length) {
+    try {
+      int i = length;
+      while (--i &amp;gt;= 0) {
+        if (a[abegin + i] != b[bbegin + i]) {
+          return false;
+        }
+      }
+    } catch (ArrayIndexOutOfBoundsException e) {
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * Test the equality of two byte arrays.
+   * @param a The first byte array.
+   * @param b The second byte array.
+   * @return True if the byte arrays are equal.
+   */
+  public static boolean equals(final byte a[], final byte b[]) {
+    if (a == b)
+      return true;
+    if (a == null || b == null)
+      return false;
+    if (a.length != b.length)
+      return false;
+    try {
+      for (int i = 0; i &amp;lt; a.length; i++) {
+        if (a[i] != b[i]) {
+          return false;
+        }
+      }
+    } catch (ArrayIndexOutOfBoundsException e) {
+      return false;
+    }
+    return true;
+  }
+  
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
