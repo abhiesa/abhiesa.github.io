@@ -6,6 +6,7 @@ build:
         flags: --disableSitemap=true
 deploy:
   steps:
-    - lukevivier/gh-pages@0.2.1:
+    - uetchy/gh-pages:
         token: $GIT_TOKEN
-        basedir: public
+        repo: abhiesa/abhiesa.github.io
+        path: public
