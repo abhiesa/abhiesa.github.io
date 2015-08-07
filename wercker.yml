@@ -9,4 +9,3 @@ deploy:
     - uetchy/gh-pages:
         token: $GIT_TOKEN
         repo: abhiesa/abhiesa.github.io
-        path: public
