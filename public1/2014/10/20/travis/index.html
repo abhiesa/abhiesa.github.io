@@ -1,0 +1,377 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Hexo Travis Config &middot; Abhishek Pandey</title>
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/poole-overrides.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde-overrides.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde-x.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/highlight/arta.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/touch-icon-144-precomposed.png">
+  <link href="http://localhost:1313/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="Auto publish to github, hexo blog">
+  <meta name="keywords" content="Hexo,github,Blogging">
+  <link rel="author" href="http://plus.google.com/113911752918942467189">
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075?s=200" alt="gravatar">
+      <h1>Abhishek Pandey</h1>
+      <p class="lead">Dream Design Desire Develop</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="http://localhost:1313/">Blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="http://localhost:1313/about/">about me</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="abhiesa"><i class="fa fa-github-square fa-3x"></i></a>
+      
+      <a href="abhiesa"><i class="fa fa-linkedin-square fa-3x"></i></a>
+      <a href="113911752918942467189"><i class="fa fa-google-plus-square fa-3x"></i></a>
+      <a href="abhiesa"><i class="fa fa-facebook-square fa-3x"></i></a>
+      <a href="abhiesa"><i class="fa fa-twitter-square fa-3x"></i></a>
+      <a href="abhiesa"><i class="fa fa-youtube-square fa-3x"></i></a>
+      <a href="" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>
+      </li>
+    </ul>
+
+    <p>Copyright &copy; 2015 <a href="http://localhost:1313/license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1>Hexo Travis Config</h1>
+    <span class="post-date">Oct 20, 2014 &middot; 1 minute read &middot; <a href="http://localhost:1313/2014/10/20/travis/#disqus_thread">Comments</a>
+    
+    <br/>
+    <a class="label" href="http://localhost:1313/categories/blogging">Blogging</a>
+    </span>
+    <p>#My Kind of Hello World</p>
+
+<p>Travis Config to deploy hexo blog automatically using Travis-CI</p>
+
+<pre><code class="language-yaml">language: node_js
+node_js:
+  - &quot;0.10&quot;
+branches:
+  only:
+  - source
+before_install:
+- npm install -g hexo
+install:
+- npm install
+before_script:
+- git config --global user.name 'Abhishek Prashant Pandey'
+- git config --global user.email 'abhiesa@gmail.com'
+script:
+- hexo generate
+after_success:
+- mkdir .deploy
+- cd .deploy
+- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init &amp;&amp; git remote add -t master origin $DEPLOY_REPO)
+- rm -rf ./*
+- cp -r ../public/* .
+- git add -A .
+- git commit -m 'Auto Update from TRAVIS-CI'
+- git branch -m master
+- git push -q $DEPLOY_REPO HEAD:master
+</code></pre>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "abhiesasblog";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+=======
+<!DOCTYPE HTML><!-- _partial/head -->
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo Travis Config | Blog @ ABHIESA</title>
+  <meta name="author" content="Abhishek Prashant Pandey">
+  
+  <meta name="description" content="Auto publish to github, hexo blog">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Hexo Travis Config"/>
+  <meta property="og:site_name" content="Blog @ ABHIESA"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/true" title="Blog @ ABHIESA" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  
+  <link rel="stylesheet" href="/css/bootstrap.lumen.min.css" media="screen" type="text/css">
+  
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  <!-- _partial/post/google_analytics -->
+
+
+
+</head>
+
+ <body>
+  <!-- _partial/navigation -->
+<nav id="main-nav" class="navbar navbar-inverse" role="navigation"> <!-- navbar-fixed-top -->
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Blog @ ABHIESA</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <!-- post -->
+
+
+<!-- _partial/article -->
+
+<!-- _partial/post/title -->
+<div class="panel-heading">
+
+	
+  <!-- display as page -->
+		<div class="page-header">
+			<h1> Hexo Travis Config</h1>
+		</div>
+	
+
+</div>
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+	
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> <p>Auto publish to github, hexo blog</p>
+
+		</div> <!-- alert -->
+	
+
+	<!-- content -->
+	<div class="mypage">
+	    <h1 id="My_Kind_of_Hello_World">My Kind of Hello World</h1>
+<p>Travis Config to deploy hexo blog automatically using Travis-CI</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">language: node_js</div><div class="line">node_js:</div><div class="line">  -<span class="ruby"> <span class="string">"0.10"</span></span></div><div class="line">branches:</div><div class="line">  only:</div><div class="line">  -<span class="ruby"> source</span></div><div class="line">before_install:</div><div class="line">-<span class="ruby"> npm install -g hexo</span></div><div class="line">install:</div><div class="line">-<span class="ruby"> npm install</span></div><div class="line">before_script:</div><div class="line">-<span class="ruby"> git config --global user.name <span class="string">'Abhishek Prashant Pandey'</span></span></div><div class="line">-<span class="ruby"> git config --global user.email <span class="string">'abhiesa@gmail.com'</span></span></div><div class="line">script:</div><div class="line">-<span class="ruby"> hexo generate</span></div><div class="line">after_success:</div><div class="line">-<span class="ruby"> mkdir .deploy</span></div><div class="line">-<span class="ruby"> cd .deploy</span></div><div class="line">-<span class="ruby"> git clone --depth <span class="number">1</span> --branch master --single-branch <span class="variable">$DEPLOY_REPO</span> . || (git init && git remote add -t master origin <span class="variable">$DEPLOY_REPO</span>)</span></div><div class="line">-<span class="ruby"> rm -rf ./*</span></div><div class="line">-<span class="ruby"> cp -r ../public/* .</span></div><div class="line">-<span class="ruby"> git add -<span class="constant">A</span> .</span></div><div class="line">-<span class="ruby"> git commit -m <span class="string">'Auto Update from TRAVIS-CI'</span></span></div><div class="line">-<span class="ruby"> git branch -m master</span></div><div class="line">-<span class="ruby"> git push -q <span class="variable">$DEPLOY_REPO</span> <span class="constant">HEAD</span><span class="symbol">:master</span></span></div></pre></td></tr></table></figure>
+
+
+	</div>
+
+	<div>
+  	<center>
+	<!-- _partial/post/pagination -->
+<div class="pagination">
+<ul class="pagination">
+	 
+		
+    	<li class="prev"><a href="/2014/10/21/things-to-write/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+		
+          <li class="next disabled"><a>Next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+	<!-- comment -->
+	<!-- _partial/post/comment -->
+
+<section id="comment">
+  <h2 class="title">Comments</h2>
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+
+	
+		<!-- _partial/post/meta -->
+<div class="col-md-3"> 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Oct 20 2014
+	</div>
+	
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+        <!-- _partial/post/category -->
+  
+  <li> <li><a href="/categories/Blogging/">Blogging<span>3</span></a></li> </li>
+
+    </ul>
+	</div>
+	
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+    <ul id="tags" class="tag_box list-unstyled collapse in">
+	    <!-- _partial/post/tag -->
+  
+  <li><a href="/tags/Hexo/">Hexo<span>1</span></a></li> <li><a href="/tags/github/">github<span>1</span></a></li>
+
+    </ul>
+	</div>
+	
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+  <hr>
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+
+	  </div>
+    <footer> <!-- _partial/footer -->
+<p>
+  &copy; 2014 by Abhishek Prashant Pandey
+  &nbsp;
+</p>
+ </footer>
+  </div> <!-- container-narrow -->
+  <!-- _partial/after_footer -->
+<a id="gotop" href="#">
+  <span>▲</span>
+</a>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- <script src="/js/main.js"></script> -->
+
+<script type="text/javascript">
+var disqus_shortname = 'abhiesasblog';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+}());
+</script>
+
+
+<<<<<<< HEAD
+
+<script type="text/javascript">
+    var disqus_shortname = "abhiesasblog";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="http://localhost:1313/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
+=======
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body></html>
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486

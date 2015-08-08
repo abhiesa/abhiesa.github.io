@@ -1,0 +1,779 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Java Data Types and Operators &middot; Abhishek Pandey</title>
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/poole-overrides.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde-overrides.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde-x.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/highlight/arta.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/touch-icon-144-precomposed.png">
+  <link href="http://localhost:1313/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pro">
+  <meta name="keywords" content="Technical Notes,java">
+  <link rel="author" href="http://plus.google.com/113911752918942467189">
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075?s=200" alt="gravatar">
+      <h1>Abhishek Pandey</h1>
+      <p class="lead">Dream Design Desire Develop</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="http://localhost:1313/">Blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="http://localhost:1313/about/">about me</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="abhiesa"><i class="fa fa-github-square fa-3x"></i></a>
+      
+      <a href="abhiesa"><i class="fa fa-linkedin-square fa-3x"></i></a>
+      <a href="113911752918942467189"><i class="fa fa-google-plus-square fa-3x"></i></a>
+      <a href="abhiesa"><i class="fa fa-facebook-square fa-3x"></i></a>
+      <a href="abhiesa"><i class="fa fa-twitter-square fa-3x"></i></a>
+      <a href="abhiesa"><i class="fa fa-youtube-square fa-3x"></i></a>
+      <a href="" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>
+      </li>
+    </ul>
+
+    <p>Copyright &copy; 2015 <a href="http://localhost:1313/license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1>Java Data Types and Operators</h1>
+    <span class="post-date">Oct 28, 2014 &middot; 3 minute read &middot; <a href="http://localhost:1313/2014/10/28/java-data-type--and-operator/#disqus_thread">Comments</a>
+    
+    <br/>
+    <a class="label" href="http://localhost:1313/categories/technical-notes">Technical Notes</a>
+    </span>
+    <p><strong>data types in java</strong></p>
+
+=======
+<!DOCTYPE HTML><!-- _partial/head -->
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Java Data Types and Operators | Blog @ ABHIESA</title>
+  <meta name="author" content="Abhishek Prashant Pandey">
+  
+  <meta name="description" content="Dream Design Desire Develop">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Java Data Types and Operators"/>
+  <meta property="og:site_name" content="Blog @ ABHIESA"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/true" title="Blog @ ABHIESA" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  
+  <link rel="stylesheet" href="/css/bootstrap.lumen.min.css" media="screen" type="text/css">
+  
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  <!-- _partial/post/google_analytics -->
+
+
+
+</head>
+
+ <body>
+  <!-- _partial/navigation -->
+<nav id="main-nav" class="navbar navbar-inverse" role="navigation"> <!-- navbar-fixed-top -->
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Blog @ ABHIESA</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <!-- post -->
+
+
+<!-- _partial/article -->
+
+<!-- _partial/post/title -->
+<div class="panel-heading">
+
+	
+  <!-- display as page -->
+		<div class="page-header">
+			<h1> Java Data Types and Operators</h1>
+		</div>
+	
+
+</div>
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+	
+
+	<!-- content -->
+	<div class="mypage">
+	    <p><strong>data types in java</strong></p>
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Explanation</th>
+<th>Default</th>
+<th>Wrapper</th>
+<th>Min Value</th>
+<th>Max Value</th>
+</tr>
+</thead>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tbody>
+<tr>
+<td>int</td>
+<td>A 32-bit (4-byte) integer value</td>
+<td>0</td>
+<td>Integer</td>
+<td>-2147483648</td>
+<td>2147483647</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>short</td>
+<td>A 16-bit (2-byte) integer value</td>
+<td>0</td>
+<td>Short</td>
+<td>-32768</td>
+<td>32767</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>long</td>
+<td>A 64-bit (8-byte) integer value</td>
+<td>0L</td>
+<td>Long</td>
+<td>-9223372036854775808</td>
+<td>9223372036854775807</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>byte</td>
+<td>An 8-bit (1-byte) integer value</td>
+<td>0</td>
+<td>Byte</td>
+<td>-128</td>
+<td>+127</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>float</td>
+<td>A 32-bit (4-byte) floating-point value</td>
+<td>0.0f</td>
+<td>Float</td>
+<td>1.4e-045</td>
+<td>3.4e+038</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>double</td>
+<td>A 64-bit (8-byte) floating-point value</td>
+<td>0.0d</td>
+<td>Double</td>
+<td>4.9e-324</td>
+<td>1.8e+308</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>char</td>
+<td>A 16-bit character using the Unicode encoding scheme</td>
+<td>\u0000</td>
+<td>Char</td>
+<td></td>
+<td></td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>boolean</td>
+<td>A true or false value</td>
+<td>false</td>
+<td>Boolean</td>
+<td>false</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<<<<<<< HEAD
+
+<p><strong>keywords in Java</strong></p>
+
+<p>|abstract |class    |extends |implements |null      |strictfp     |true     |assert   |const    |false   |import     |package   |super        |try      |boolean  |continue |final   |instanceof |private   |switch       |void     |break    |default  |finally |int        |protected |synchronized |volatile |byte     |do       |float   |interface  |public    |this         |while    |case     |double   |for     |long       |return    |throw        |catch    |else     |goto    |native     |short     |throws        |char     |enum     |if      |new        |static    |transient</p>
+
+<p><strong>All Arithmetic Operators</strong></p>
+
+=======
+<p><strong>keywords in Java</strong></p>
+<p>|abstract |class    |extends |implements |null      |strictfp     |true     |assert   |const    |false   |import     |package   |super        |try      |boolean  |continue |final   |instanceof |private   |switch       |void     |break    |default  |finally |int        |protected |synchronized |volatile |byte     |do       |float   |interface  |public    |this         |while    |case     |double   |for     |long       |return    |throw        |catch    |else     |goto    |native     |short     |throws        |char     |enum     |if      |new        |static    |transient</p>
+<p><strong>All Arithmetic Operators</strong></p>
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Result</th>
+</tr>
+</thead>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>-</td>
+<td>Subtraction (unary minus)</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>/</td>
+<td>Division</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>%</td>
+<td>Modulus</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>++</td>
+<td>Increment</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>+=</td>
+<td>Addition assignment</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>-=</td>
+<td>Subtraction assignment</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>*=</td>
+<td>Multiplication assignment</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>/=</td>
+<td>Division assignment</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>%=</td>
+<td>Modulus assignment</td>
+</tr>
+<<<<<<< HEAD
+
+<tr>
+<td>&ndash;</td>
+=======
+<tr>
+<td>—</td>
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<td>Decrement</td>
+</tr>
+</tbody>
+</table>
+<<<<<<< HEAD
+
+<p><strong>All Logical Operators</strong></p>
+
+=======
+<p><strong>All Logical Operators</strong></p>
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Result</th>
+</tr>
+</thead>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>Logical AND</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td><code>&#124;</code></td>
+<td>Logical OR</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>^</td>
+<td>Logical XOR (exclusive OR)</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td><code>&#124;&#124;</code></td>
+<td>Short-circuit OR</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>&amp;&amp;</td>
+<td>Short-circuit AND</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>!</td>
+<td>Logical unary NOT</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>&amp;=</td>
+<td>AND assignment</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td><code>&#124;=</code></td>
+<td>OR assignment</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>^=</td>
+<td>XOR assignment</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>==</td>
+<td>Equal to</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>!=</td>
+<td>Not equal to</td>
+</tr>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+<tr>
+<td>? :</td>
+<td>ernary if-then-else</td>
+</tr>
+</tbody>
+</table>
+<<<<<<< HEAD
+
+<p>###Some Interesting Utilities</p>
+
+<pre><code class="language-java">public final class Interesting {
+
+  /**
+   * Get a Boolean from a boolean, equivalent to the java 1.4 method Boolean.valueOf(boolean)
+   * @param value the boolean
+   * @return the Boolean equivalent
+   */
+  public static Boolean valueOf(boolean value) {
+    if (value)
+      return Boolean.TRUE;
+    else
+      return Boolean.FALSE;
+  }
+
+  /**
+   * Test the equality of two doubles by converting their values into IEEE 754 floating-point &quot;double format&quot; long values.
+   * @param a Double to check equality with.
+   * @param b Double to check equality with.
+   * @return True if a equals b.
+   */
+  public static boolean equals(final double a, final double b) {
+    return Double.doubleToLongBits(a) == Double.doubleToLongBits(b);
+  }
+
+  /**
+   * Test the equality of two doubles by converting their values into IEEE 754 floating-point &quot;single precision&quot; bit layouts.
+   * @param a Float to check equality with.
+   * @param b Float to check equality with.
+   * @return True if a equals b.
+   */
+  public static boolean equals(final float a, final float b) {
+    return Float.floatToIntBits(a) == Float.floatToIntBits(b);
+  }
+
+  /**
+   * Test the equality of a given sub-section of two byte arrays.
+   * 
+   * @param a The first byte array.
+   * @param abegin The begining index of the first byte array.
+   * @param b The second byte array.
+   * @param bbegin The begining index of the second byte array.
+   * @param length The length of the sub-section.
+   * @return True if sub-sections are equal.
+   */
+  public static boolean equals(final byte a[], final int abegin, final byte b[], final int bbegin,final int length) {
+    try {
+      int i = length;
+      while (--i &gt;= 0) {
+        if (a[abegin + i] != b[bbegin + i]) {
+          return false;
+        }
+      }
+    } catch (ArrayIndexOutOfBoundsException e) {
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * Test the equality of two byte arrays.
+   * @param a The first byte array.
+   * @param b The second byte array.
+   * @return True if the byte arrays are equal.
+   */
+  public static boolean equals(final byte a[], final byte b[]) {
+    if (a == b)
+      return true;
+    if (a == null || b == null)
+      return false;
+    if (a.length != b.length)
+      return false;
+    try {
+      for (int i = 0; i &lt; a.length; i++) {
+        if (a[i] != b[i]) {
+          return false;
+        }
+      }
+    } catch (ArrayIndexOutOfBoundsException e) {
+      return false;
+    }
+    return true;
+  }
+  
+}
+</code></pre>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "abhiesasblog";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+=======
+<h3 id="Some_Interesting_Utilities">Some Interesting Utilities</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Interesting</span> </span>{</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Get a Boolean from a boolean, equivalent to the java 1.4 method Boolean.valueOf(boolean)</div><div class="line">   *<span class="javadoctag"> @param</span> value the boolean</div><div class="line">   *<span class="javadoctag"> @return</span> the Boolean equivalent</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> Boolean <span class="title">valueOf</span>(<span class="keyword">boolean</span> value) {</div><div class="line">    <span class="keyword">if</span> (value)</div><div class="line">      <span class="keyword">return</span> Boolean.TRUE;</div><div class="line">    <span class="keyword">else</span></div><div class="line">      <span class="keyword">return</span> Boolean.FALSE;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Test the equality of two doubles by converting their values into IEEE 754 floating-point "double format" long values.</div><div class="line">   *<span class="javadoctag"> @param</span> a Double to check equality with.</div><div class="line">   *<span class="javadoctag"> @param</span> b Double to check equality with.</div><div class="line">   *<span class="javadoctag"> @return</span> True if a equals b.</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">equals</span>(<span class="keyword">final</span> <span class="keyword">double</span> a, <span class="keyword">final</span> <span class="keyword">double</span> b) {</div><div class="line">    <span class="keyword">return</span> Double.doubleToLongBits(a) == Double.doubleToLongBits(b);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Test the equality of two doubles by converting their values into IEEE 754 floating-point "single precision" bit layouts.</div><div class="line">   *<span class="javadoctag"> @param</span> a Float to check equality with.</div><div class="line">   *<span class="javadoctag"> @param</span> b Float to check equality with.</div><div class="line">   *<span class="javadoctag"> @return</span> True if a equals b.</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">equals</span>(<span class="keyword">final</span> <span class="keyword">float</span> a, <span class="keyword">final</span> <span class="keyword">float</span> b) {</div><div class="line">    <span class="keyword">return</span> Float.floatToIntBits(a) == Float.floatToIntBits(b);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Test the equality of a given sub-section of two byte arrays.</div><div class="line">   * </div><div class="line">   *<span class="javadoctag"> @param</span> a The first byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> abegin The begining index of the first byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> b The second byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> bbegin The begining index of the second byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> length The length of the sub-section.</div><div class="line">   *<span class="javadoctag"> @return</span> True if sub-sections are equal.</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">equals</span>(<span class="keyword">final</span> <span class="keyword">byte</span> a[], <span class="keyword">final</span> <span class="keyword">int</span> abegin, <span class="keyword">final</span> <span class="keyword">byte</span> b[], <span class="keyword">final</span> <span class="keyword">int</span> bbegin,<span class="keyword">final</span> <span class="keyword">int</span> length) {</div><div class="line">    <span class="keyword">try</span> {</div><div class="line">      <span class="keyword">int</span> i = length;</div><div class="line">      <span class="keyword">while</span> (--i &gt;= <span class="number">0</span>) {</div><div class="line">        <span class="keyword">if</span> (a[abegin + i] != b[bbegin + i]) {</div><div class="line">          <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        }</div><div class="line">      }</div><div class="line">    } <span class="keyword">catch</span> (ArrayIndexOutOfBoundsException e) {</div><div class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="javadoc">/**</span></div><div class="line">   * Test the equality of two byte arrays.</div><div class="line">   *<span class="javadoctag"> @param</span> a The first byte array.</div><div class="line">   *<span class="javadoctag"> @param</span> b The second byte array.</div><div class="line">   *<span class="javadoctag"> @return</span> True if the byte arrays are equal.</div><div class="line">   */</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">equals</span>(<span class="keyword">final</span> <span class="keyword">byte</span> a[], <span class="keyword">final</span> <span class="keyword">byte</span> b[]) {</div><div class="line">    <span class="keyword">if</span> (a == b)</div><div class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    <span class="keyword">if</span> (a == <span class="keyword">null</span> || b == <span class="keyword">null</span>)</div><div class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    <span class="keyword">if</span> (a.length != b.length)</div><div class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    <span class="keyword">try</span> {</div><div class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) {</div><div class="line">        <span class="keyword">if</span> (a[i] != b[i]) {</div><div class="line">          <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        }</div><div class="line">      }</div><div class="line">    } <span class="keyword">catch</span> (ArrayIndexOutOfBoundsException e) {</div><div class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">  }</div><div class="line">  </div><div class="line">}</div></pre></td></tr></table></figure>
+
+
+	</div>
+
+	<div>
+  	<center>
+	<!-- _partial/post/pagination -->
+<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+        
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+		
+		   <li class="next"><a href="/2014/10/21/projection/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+	<!-- comment -->
+	<!-- _partial/post/comment -->
+
+<section id="comment">
+  <h2 class="title">Comments</h2>
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+
+	
+		<!-- _partial/post/meta -->
+<div class="col-md-3"> 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Oct 28 2014
+	</div>
+	
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+        <!-- _partial/post/category -->
+  
+  <li> <li><a href="/categories/Technical-Notes/">Technical Notes<span>1</span></a></li> </li>
+
+    </ul>
+	</div>
+	
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+    <ul id="tags" class="tag_box list-unstyled collapse in">
+	    <!-- _partial/post/tag -->
+  
+  <li><a href="/tags/Java/">Java<span>1</span></a></li>
+
+    </ul>
+	</div>
+	
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+  <hr>
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+
+	  </div>
+    <footer> <!-- _partial/footer -->
+<p>
+  &copy; 2014 by Abhishek Prashant Pandey
+  &nbsp;
+</p>
+ </footer>
+  </div> <!-- container-narrow -->
+  <!-- _partial/after_footer -->
+<a id="gotop" href="#">
+  <span>▲</span>
+</a>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- <script src="/js/main.js"></script> -->
+
+<script type="text/javascript">
+var disqus_shortname = 'abhiesasblog';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
+}());
+</script>
+
+
+<<<<<<< HEAD
+
+<script type="text/javascript">
+    var disqus_shortname = "abhiesasblog";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="http://localhost:1313/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
+=======
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body></html>
+>>>>>>> 019feb451e4fa9ae6d1b717590de00fe5e961486
