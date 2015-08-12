@@ -10,4 +10,4 @@ deploy:
         token: $GIT_TOKEN
         repo: abhiesa/abhiesa.github.io
         path: public
-        domain: abhiesa.com
+        domain: github.com
