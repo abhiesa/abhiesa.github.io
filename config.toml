@@ -22,7 +22,7 @@ disqusShortname = "abhiesasblog"
     pre = "<i class='fa fa-heart'></i>"
     weight = -110
     identifier = "about me"
-    url = "/about/"
+    url = "/about-me/"
 
 [taxonomies]
   category = "categories"
