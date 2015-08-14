@@ -1,4 +1,5 @@
 box: debian
+box: 
 build:
   steps:
     - arjen/hugo-build:
@@ -6,8 +7,6 @@ build:
         flags: --disableSitemap=true
 deploy:
   steps:
-    - uetchy/gh-pages:
+    - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
-        repo: abhiesa/abhiesa.github.io
-        path: public
-        domain: github.com
+        basedir: public

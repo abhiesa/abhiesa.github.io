@@ -1,6 +1,6 @@
 baseurl = "http://abhiesa.github.io/"
 languageCode = "en-us"
-title = "Blog @ abhiesa"
+title = "My New Hugo Site"
 contentdir = "content"
 datadir = "data"
 publishdir = "public"
@@ -11,6 +11,7 @@ PostFormat = true
 log = true
 disqusShortname = "abhiesasblog"
 
+
 [blackfriday]
   angledQuotes = true
   fractions = false
@@ -18,11 +19,21 @@ disqusShortname = "abhiesasblog"
   extensions = ["hardLineBreak","noEmptyLineBeforeBlock"]
   
 [[menu.main]]
-    name = "about me"
+    name = "saal"
     pre = "<i class='fa fa-heart'></i>"
     weight = -110
-    identifier = "about me"
-    url = "/about-me/"
+    identifier = "saal"
+    url = "/saal/"
+[[menu.main]]
+    name = "about"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+    url = "/about/"
+[[menu.main]]
+    name = "hello"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+    url = "/hello/"
 
 [taxonomies]
   category = "categories"
@@ -40,25 +51,26 @@ paginatepath = "page"
    tag = "tags"
 
 [params]
-  defaultDescription = "Dream Design Desire Develop"
-  author = "Abhishek Pandey"
+  defaultDescription = "Tesla's Awesome Hugo Site"
+  author = "Nikola Tesla"
   highlight = "arta"
-  #googleAnalytics = "ABC"
-  googleAuthorship = "113911752918942467189"
-  #theme = "no-js"
-  defaultKeywords = "Dream Design Desire Develop"
+  googleAnalytics = "ABC"
+  googleAuthorship = "LOL"
+  theme = "no-js"
+  defaultKeywords = "red, yellow, green"
   showTopProfile = true
   showTopSocial = false
   github = "abhiesa"
-  #bitbucket = "abhiesa"
+  bitbucket = "abhiesa"
   linkedin = "abhiesa"
-  googleplus = "113911752918942467189"
+  googleplus = "abhiesa"
   facebook = "abhiesa"
   twitter = "abhiesa"
   youtube = "abhiesa"
   rss = true
   gravatarHash = "5dbab16d606f66592c2555df8eab8075"
-  tagline = "Dream Design Desire Develop"
+  tagline = "lala lala lori, doodh ki katoori"
  
 [Author]
-  name = "Abhishek Pandey"
+  name = "Abhi"
+
