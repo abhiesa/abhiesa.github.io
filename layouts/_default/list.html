@@ -2,7 +2,6 @@
 <section id="content">
   <div class="wrap-content zerogrid">
     <div class="row block">
-            <!--{{ partial "left.html" . }}-->
         <div id="main-content" class="col-3-6">
           <div class="wrap-col">
 			{{ range .Data.Pages }}
@@ -13,12 +12,11 @@
  				<time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
               </div>
             </div>
-				{{ if isset .Params "categories" }}&middot;{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}&middot; 
+				{{ if isset .Params "categories" }}&middot;{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}&middot;
             </article>
               {{ end }}
           </div>
         </div>
-		{{ partial "right.html" . }}
     </div>
   </div>
 </section>

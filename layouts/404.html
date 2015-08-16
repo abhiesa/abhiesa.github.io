@@ -2,7 +2,6 @@
 <section id="content">
   <div class="wrap-content zerogrid">
     <div class="row block">
-            {{ partial "left.html" . }}
         <div id="main-content" class="col-3-6">
           <div class="wrap-col">
             <article>
@@ -10,11 +9,10 @@
 	              <h2>404 Not Found</h2>
 	            </div>
 	            <p>What you're looking for isn't here, sorry!</p>
-	    		<p><a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></p> 
+	    		<p><a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></p>
             </article>
           </div>
         </div>
-{{ partial "right.html" . }}
     </div>
   </div>
 </section>
