@@ -1,4 +1,4 @@
-box: switchback/git-debian
+box: sameersbn/gitlab:7.13.5
 box: 
 build:
   steps:
