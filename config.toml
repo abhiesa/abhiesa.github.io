@@ -1,6 +1,6 @@
 baseurl = "http://abhiesa.github.io/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "en-hi"
+title = "Blog @ abhiesa"
 contentdir = "content"
 datadir = "data"
 publishdir = "public"
@@ -8,9 +8,7 @@ canonifyurls =  true
 layoutdir = "layouts"
 copyright = "This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0)."
 PostFormat = true
-log = true
 disqusShortname = "abhiesasblog"
-
 
 [blackfriday]
   angledQuotes = true
@@ -19,21 +17,11 @@ disqusShortname = "abhiesasblog"
   extensions = ["hardLineBreak","noEmptyLineBeforeBlock"]
   
 [[menu.main]]
-    name = "saal"
-    pre = "<i class='fa fa-heart'></i>"
-    weight = -110
-    identifier = "saal"
-    url = "/saal/"
-[[menu.main]]
     name = "about"
     pre = "<i class='fa fa-road'></i>"
     weight = -100
+    identifier = "about"
     url = "/about/"
-[[menu.main]]
-    name = "hello"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -100
-    url = "/hello/"
 
 [taxonomies]
   category = "categories"
@@ -51,26 +39,26 @@ paginatepath = "page"
    tag = "tags"
 
 [params]
-  defaultDescription = "Tesla's Awesome Hugo Site"
+  defaultDescription = "Dream Design Desire Develop"
   author = "Nikola Tesla"
   highlight = "arta"
   googleAnalytics = "ABC"
   googleAuthorship = "LOL"
   theme = "no-js"
-  defaultKeywords = "red, yellow, green"
+  defaultKeywords = "blog, golang, java, ecommerce, web app, spring, best practices, learning, tutorials, apache solr, apache lucene, elastic search, apache spark, apache mesos, apache zookeeper, private cloud, docker, vagrant"
   showTopProfile = true
   showTopSocial = false
   github = "abhiesa"
-  bitbucket = "abhiesa"
+  #bitbucket = "abhiesa"
   linkedin = "abhiesa"
-  googleplus = "abhiesa"
+  googleplus = "113911752918942467189"
   facebook = "abhiesa"
   twitter = "abhiesa"
   youtube = "abhiesa"
   rss = true
   gravatarHash = "5dbab16d606f66592c2555df8eab8075"
-  tagline = "lala lala lori, doodh ki katoori"
+  tagline = "Dream Design Desire Develop"
  
 [Author]
-  name = "Abhi"
+  name = "Abhishek Pandey"
 
