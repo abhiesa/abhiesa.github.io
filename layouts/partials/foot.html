@@ -38,8 +38,8 @@
           <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. </p></div>
         </div>
       </div>
-      <div class="row">
-        <div class="twelve columns" id = "copyright"><p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ "/license/" | absURL }}">License</a>Powered by <a href="http://gohugo.io">Hugo</a>, <a href="http://www.zerotheme.com/zerogrid-a-simple-grid-system-for-responsive-design">zerogrid</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p></div>
+      <div class="row" id="footer">
+        <div class="twelve columns" id = "copyright"><p>Copyright &copy; Abhishek Pandey{{ .Now.Format "2006" }} <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
       </div>
     </div>
     {{ if isset .Site.Params "highlight" }}<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
