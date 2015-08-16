@@ -1,4 +1,4 @@
-box: sameersbn/gitlab:latest
+box: debian
 build:
   steps:
     - arjen/hugo-build:
