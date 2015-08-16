@@ -2,7 +2,6 @@ box: wercker/default
 build:
   steps:
     - arjen/hugo-build:
-        theme: hugo-paper
         flags: --buildDrafts=false
 deploy:
   steps:
