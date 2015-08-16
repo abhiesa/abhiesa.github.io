@@ -48,17 +48,13 @@
   <div class="container">
     <div class="row" id="banner" role="banner">
       <div class="two columns" id="banner-inner-wrapper">
-        <img id="logo" src="{{ "/img/logo.png" | absURL }}" title="Responsive Bar">
+        <img id="logo" src="{{ "/img/logo.png" | absURL }}" title="Abhishek Pandey's Latest Logo" alt="Abhishek Pandey's Latest Logo (Leaf cut with small A)">
       </div>
       <div class="one columns">&nbsp;</div>
       <div id="nav" class="nine columns">
         <ul>
           <li class="icon"><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}{{ .Site.Params.home }}{{ else }}Blog{{ end }}</a></li>
           {{ range .Site.Menus.main }}<li class="icon"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>{{end}}
-            <li class="icon"><a  href="#"><span class="icon"></span>Beer</a></li>
-            <li class="icon"><a href="#">Wines</a></li>
-            <li class="icon"><a href="#">Soft Drinks</a></li>
-            <li class="icon"><a href="#">Coffee &amp; Tea</a></li>
         </ul>
       </div>
     </div>
