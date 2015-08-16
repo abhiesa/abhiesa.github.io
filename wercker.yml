@@ -1,4 +1,4 @@
-box: debian
+box: switchback/git-debian
 box: 
 build:
   steps:
