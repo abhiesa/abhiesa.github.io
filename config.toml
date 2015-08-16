@@ -7,6 +7,7 @@ publishdir = "public"
 canonifyurls =  true
 layoutdir = "layouts"
 copyright = "This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0)."
+copyrighturl = "http://creativecommons.org/licenses/by/4.0/"
 PostFormat = true
 disqusShortname = "abhiesasblog"
 
@@ -39,9 +40,8 @@ paginatepath = "page"
    tag = "tags"
 
 [params]
-  defaultDescription = "Dream Design Desire Develop"
-  author = "Nikola Tesla"
-  highlight = "arta"
+  description = "Abhishek Pandey is a technical integration architect, with emphasis on specialized workflows and quality control with management. He has already scored big clients and employers by his side. He is also a father of little angle, and shares his birth date with his daughter. He commits himself as a passionate husband, loving son, and a proud indian citizen."
+  author = "Abhishek Pandey"
   googleAnalytics = "UA-41826196-1"
   googleAuthorship = "113911752918942467189"
   theme = "no-js"
@@ -49,7 +49,6 @@ paginatepath = "page"
   showTopProfile = true
   showTopSocial = false
   github = "abhiesa"
-  #bitbucket = "abhiesa"
   linkedin = "abhiesa"
   googleplus = "113911752918942467189"
   facebook = "abhiesa"
