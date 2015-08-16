@@ -14,9 +14,9 @@
         </div>
         <div>
           <div><h2>Popular Post</h2></div>
-          <div><h4><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}{{ .Site.Params.home }}{{ else }}Blog{{ end }}</a></h4></div>
+          <div><h4><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}{{ .Site.Params.home }}
+          {{ else }}Blog{{ end }}</a></h4></div>
             {{ range .Site.Menus.main }}<div><h4><a href="{{ .URL | absURL }}">{{ .Name }}</a></h4></div>{{end}}
-          </div>
         </div>
         <div>
           <div><h2>Site Status</h2></div>
