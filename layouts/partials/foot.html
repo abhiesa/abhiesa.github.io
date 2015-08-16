@@ -41,9 +41,9 @@
         <div class="twelve columns" id = "copyright"><p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ "/license/" | absURL }}">License</a>Powered by <a href="http://gohugo.io">Hugo</a>, <a href="http://www.zerotheme.com/zerogrid-a-simple-grid-system-for-responsive-design">zerogrid</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p></div>
       </div>
     </div>
-    {{ if isset .Site.Params "highlight" }}<script src="{{ "/js/highlight.pack.js" | absURL }}"></script>
+    {{ if isset .Site.Params "highlight" }}<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>{{ end }}
-    <script src="{{ "/js/jquery.js" | absURL }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
     jQuery(function($) {
     var open = false; 
