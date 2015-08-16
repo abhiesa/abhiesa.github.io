@@ -38,6 +38,7 @@
   <link href="{{ "/favicon.png" | absURL }}" rel="icon">
   {{ $siteTitle := .Site.Title }}{{ $authorName := .Site.Author.name }}{{ with .RSSLink }}<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} &middot; {{ $authorName }}" />{{ end }}{{ $siteTitle := .Site.Title }}
   <link rel="author" href="humans.txt">
+  {{ with .Site.Params.googleAuthorship }}<link rel="publisher" href="http://plus.google.com/{{ . }}">{{ end }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <!--[if lt IE 8]><div style=' clear: both; text-align:center; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a> </div> <![endif]-->
