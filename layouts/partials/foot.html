@@ -1,6 +1,6 @@
       <div class="three columns" id = "sidebar">
         <div>
-          <div>{{ with .Site.Params.gravatarHash }}<img src="https://www.gravatar.com/avatar/{{ . }}?s=200" alt="gravatar" style="border:none;">{{ end }}
+          <div>{{ with .Site.Params.gravatarHash }}<img src="https://www.gravatar.com/avatar/{{ . }}" alt="gravatar" style="border:none;">{{ end }}
             <h1>{{ .Site.Author.name }}</h1>{{ with .Site.Params.tagline }}<p>{{ . | markdownify }}</p>{{ end }}
           </div>
         </div>
@@ -14,28 +14,31 @@
         </div>
         <div>
           <div><h2>Popular Post</h2></div>
-          <div><p><a href="https://app.wercker.com/project/bykey/2668cc6276326acb21a6f536e2b24811"><img src="https://camo.githubusercontent.com/a342b537916c237000d75c799c76eea1cc303098/68747470733a2f2f6170702e776572636b65722e636f6d2f7374617475732f32363638636336323736333236616362323161366635333665326232343831312f6d" alt="wercker status" title="wercker status" data-canonical-src="https://app.wercker.com/status/2668cc6276326acb21a6f536e2b24811/m" style="max-width:100%;"></a></p></div>
           <div><h4><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}{{ .Site.Params.home }}{{ else }}Blog{{ end }}</a></h4></div>
             {{ range .Site.Menus.main }}<div><h4><a href="{{ .URL | absURL }}">{{ .Name }}</a></h4></div>{{end}}
           </div>
         </div>
+        <div>
+          <div><h2>Site Status</h2></div>
+          <div><p><a href="https://app.wercker.com/project/bykey/2668cc6276326acb21a6f536e2b24811"><img src="https://camo.githubusercontent.com/a342b537916c237000d75c799c76eea1cc303098/68747470733a2f2f6170702e776572636b65722e636f6d2f7374617475732f32363638636336323736333236616362323161366635333665326232343831312f6d" alt="wercker status" title="wercker status" data-canonical-src="https://app.wercker.com/status/2668cc6276326acb21a6f536e2b24811/m" style="max-width:100%;"></a></p></div>
+        </div>
       </div>
       <div class="row">
         <div class="three columns">
-          <div><h2>Text Heading</h2></div>
-          <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. </p></div>
+          <div><h2>More in Technology: </h2></div>
+          <div><p>Lorem ipsum dolor sit amet,</p></div>
         </div>
         <div class="three columns">
-          <div><h2>Text Heading</h2></div>
-          <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. </p></div>
+          <div><h2>More in Entertainment: </h2></div>
+          <div><p>Lorem ipsum dolor sit amet,</p></div>
         </div>
         <div class="three columns">
-          <div><h2>Text Heading</h2></div>
-          <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. </p></div>
+          <div><h2>More in Relegion: </h2></div>
+          <div><p>Lorem ipsum dolor sit amet,</p></div>
         </div>
         <div class="three columns">
-          <div><h2>Text Heading</h2></div>
-          <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. </p></div>
+          <div><h2>More in General: </h2></div>
+          <div><p>Lorem ipsum dolor sit amet,</p></div>
         </div>
       </div>
       <div class="row" id="footer">
@@ -45,43 +48,6 @@
     {{ if isset .Site.Params "highlight" }}<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>{{ end }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-    jQuery(function($) {
-    var open = false; 
-    function resizeMenu() {
-        if ($(this).width() < 480) {
-            if (!open) {
-                $("#menu-drink").hide();
-            }
-            $("#menu-button").show();
-        }
-        else if ($(this).width() >= 480) {
-            if (!open) {
-                $("#menu-drink").show();
-            }
-            $("#menu-button").hide();
-        }
-    } 
-    function setupMenuButton() {
-        $("#menu-button").click(function(e) {
-            e.preventDefault();
-            if (open) {
-                // Hide the menu
-                $("#menu-drink").fadeOut();
-                $("#menu-button").toggleClass("selected");
-            }
-            else {
-                $("#menu-drink").fadeIn();
-                $("#menu-button").toggleClass("selected");
-            }
-            open = !open;
-        });
-    }
-    $(window).resize(resizeMenu);
-    resizeMenu();
-    setupMenuButton();
-});
-    </script>
     {{ with .Site.Params.googleAnalytics }}
     <script>
     var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];
