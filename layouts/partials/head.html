@@ -18,7 +18,6 @@
   <meta name="twitter:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
   <meta name="twitter:description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="twitter:image" content="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075" />
-
   <meta property="og:title" content="{{ .Title }} &middot; {{ .Site.Title }}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="http://abhiesa.github.io/" />
@@ -45,7 +44,11 @@
   {{ with .Site.Params.googleAuthorship }}<link rel="publisher" href="http://plus.google.com/{{ . }}">{{ end }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <!--[if lt IE 8]><div style=' clear: both; text-align:center; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a> </div> <![endif]-->
+  <!--[if lt IE 8]><div style=' clear: both; text-align:center; position: relative;'> 
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> 
+      <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" 
+      width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+      </a> </div> <![endif]-->
   <style type="text/css">
     .container { margin-top: 50px; }
     body{ background-image: url(/img/gatsby-II.jpg);}
@@ -58,20 +61,28 @@
     .icon a {text-decoration: underline; transition: color .5s, background .5s, height .5s;}
     .icon a{text-decoration: none;}
   </style>
-
 </head>
-<!-- .container is main centered wrapper -->
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
   <div class="container">
     <div class="row" id="banner" role="banner">
       <div class="two columns" id="banner-inner-wrapper">
-        <img id="logo" src="{{ "/img/logo.png" | absURL }}" title="Abhishek Pandey's Latest Logo" alt="Abhishek Pandey's Latest Logo (Leaf cut with small A)">
+        <img id="logo" src="{{ "/img/logo.png" | absURL }}" 
+          title="Abhishek Pandey's Latest Logo" 
+          alt="Abhishek Pandey's Latest Logo (Leaf cut with small A)">
       </div>
       <div class="one columns">&nbsp;</div>
       <div id="nav" class="nine columns">
         <ul>
-          <li class="icon"><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}{{ .Site.Params.home }}{{ else }}Blog{{ end }}</a></li>
-          {{ range .Site.Menus.main }}<li class="icon"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>{{end}}
+          <li class="icon"><a href="{{ "/" | absURL }}">
+            {{ if isset .Site.Params "home"}}
+              {{ .Site.Params.home }}
+            {{ else }}
+              Blog
+            {{ end }}
+          </a></li>
+          {{ range .Site.Menus.main }}
+            <li class="icon"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          {{end}}
         </ul>
       </div>
     </div>
