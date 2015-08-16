@@ -1,14 +1,25 @@
 {{ partial "head.html" . }}
-<div class="content container">
-  <ul class="posts">
-  {{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ if isset .Params "categories" }}
-    &middot;
-    {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-    {{ end }}</span>
-    &middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
-  {{ end }}
-  </ul>
-</div>
+<section id="content">
+  <div class="wrap-content zerogrid">
+    <div class="row block">
+            <!--{{ partial "left.html" . }}-->
+        <div id="main-content" class="col-3-6">
+          <div class="wrap-col">
+			{{ range .Data.Pages }}
+            <article>
+            <div class="heading">
+              <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <div class="info">
+ 				<time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
+              </div>
+            </div>
+				{{ if isset .Params "categories" }}&middot;{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}&middot; 
+            </article>
+              {{ end }}
+          </div>
+        </div>
+		{{ partial "right.html" . }}
+    </div>
+  </div>
+</section>
 {{ partial "foot.html" . }}

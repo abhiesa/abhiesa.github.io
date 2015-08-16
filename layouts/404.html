@@ -1,9 +1,21 @@
 {{ partial "head.html" . }}
-<div class="content container">
-  <div class="post">
-    <h1>404 Not Found</h1>
-    <p>What you're looking for isn't here, sorry!</p>
-    <p><a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></p>
+<section id="content">
+  <div class="wrap-content zerogrid">
+    <div class="row block">
+            {{ partial "left.html" . }}
+        <div id="main-content" class="col-3-6">
+          <div class="wrap-col">
+            <article>
+	            <div class="heading">
+	              <h2>404 Not Found</h2>
+	            </div>
+	            <p>What you're looking for isn't here, sorry!</p>
+	    		<p><a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></p> 
+            </article>
+          </div>
+        </div>
+{{ partial "right.html" . }}
+    </div>
   </div>
-</div>
+</section>
 {{ partial "foot.html" . }}

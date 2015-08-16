@@ -1,8 +1,20 @@
 {{ partial "head.html" . }}
-<div class="content container">
-  <div class="post">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
+<section id="content">
+  <div class="wrap-content zerogrid">
+    <div class="row block">
+            <!--{{ partial "left.html" . }}-->
+        <div id="main-content" class="col-3-6">
+          <div class="wrap-col">
+            <article>
+            <div class="heading">
+              <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            </div>
+            {{ .Content }}
+            </article>
+          </div>
+        </div>
+{{ partial "right.html" . }}
+    </div>
   </div>
-</div>
+</section>
 {{ partial "foot.html" . }}
