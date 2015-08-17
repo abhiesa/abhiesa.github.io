@@ -1,21 +1,44 @@
-{{ partial "head.html" . }}
       <div class="nine columns" id = "nine_blog_txt">
         <section>
-          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}{{ range $paginator.Pages }}<article>
+          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}{{ range $paginator.Pages }}
+          <article>
             <div>
               <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-              <div>{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}{{ if isset .Params "categories" }}<br/>{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}
+              <div>
+                {{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read
+                {{ if .Site.DisqusShortname }} 
+                  &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>
+                {{ end }}
+                {{ if isset .Params "categories" }}
+                  <br/>
+                    {{ range .Params.categories }}
+                      <a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                {{ end }}
               </div>
             </div>
-            {{ if eq .Site.Params.truncate false }}{{ .Content }}{{ else if .Description }}<p>{{ .Description }}</p><a href="{{ .Permalink }}">Read On &rarr;</a>{{ else }}{{ .Summary }}{{ if .Truncated }}<p class="more"><a class="button" href="{{ .Permalink }}">Read On &rarr;</a></p>{{ end }}{{ end }}
-          </article>{{ end }}{{ template "_internal/pagination.html" . }}
+            {{ if eq .Site.Params.truncate false }}
+              {{ .Content }}
+            {{ else if .Description }}
+               <p>{{ .Description }}</p>
+               <a href="{{ .Permalink }}">Read On &rarr;</a>
+             {{ else }}
+               {{ .Summary }}
+               {{ if .Truncated }}
+                 <p class="more"><a class="button" href="{{ .Permalink }}">Read On &rarr;</a></p>
+               {{ end }}
+             {{ end }}
+          </article>
+          {{ end }}
+          {{ template "_internal/pagination.html" . }}
           {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};
           (function () { var s = document.createElement('script'); s.async = true;
             s.type = 'text/javascript'; s.src = '//' + disqus_shortname + '.disqus.com/count.js';
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
           }());</script>{{ end }}  	
 	    </section>
-      </div>{{ partial "foot.html" . }}<!--<ul id="pagi"><li><a class="current" href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">next</a></li></ul>-->
+      </div>
+<!--<ul id="pagi"><li><a class="current" href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">next</a></li></ul>-->
       
             
 
