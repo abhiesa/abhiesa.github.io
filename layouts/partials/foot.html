@@ -1,65 +1,54 @@
       <div class="three columns" id = "sidebar">
         <div>
-          <div>{{ with .Site.Params.gravatarHash }}<img src="https://www.gravatar.com/avatar/{{ . }}" alt="gravatar" style="border:none;">{{ end }}
-            <h1>{{ .Site.Author.name }}</h1>{{ with .Site.Params.tagline }}<p>{{ . | markdownify }}</p>{{ end }}
-          </div>
+          {{ with .Site.Params.gravatarHash }}
+            <img src="https://www.gravatar.com/avatar/{{ . }}" alt="gravatar" style="border:none;">
+          {{ end }}
+          <h1>{{ .Site.Author.name }}</h1>{{ with .Site.Params.tagline }}<p>{{ . | markdownify }}</p>{{ end }}
         </div>
-        <div>
-          <div><h2>Categories</h2></div>
-          <div>
-            <ul>
-              <li>{{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github-square fa-3x"></i></a>{{ end }}{{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket-square fa-3x"></i></a>{{ end }}{{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{{ end }}{{ with .Site.Params.googleplus }}<a href="{{ . }}"><i class="fa fa-google-plus-square fa-3x"></i></a>{{ end }}{{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a>{{ end }}{{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a>{{ end }}{{ with .Site.Params.youtube }}<a href="{{ . }}"><i class="fa fa-youtube-square fa-3x"></i></a>{{ end }}{{ if .Site.Params.rss }}<a href="{{ .RSSlink }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{{ end }}</li>
-            </ul>
-          </div>
+        <div><div><h2>Categories</h2></div><div><ul><li>
+          {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github-square fa-3x"></i></a>{{ end }}
+          {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket-square fa-3x"></i></a>{{ end }}
+          {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{{ end }}
+          {{ with .Site.Params.googleplus }}<a href="{{ . }}"><i class="fa fa-google-plus-square fa-3x"></i></a>{{ end }}
+          {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a>{{ end }}
+          {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a>{{ end }}
+          {{ with .Site.Params.youtube }}<a href="{{ . }}"><i class="fa fa-youtube-square fa-3x"></i></a>{{ end }}
+          {{ if .Site.Params.rss }}<a href="{{ .RSSlink }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{{ end }}
+        </li></ul></div></div>
+        <div><div><h2>Popular Post</h2></div>
+          <div><h4><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}{{ .Site.Params.home }}{{ else }}Blog{{ end }}</a></h4></div>
+          {{ range .Site.Menus.main }}<div><h4><a href="{{ .URL | absURL }}">{{ .Name }}</a></h4></div>{{end}}
         </div>
-        <div>
-          <div><h2>Popular Post</h2></div>
-          <div><h4><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}{{ .Site.Params.home }}
-          {{ else }}Blog{{ end }}</a></h4></div>
-            {{ range .Site.Menus.main }}<div><h4><a href="{{ .URL | absURL }}">{{ .Name }}</a></h4></div>{{end}}
-        </div>
-        <div>
-          <div><h2>Site Status</h2></div>
+        <div><div><h2>Site Status</h2></div>
           <div><p><a href="https://app.wercker.com/project/bykey/2668cc6276326acb21a6f536e2b24811"><img src="https://camo.githubusercontent.com/a342b537916c237000d75c799c76eea1cc303098/68747470733a2f2f6170702e776572636b65722e636f6d2f7374617475732f32363638636336323736333236616362323161366635333665326232343831312f6d" alt="wercker status" title="wercker status" data-canonical-src="https://app.wercker.com/status/2668cc6276326acb21a6f536e2b24811/m" style="max-width:100%;"></a></p></div>
         </div>
       </div>
-      <div class="row" style = "background-color: grey">
-        <div class="three columns">
-          <div><h2>More in Technology: </h2></div>
-          <div><p>Lorem ipsum dolor sit amet,</p></div>
-        </div>
-        <div class="three columns">
-          <div><h2>More in Entertainment: </h2></div>
-          <div><p>Lorem ipsum dolor sit amet,</p></div>
-        </div>
-        <div class="three columns">
-          <div><h2>More in Relegion: </h2></div>
-          <div><p>Lorem ipsum dolor sit amet,</p></div>
-        </div>
-        <div class="three columns">
-          <div><h2>More in General: </h2></div>
-          <div><p>Lorem ipsum dolor sit amet,</p></div>
-        </div>
-      </div>
-      <div class="row" id="footer">
+    </div>
+    <div class="row" style = "background-color: grey">
+      <div class="three columns"><div><h2>More in Technology:    </h2></div><div><p>Lorem ipsum dolor sit amet,</p></div></div>
+      <div class="three columns"><div><h2>More in Entertainment: </h2></div><div><p>Lorem ipsum dolor sit amet,</p></div></div>
+      <div class="three columns"><div><h2>More in Relegion:     </h2></div><div><p>Lorem ipsum dolor sit amet,</p></div></div>
+      <div class="three columns"><div><h2>More in General:      </h2></div><div><p>Lorem ipsum dolor sit amet,</p></div></div>
+    </div>
+    <div class="row" id="footer">
         <div class="twelve columns" id = "copyright" style = "align:center">
           <p>Copyright &copy; by Abhishek Pandey{{ .Now.Format "2006" }}  under a CC BY 4.0 license
           <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
             <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-          </a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-          Creative Commons Attribution 4.0 International License</a>.</div>
-      </div>
+          </a>
+          <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International License</a>.</p>
+        </div>
     </div>
-    {{ if isset .Site.Params "highlight" }}<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>{{ end }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    {{ with .Site.Params.googleAnalytics }}
-    <script>
-    var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];
+  </div>
+  {{ if isset .Site.Params "highlight" }}<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>{{ end }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  {{ with .Site.Params.googleAnalytics }}
+  <script>var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+  </script>
   {{ end }}
 </body>
 </html>
