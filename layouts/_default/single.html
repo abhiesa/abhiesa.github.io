@@ -1,18 +1,16 @@
 {{ partial "head.html" . }}
-<section id="content">
-  <div class="wrap-content zerogrid">
-    <div class="row block">
-        <div id="main-content" class="col-3-6">
-          <div class="wrap-col">
-            <article>
-            <div class="heading">
+      <div class="nine columns" id = "nine_blog_txt">
+          <article>
+            <div>
               <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <div>{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}{{ if isset .Params "categories" }}<br/>{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}
+              </div>
             </div>
-            {{ .Content }}
-            </article>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-{{ partial "foot.html" . }}
+			{{ .Content }}
+          </article>
+          {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};
+          (function () { var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript'; s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());</script>{{ end }}  	
+      </div>{{ partial "foot.html" . }}
