@@ -1,23 +1,17 @@
 {{ partial "head.html" . }}
-<section id="content">
-  <div class="wrap-content zerogrid">
-    <div class="row block">
-        <div id="main-content" class="col-3-6">
-          <div class="wrap-col">
-			{{ range .Data.Pages }}
+      <div class="nine columns" id = "nine_blog_txt">
+          {{ range .Data.Pages }}
             <article>
-            <div class="heading">
+            <div>
               <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-              <div class="info">
- 				<time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
-              </div>
+              <div><time>{{ .Date.Format "Jan 2, 2006" }}</time></li></div>
             </div>
 				{{ if isset .Params "categories" }}&middot;{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}&middot;
             </article>
-              {{ end }}
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-{{ partial "foot.html" . }}
+            {{ end }}
+          {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};
+          (function () { var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript'; s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());</script>{{ end }}  	
+      </div>{{ partial "foot.html" . }}
