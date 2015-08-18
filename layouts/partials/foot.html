@@ -1,25 +1,27 @@
       <div class="three columns" id = "sidebar">
-        <div>
-          {{ with .Site.Params.gravatarHash }}
-            <img src="https://www.gravatar.com/avatar/{{ . }}" alt="gravatar" style="border:none;">
-          {{ end }}
-          <h1>{{ .Site.Author.name }}</h1>{{ with .Site.Params.tagline }}<p>{{ . | markdownify }}</p>{{ end }}
+        <div id="about_box">
+          <div id="about_name_box"><h5>About <h1>{{ .Site.Author.name }}</h1></h5></div>
+          <div id="about_gravatar_box">
+            {{ with .Site.Params.gravatarHash }}
+              <img src="https://www.gravatar.com/avatar/{{ . }}" alt="gravatar" style="border:none;">
+            {{ end }}
+            {{ with .Site.Params.tagline }}<div id="about_tagline_box">{{ . | markdownify }}</div>{{ end }}
+          </div>
         </div>
-        <div><div><h2>Categories</h2></div><div><ul><li>
-          {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github-square fa-3x"></i></a>{{ end }}
-          {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket-square fa-3x"></i></a>{{ end }}
-          {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{{ end }}
-          {{ with .Site.Params.googleplus }}<a href="{{ . }}"><i class="fa fa-google-plus-square fa-3x"></i></a>{{ end }}
-          {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a>{{ end }}
-          {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a>{{ end }}
-          {{ with .Site.Params.youtube }}<a href="{{ . }}"><i class="fa fa-youtube-square fa-3x"></i></a>{{ end }}
-          {{ if .Site.Params.rss }}<a href="{{ .RSSlink }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{{ end }}
-        </li></ul></div></div>
-        <div><div><h2>Popular Post</h2></div>
-          <div><h4><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}{{ .Site.Params.home }}{{ else }}Blog{{ end }}</a></h4></div>
-          {{ range .Site.Menus.main }}<div><h4><a href="{{ .URL | absURL }}">{{ .Name }}</a></h4></div>{{end}}
+        <div id="social_box">
+          <div id="social_name_box"><h5>Social Connect</h5></div>
+          <div><ul>
+          {{ with .Site.Params.github }}<li><a href="{{ . }}"><i class="fa fa-github-square fa-3x"></i></a></li>{{ end }}
+          {{ with .Site.Params.bitbucket }}<li><a href="{{ . }}"><i class="fa fa-bitbucket-square fa-3x"></i></a></li>{{ end }}
+          {{ with .Site.Params.linkedin }}<li><a href="{{ . }}"><i class="fa fa-linkedin-square fa-3x"></i></a></li>{{ end }}
+          {{ with .Site.Params.googleplus }}<li><a href="{{ . }}"><i class="fa fa-google-plus-square fa-3x"></i></a></li>{{ end }}
+          {{ with .Site.Params.facebook }}<li><a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a></li>{{ end }}
+          {{ with .Site.Params.twitter }}<li><a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a></li>{{ end }}
+          {{ with .Site.Params.youtube }}<li><a href="{{ . }}"><i class="fa fa-youtube-square fa-3x"></i></a></li>{{ end }}
+          {{ if .Site.Params.rss }}<a href="{{ .RSSlink }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a></li>{{ end }}
+          </ul></div>
         </div>
-        <div><div><h2>Site Status</h2></div>
+        <div><div><h5>Site Status</h5></div>
           <div><p><a href="https://app.wercker.com/project/bykey/2668cc6276326acb21a6f536e2b24811"><img src="https://camo.githubusercontent.com/a342b537916c237000d75c799c76eea1cc303098/68747470733a2f2f6170702e776572636b65722e636f6d2f7374617475732f32363638636336323736333236616362323161366635333665326232343831312f6d" alt="wercker status" title="wercker status" data-canonical-src="https://app.wercker.com/status/2668cc6276326acb21a6f536e2b24811/m" style="max-width:100%;"></a></p></div>
         </div>
       </div>
