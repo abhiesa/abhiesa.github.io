@@ -19,10 +19,16 @@ disqusShortname = "abhiesasblog"
   
 [[menu.main]]
     name = "about"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -100
-    identifier = "about"
     url = "/about/"
+[[menu.main]]
+    name = "archive"
+    url = "/archive/"
+[[menu.main]]
+    name = "categories"
+    url = "/categories/"
+[[menu.main]]
+    name = "tags"
+    url = "/tags/"
 
 [taxonomies]
   category = "categories"
