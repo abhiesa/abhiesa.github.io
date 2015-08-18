@@ -8,7 +8,6 @@
               <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
               <div>
                 {{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read
-                  {{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
                   <span>
                     {{ if isset .Params "categories" }} {{ range .Params.categories }}
                       <a class="categories" href="{{ "/categories/" | absURL }}{{ . | urlize }}"><strong>{{ . }}</strong></a>
@@ -16,7 +15,27 @@
                   </span>
               </div>
             </div>
-            {{ if eq .Site.Params.truncate false }}{{ .Content }}{{ else if .Description }}<p>{{ .Description }}</p><a href="{{ .Permalink }}">Read On &rarr;</a>{{ else }}{{ .Summary }}{{ if .Truncated }}<p class="more"><a class="button" href="{{ .Permalink }}">Read On &rarr;</a></p>{{ end }}{{ end }}
+            {{ if eq .Site.Params.truncate false }}
+              {{ .Content }}
+              <p class="split-para">&nbsp; 
+                <span>{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
+              </p>
+            {{ else if .Description }}
+              <p>{{ .Description }}</p>
+              <p class="split-para"><a href="{{ .Permalink }}">Read On &rarr;</a> 
+                <span>{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
+              </p>
+            {{ else }}
+              {{ .Summary }}
+              <p class="split-para">&nbsp; 
+                <span>{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
+              </p>
+              {{ if .Truncated }}
+                <p class="split-para"><a href="{{ .Permalink }}">Read On &rarr;</a> 
+                  <span>{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
+                </p>
+              {{ end }}
+           {{ end }}
           </article>{{ end }}
           {{ template "_internal/pagination.html" . }}
           {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};
