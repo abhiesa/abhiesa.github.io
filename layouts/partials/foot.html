@@ -5,7 +5,6 @@
             {{ with .Site.Params.gravatarHash }}
               <img src="https://www.gravatar.com/avatar/{{ . }}" alt="gravatar" style="border:none;">
             {{ end }}
-            {{ with .Site.Params.tagline }}<div id="about_tagline_box">{{ . | markdownify }}</div>{{ end }}
           </div>
         </div>
         <div id="social_box">
