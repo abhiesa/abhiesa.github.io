@@ -1,4 +1,4 @@
-      <div class="four columns" id = "sidebar">
+      <div class="three columns" id = "sidebar">
         <div id="about_box">
           <div id="about_name_box"><h5>About {{ .Site.Author.name }}</h5></div>
           <div id="about_gravatar_box">
@@ -10,7 +10,7 @@
         </div>
         <div id="social_box">
           <div id="social_name_box"><h5>Social Connect</h5></div>
-          <div><ul>
+          <div id="social_link_box"><ul>
           {{ with .Site.Params.github }}<li><a href="{{ . }}"><i class="fa fa-github-square fa-3x"></i></a></li>{{ end }}
           {{ with .Site.Params.bitbucket }}<li><a href="{{ . }}"><i class="fa fa-bitbucket-square fa-3x"></i></a></li>{{ end }}
           {{ with .Site.Params.linkedin }}<li><a href="{{ . }}"><i class="fa fa-linkedin-square fa-3x"></i></a></li>{{ end }}
