@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-      <div class="eight columns" id = "nine_blog_txt">
+      <div class="nine columns" id = "nine_blog_txt">
         <!--<section>-->
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
