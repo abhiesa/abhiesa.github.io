@@ -1,6 +1,6 @@
       <div class="three columns" id = "sidebar">
         <div id="about_box">
-          <div id="about_name_box"><h5>About <h1>{{ .Site.Author.name }}</h1></h5></div>
+          <div id="about_name_box"><h5>About {{ .Site.Author.name }}</h5></div>
           <div id="about_gravatar_box">
             {{ with .Site.Params.gravatarHash }}
               <img src="https://www.gravatar.com/avatar/{{ . }}" alt="gravatar" style="border:none;">
@@ -18,7 +18,7 @@
           {{ with .Site.Params.facebook }}<li><a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a></li>{{ end }}
           {{ with .Site.Params.twitter }}<li><a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a></li>{{ end }}
           {{ with .Site.Params.youtube }}<li><a href="{{ . }}"><i class="fa fa-youtube-square fa-3x"></i></a></li>{{ end }}
-          {{ if .Site.Params.rss }}<a href="{{ .RSSlink }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a></li>{{ end }}
+          {{ if .Site.Params.rss }}<li><a href="{{ .RSSlink }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a></li>{{ end }}
           </ul></div>
         </div>
         <div><div><h5>Site Status</h5></div>
@@ -26,11 +26,11 @@
         </div>
       </div>
     </div>
-    <div class="row" id="footer_msg">
+    <!--<div class="row" id="footer_msg">
       <div class="four columns footer_msg_box"><div><h4>More in Entertainment: </h4></div><div><p>Lorem ipsum dolor sit amet,</p></div></div>
       <div class="four columns footer_msg_box"><div><h4>More in Relegion:     </h4></div><div><p>Lorem ipsum dolor sit amet,</p></div></div>
       <div class="four columns footer_msg_box"><div><h4>More in General:      </h4></div><div><p>Lorem ipsum dolor sit amet,</p></div></div>
-    </div>
+    </div>-->
     <div class="row" id="footer">
         <div class="twelve columns" id = "copyright">
           <p>Copyright &copy; by Abhishek Pandey {{ .Now.Format "2006" }}
