@@ -5,7 +5,7 @@
           {{ range $paginator.Pages }}
           <article>
             <div>
-              <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
               <div>
                 {{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read
                   <span>
