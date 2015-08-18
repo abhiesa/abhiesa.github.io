@@ -158,16 +158,9 @@
           title="Abhishek Pandey's Latest Logo" 
           alt="Abhishek Pandey's Latest Logo (Leaf cut with small A)">
       </div>
-      <div class="eight columns" id="banner_tagline"><h2>Dream Design Desire Develop</h2></div>
-      <div id="nav" class="two columns">
+      <div class="seven columns" id="banner_tagline"><h2>Dream Design Desire Develop</h2></div>
+      <div id="nav" class="three columns">
         <ul>
-          <li class="icon"><a href="{{ "/" | absURL }}">
-            {{ if isset .Site.Params "home"}}
-              {{ .Site.Params.home }}
-            {{ else }}
-              Blog
-            {{ end }}
-          </a></li>
           {{ range .Site.Menus.main }}
             <li class="icon"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{end}}
