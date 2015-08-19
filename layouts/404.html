@@ -1,19 +1,10 @@
 {{ partial "head.html" . }}
-<section id="content">
-  <div class="wrap-content zerogrid">
-    <div class="row block">
-        <div id="main-content" class="col-3-6">
-          <div class="wrap-col">
-            <article>
-	            <div class="heading">
-	              <h2>404 Not Found</h2>
-	            </div>
-	            <p>What you're looking for isn't here, sorry!</p>
-	    		<p><a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></p>
-            </article>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-{{ partial "foot.html" . }}
+      <div class="nine columns" id = "nine_blog_txt">
+          <article>
+            <div>
+              <h4>404 Not Found</h4>
+              <div><p>What you're looking for isn't here, sorry! <a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></p></div>
+            </div>
+            <h5><a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></h5>
+          </article>
+      </div>{{ partial "foot.html" . }}
