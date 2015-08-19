@@ -52,18 +52,20 @@
       </a> </div> <![endif]-->
   <style type="text/css">
     body{  font-family: 'Lato', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif; word-spacing: .2em; background-color: #eee; }
-    #banner { background-color: #032536; color: #EEE; height: 8em; }
+    #banner { background-color: #032536; color: #EEE; height: 8em; border-radius: .5em;}
     #banner-inner-wrapper{ text-align: center; vertical-align: middle; padding: .1em; }
     #logo {max-width: 100%; padding: 1em;}
-    #banner_tagline{ text-align: center; margin-top: 2em;}
+    #banner_tagline{ margin-top: 0.1em;}
+    #banner_tagline h5{ text-align: left; margin-top: 0.1em;}
+    #banner_tagline h2{ text-align: right; margin-top: 0.1em;}
     #nav {text-align:right;}
     #nav ul { padding-right: .2em; margin: .2em; }
     #nav ul li { display: inline;}
-    #twelve_row_blog{ background-color:#6E91A1; border-style:solid;  border-color:#6E91A1; border-width:.4em; }
-    #nine_blog_txt { border-style: solid; border-color: #477286; border-width: .4em; padding: .3em; background-color: #fff; }
+    #twelve_row_blog{ border-style:solid;  border-color:#eee; border-width:.4em; }
+    #nine_blog_txt { border-style: solid; border-color: #477286; border-width: .4em; padding: .3em; background-color: #fff;  -webkit-box-shadow: 6px 9px 10px 1px rgba(0,0,0,0.5);  -moz-box-shadow: 6px 9px 10px 1px rgba(0,0,0,0.5);  box-shadow: 6px 9px 10px 1px rgba(0,0,0,0.5);}
     article  h4{ -webkit-box-shadow: 1px 1px 1px 1px #6E91A1; box-shadow: 1px 1px 1px 1px #6E91A1; text-align: center; }
     .split-para { display:block;margin:1.2em;}
-    #sidebar{  border-style: solid;  border-color: #477286; border-width: .4em; background-color: #fff; padding: .3em; }
+    #sidebar{  border-style: solid;  border-color: #477286; border-width: .4em; background-color: #fff; padding: .3em; -webkit-box-shadow: 6px 9px 10px 1px rgba(0,0,0,0.5);  -moz-box-shadow: 6px 9px 10px 1px rgba(0,0,0,0.5);  box-shadow: 6px 9px 10px 1px rgba(0,0,0,0.5);}
     #social_link_box ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
     #social_link_box ul li { display: inline; }
     #social_link_box ul li a { text-decoration: none; padding: .2em 1em; color: #fff; background-color: #032536; }
@@ -74,7 +76,10 @@
     pre code {font-family: "Source Code Pro", "Courier New", Courier, monospace;}
     .split-para { display:block; margin:1.5em;}
     .split-para span { display:block;float:right; width:25%;}
-    
+    #about_name_box { outline: .1em  dashed #032536; outline-offset: .1em;text-align: center;}
+    #social_name_box {outline: .05em dashed #032536; outline-offset: .1em; text-align: center;}
+    #about_box p { font-size: smaller; }
+    #about_gravatar_box{ text-align: right; }
     /*.footer_msg_box{ border-style: solid; border-color: #D5C5CD; border-width: 7px; padding: 7px; text-align: center; background-color: #9B8992; }*/
     /*http://paletton.com/#uid=13s0d0kllllaFw0g0qFqFg0w0aF*/
     /* Main Primary color 
@@ -93,7 +98,10 @@
           title="Abhishek Pandey's Latest Logo" 
           alt="Abhishek Pandey's Latest Logo (Leaf cut with small A)">
       </div>
-      <div class="seven columns" id="banner_tagline"><h2>Dream Design Desire Develop</h2></div>
+      <div class="seven columns" id="banner_tagline">
+        <h5>Abhishek Pandey's</h5>
+        <h2>Dream Design Desire Develop</h2>
+      </div>
       <div id="nav" class="three columns">
         <ul>
           {{ range .Site.Menus.main }}
