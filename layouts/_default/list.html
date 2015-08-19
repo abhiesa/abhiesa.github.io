@@ -3,7 +3,7 @@
           {{ range .Data.Pages }}
             <article>
             <div>
-              <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
               <div><time>{{ .Date.Format "Jan 2, 2006" }}</time></li></div>
             </div>
 				{{ if isset .Params "categories" }}&middot;{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}&middot;
