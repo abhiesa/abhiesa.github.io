@@ -2,7 +2,7 @@
       <div class="nine columns" id = "nine_blog_txt">
           <article>
             <div>
-              <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
               <div>{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}{{ if isset .Params "categories" }}<br/>{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}
               </div>
             </div>
