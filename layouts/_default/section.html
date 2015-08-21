@@ -6,8 +6,8 @@
   </div>{{ range .Data.Pages.GroupByDate "2006" }}
   <article class="default_section_div">
     <h5 class="default_section_h5">{{ .Key }}</h5>
-		<ul id="default_section_li">{{ range .Pages }}{{ .Render "li"}}{{ end }}</ul>
-		<div id="disqus_thread"></div>
+		<ul class="default_section_li">{{ range .Pages }}{{ .Render "li"}}{{ end }}</ul>
+		<div class="disqus_thread"></div>
   </article>{{ end }}
 </div>
 {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};

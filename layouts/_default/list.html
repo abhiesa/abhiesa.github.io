@@ -1,7 +1,6 @@
 {{ partial "head.html" . }}
 {{ "<!-- ENTERING _default list.html -->" | safeHTML }}
 <div class="nine columns" id = "nine_blog_txt">
-  default list
   <div>
     <li><a href="{{ .Permalink }}">{{ .Title }}</a><div class="meta">{{ .Date.Format "Mon, 2 Jan, 2006" }}</div></li>
   </div>{{ range .Data.Pages }}

@@ -1,7 +1,6 @@
 {{ partial "head.html" . }}
-{{ "<!-- ENTERING _default head.html -->" | safeHTML }}
+{{ "<!-- ENTERING _default terms.html -->" | safeHTML }}
 <div class="nine columns" id = "nine_blog_txt">
-  default terms
 {{ range .Data.Pages }}
   <article>
     <div>
@@ -18,5 +17,5 @@
   s.src = '//' + disqus_shortname + '.disqus.com/count.js';s.async = true;  s.type = 'text/javascript';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);}());
 </script>{{ end }}
-{{ "<!-- LEAVING _default head.html -->" | safeHTML }}
+{{ "<!-- LEAVING _default terms.html -->" | safeHTML }}
 {{ partial "foot.html" . }}
