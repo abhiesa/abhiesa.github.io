@@ -39,7 +39,7 @@ disqusShortname = "abhiesasblog"
     page = "/:filename/"
 	
 paginate = 10
-paginatepath = "page""
+paginatepath = "page"
 
 [params]
   description = "Abhishek Pandey is a technical integration architect, with emphasis on specialized workflows and quality control with management. He has already scored big clients and employers by his side. He is also a father of little angle, and shares his birth date with his daughter. He commits himself as a passionate husband, loving son, and a proud indian citizen."
