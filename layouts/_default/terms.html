@@ -1,16 +1,19 @@
 {{ partial "head.html" . }}
-  <div id="layout" class="pure-g">
-    <div class="content pure-u-1 pure-u-md-3-4">
-      <a name="top"></a>
-      <main>
-        <div class="posts">
-          <h1 id="title">Site {{ .Title }}</h1>
-          {{ $data := .Data }}
-          {{ range $key,$value := .Data.Terms.ByCount }}
-            <h3><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> &nbsp; {{ $value.Count }} </h3>
-          {{ end }}
-        </div>
-     </main>
+<div class="nine columns" id = "nine_blog_txt">
+{{ range .Data.Pages }}
+  <article>
+    <div>
+      <h4>Site {{ .Title }}</h4>
     </div>
-  </div>
-{{ partial "footer.html" . }}
+		{{ $data := .Data }}
+          {{ range $key,$value := .Data.Terms.ByCount }}
+            <h5><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> &nbsp; {{ $value.Count }} </h3>
+          {{ end }}
+  </article>{{ end }}
+</div>
+{{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }}; 
+  (function () { var s = document.createElement('script'); 
+  s.src = '//' + disqus_shortname + '.disqus.com/count.js';s.async = true;  s.type = 'text/javascript';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);}());	
+</script>{{ end }}
+{{ partial "foot.html" . }}
