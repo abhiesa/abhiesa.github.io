@@ -1,12 +1,12 @@
 {{ partial "head.html" . }}
 <div class="nine columns" id = "nine_blog_txt">
-  default section
-  <div>
-    <h4>Section: {{ .Title }}</h4>
+  <div class="default_section_div">
+    <h4 class="default_section_h4">Section: {{ .Title }}</h4>
   </div>{{ range .Data.Pages.GroupByDate "2006" }}
-  <article>
-    <div><h5>{{ .Key }}</h5><div>
-		<ul id="list">{{ range .Pages }}{{ .Render "li"}}{{ end }}</ul>
+  <article class="default_section_div">
+    <h5 class="default_section_h5">{{ .Key }}</h5>
+		<ul id="default_section_li">{{ range .Pages }}{{ .Render "li"}}{{ end }}</ul>
+		<div id="disqus_thread"></div>
   </article>{{ end }}
 </div>
 {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }}; 
