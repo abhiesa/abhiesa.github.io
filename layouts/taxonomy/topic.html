@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+  <div class="content pure-u-1 pure-u-md-3-4">
+    <a name="top"></a>
+    <main>
+      <div class="posts">
+        {{ range .Paginator.Pages }}
+          {{ .Render "li" }}
+        {{ end }}
+      </div>
+    </main>
+  </div>
+{{ partial "foot.html" . }}
