@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
 <div class="nine columns" id = "nine_blog_txt">
+  in-cat
 {{ range .Paginator.Pages }}{{ .Render "li" }}{{ end }}
 </div>
 {{ partial "foot.html" . }}
