@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
 <div class="nine columns" id = "nine_blog_txt">
+  default single
   {{ range .Data.Pages }}<article>
     <div>
       <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
