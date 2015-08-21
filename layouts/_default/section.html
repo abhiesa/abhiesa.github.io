@@ -4,7 +4,7 @@
     <h4>Section: {{ .Title }}</h4>
   </div>{{ range .Data.Pages.GroupByDate "2006" }}
   <article>
-    <div><h5>{{ .Key }}</h5><div><time>{{ .Date.Format "Jan 2, 2006" }}</time></li></div></div>
+    <div><h5>{{ .Key }}</h5><div>
 		<ul id="list">{{ range .Pages }}{{ .Render "li"}}{{ end }}</ul>
   </article>{{ end }}
 </div>
