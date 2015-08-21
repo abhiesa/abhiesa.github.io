@@ -5,7 +5,7 @@ tags = [ "java" ]
 date = "2015-01-06T14:44:00+05:30"
 categories = ["Technical Notes"]
 keywords = ["hugo", "golang", "aglaus"]
-eyecatch: "hugo.png"
+eyecatch = "hugo.png"
 +++
 ## Hugo用テーマ[Aglaus]について
 

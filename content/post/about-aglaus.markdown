@@ -2,7 +2,7 @@
 title = "about-aglaus"
 description = "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pro"
 tags = [ "java" ]
-eyecatch: "hugo.png"
+eyecatch = "hugo.png"
 date = "2015-01-06T14:44:00+05:30"
 categories = ["Technical Notes"]
 keywords = ["hugo", "golang", "aglaus"]
