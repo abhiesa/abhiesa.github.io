@@ -1,17 +1,31 @@
 {{ partial "head.html" . }}
-      <div class="nine columns" id = "nine_blog_txt">
-          {{ range .Data.Pages }}
-            <article>
-            <div>
-              <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-              <div><time>{{ .Date.Format "Jan 2, 2006" }}</time></li></div>
-            </div>
-				{{ if isset .Params "categories" }}&middot;{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}&middot;
-            </article>
-            {{ end }}
-          {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};
-          (function () { var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript'; s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-          }());</script>{{ end }}  	
-      </div>{{ partial "foot.html" . }}
+<div class="nine columns" id = "nine_blog_txt">
+  <div>
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
+      <div class="meta">{{ .Date.Format "Mon, 2 Jan, 2006" }}</div>
+    </li>
+  </div>
+  {{ range .Data.Pages }}
+    <article>
+      <div>
+        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <div><time>{{ .Date.Format "Jan 2, 2006" }}</time></li></div>
+      </div>
+			{{ if isset .Params "categories" }}&middot;
+			  {{ range .Params.categories }}
+			    <a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+			   {{ end }}
+			 {{ end }}&middot;
+    </article>
+  {{ end }}
+  {{ with .Site.DisqusShortname }}
+    <script type="text/javascript">var disqus_shortname = {{ . }};
+      (function () { var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript'; s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  {{ end }}  	
+</div>
+{{ partial "foot.html" . }}
