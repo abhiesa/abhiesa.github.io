@@ -1,104 +1,46 @@
-{{ "<!-- ENTERING partial header.html -->" | safeHTML }}
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
-  <meta name="copyright" content="This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0)."/>
-  <title>{{ .Title }} {{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}</title>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  {{ .Hugo.Generator }}
-  <link rel="canonical" href="{{ .Permalink }}">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/solarized_dark.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-  {{ $siteTitle := .Site.Title }}  {{ $authorName := .Site.Author.name }}   {{ with .RSSLink }}
-  <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} &middot; {{ $authorName }}" />
-  {{ end }}   {{ $siteTitle := .Site.Title }}
-  {{ if .Params.lightbox }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
-  {{ end }}
-  <link rel="author" href="humans.txt">
-  {{ with .Site.Params.googleAuthorship }}<link rel="publisher" href="http://plus.google.com/{{ . }}">{{ end }}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <link href="{{ "/favicon.png" | absURL }}" rel="icon">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/touch-icon-144-precomposed.png" | absURL }}">
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ "/apple-touch-icon-57x57.png" | absURL }}">
-  <link rel="apple-touch-icon" sizes="60x60" href=""{{ /apple-touch-icon-60x60.png"> | absURL }}">
-  <link rel="apple-touch-icon" sizes="72x72" href=""{{ /apple-touch-icon-72x72.png"> | absURL }}">
-  <link rel="apple-touch-icon" sizes="76x76" href=""{{ /apple-touch-icon-76x76.png"> | absURL }}">
-  <link rel="apple-touch-icon" sizes="114x114" href=""{{ /apple-touch-icon-114x114.png"> | absURL }}">
-  <link rel="apple-touch-icon" sizes="120x120" href=""{{ /apple-touch-icon-120x120.png"> | absURL }}">
-  <link rel="apple-touch-icon" sizes="144x144" href=""{{ /apple-touch-icon-120x120.png"> | absURL }}">
-  <link rel="apple-touch-icon" sizes="152x152" href=""{{ /apple-touch-icon-152x152.png"> | absURL }}">
-  <link rel="apple-touch-icon" sizes="180x180" href=""{{ /apple-touch-icon-180x180.png"> | absURL }}">
-  <link rel="icon" type="image/png" href=""{{ /favicon-32x32.png" sizes="32x32"> | absURL }}">
-  <link rel="icon" type="image/png" href=""{{ /favicon-194x194.png" sizes="194x194"> | absURL }}">
-  <link rel="icon" type="image/png" href=""{{ /favicon-96x96.png" sizes="96x96"> | absURL }}">
-  <link rel="icon" type="image/png" href=""{{ /android-chrome-192x192.png" sizes="192x192"> | absURL }}">
-  <link rel="icon" type="image/png" href=""{{ /favicon-16x16.png" sizes="16x16"> | absURL }}">
-  <link rel="manifest" href=""{{ /manifest.json" | absURL }}">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content=""{{ /mstile-144x144.png" | absURL }}">
-  <meta name="theme-color" content="#ffffff">
-  {{ "<!-- ENTERING partial seo-og.html (open graph) -->" | safeHTML }}
-  {{ $baseurl := .Site.BaseURL }}
-    {{ if .IsPage }}
-      <meta property="og:title" content="{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}" />
-       {{ with .Params.images }}{{ range first 6 . }}<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $baseurl }}{{ . }}{{ end }}" />
-      {{ end }}
-    {{ end }}
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}" />
-    <meta property="og:locale" content="{{ if .Params.locale }}{{ .Params.locale }}{{ else }}en_US{{ end }}" />
-    {{ with .Params.audio }}<meta property="og:audio" content="{{ . }}" />{{ end }}
-    {{ with .Params.videos }}{{ range . }}<meta property="og:video" content="{{ . }}" />{{ end }}
-  {{ end }}
-  {{ with .Site.Params.title }}<meta property="og:site_name" content="{{ . }}" />{{ end }}
-  <meta property="og:locale" content="en_IN" />
-  <meta property="og:locale:alternate" content="hi_IN" />
-  <meta property="og:locale:alternate" content="en_US" />
-  {{ if eq .Type "post" }}
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="{{ .PublishDate.Format $.Site.Params.ISO8601 }}"/>
-    <meta property="article:modified_time" content="{{ .Date.Format $.Site.Params.ISO8601 }}"/>
-    <meta property="article:author" content="https://www.facebook.com/abhiesa" />
-    <meta property="article:publisher" content="https://www.facebook.com/abhiesar" />
-    <meta property="article:section" content="{{ .Section }}" />
-  {{ with .Params.tags }}{{ range first 6 . }}<meta property="article:tag" content="{{ . }}" />{{ end }}{{ end }}
-  {{ $permalink := .Permalink }}
-  {{ $siteSeries := .Site.Taxonomies.series }}
-    {{ with .Params.series }}{{ range $name := . }}
-      {{ $series := index $siteSeries $name }}
-       {{ range $page := first 6 $series.Pages }}
-        {{ if ne $page.Permalink $permalink }}<meta property="og:see_also" content="{{ $page.Permalink }}" />{{ end }}
-       {{ end }}
-      {{ end }}
-    {{ end }}
-    {{ else if eq .Type "aboutpage" }}
-      <meta property="profile:first_name" content="Abhishek" />
-      <meta property="profile:last_name" content="Pandey" />
-      <meta property="profile:username" content="abhiesa" />
-      <meta property="profile:gender" content="male" />
-    {{ end }}
-  {{ end }}
-  {{ "<!-- LEAVING partial seo-og.html -->" | safeHTML }}
-  
-  
-  <meta name="twitter:card" content="summary" />
-  {{ with .Site.Params.twitter }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
-  {{ with .Site.Params.twitter }}<meta name="twitter:creator" content="@{{ . }}" />{{ end }}
-  <meta name="twitter:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
-  <meta name="twitter:description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <meta name="twitter:image" content="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075" />
-  <!--[if lt IE 8]><div style=' clear: both; text-align:center; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a> </div> <![endif]-->
-{{ "<!-- LEAVING partial header.html -->" | safeHTML }}
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}">
+<meta name="copyright" content="This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0)."/>
+<title>{{ .Title }} &middot; {{ .Site.Author.name }}</title>
+<meta name="twitter:card" content="summary" />
+{{ with .Site.Params.twitter }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+{{ with .Site.Params.twitter }}<meta name="twitter:creator" content="@{{ . }}" />{{ end }}
+<meta name="twitter:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
+<meta name="twitter:description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075" />
+<meta property="og:title" content="{{ .Title }} &middot; {{ .Site.Title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://abhiesa.github.io/" />
+<meta property="og:image" content="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075?s=200" />
+<meta property="og:description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:site_name" content="{{ .Permalink }}" />
+<link rel="canonical" href="{{ .Permalink }}">
+<link href="http://gmpg.org/xfn/11" rel="profile">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/solarized_dark.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/touch-icon-144-precomposed.png" | absURL }}">
+<link href="{{ "/favicon.png" | absURL }}" rel="icon">
+{{ $siteTitle := .Site.Title }}  {{ $authorName := .Site.Author.name }}   {{ with .RSSLink }}
+<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} &middot; {{ $authorName }}" />
+{{ end }}   {{ $siteTitle := .Site.Title }}
+<link rel="author" href="humans.txt">
+{{ with .Site.Params.googleAuthorship }}<link rel="publisher" href="http://plus.google.com/{{ . }}">{{ end }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!--[if lt IE 8]><div style=' clear: both; text-align:center; position: relative;'> 
+  <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> 
+  <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" 
+  width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+  </a> </div> <![endif]-->
