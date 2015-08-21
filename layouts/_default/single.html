@@ -1,16 +1,22 @@
 {{ partial "head.html" . }}
-      <div class="nine columns" id = "nine_blog_txt">
-          <article>
-            <div>
-              <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-              <div>{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}{{ if isset .Params "categories" }}<br/>{{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}
-              </div>
-            </div>
-			{{ .Content }}
-          </article>
-          {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};
-          (function () { var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript'; s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-          }());</script>{{ end }}  	
-      </div>{{ partial "foot.html" . }}
+<div class="nine columns" id = "nine_blog_txt">
+  {{ range .Data.Pages }}<article>
+    <div>
+      <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+      <div><time>{{ .Date.Format "Jan 2, 2006" }}</time></li></div>
+      <div>{{ .Date.Format "Jan 2, 2006" }} &middot; 
+        {{ .ReadingTime }} minute read
+        {{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
+        {{ if isset .Params "categories" }}<br/>{{ range .Params.categories }}
+          <a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}{{ end }}</div>
+    </div>
+	  {{ .Content }}
+  </article>{{ end }}
+</div>
+{{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }}; 
+  (function () { var s = document.createElement('script'); 
+  s.src = '//' + disqus_shortname + '.disqus.com/count.js';s.async = true;  s.type = 'text/javascript';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);}());	
+</script>{{ end }}
+{{ partial "foot.html" . }}
