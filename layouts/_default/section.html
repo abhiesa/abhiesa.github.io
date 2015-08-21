@@ -1,20 +1,23 @@
 {{ partial "head.html" . }}
-  <div id="layout" class="pure-g">
-    <div class="content pure-u-1 pure-u-md-3-4">
-      <a name="top"></a>
-      <main>
-        <div class="posts">
-          <h1 id="title">Section: {{ .Title }}</h1>
-          {{ range .Data.Pages.GroupByDate "2006" }}
-            <h2>{{ .Key }}</h2>
-            <ul id="list">
-              {{ range .Pages }}
-                {{ .Render "li"}}
-              {{ end }}
-            </ul>
-          {{ end }}
-        </div>
-      </main>
-    </div>
-  </div>
+<div class="nine columns" id = "nine_blog_txt">
+  <div>
+    <h4>Section: {{ .Title }}</h4>
+  </div>{{ range .Data.Pages.GroupByDate "2006" }}
+  <article>
+    <div><h5>{{ .Key }}</h5><div><time>{{ .Date.Format "Jan 2, 2006" }}</time></li></div></div>
+		<ul id="list">{{ range .Pages }}{{ .Render "li"}}{{ end }}</ul>
+  </article>{{ end }}
+</div>
+{{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }}; 
+  (function () { var s = document.createElement('script'); 
+  s.src = '//' + disqus_shortname + '.disqus.com/count.js';s.async = true;  s.type = 'text/javascript';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);}());	
+</script>{{ end }}
 {{ partial "foot.html" . }}
+
+          
+  
+            
+
+
+
