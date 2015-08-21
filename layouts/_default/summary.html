@@ -1,3 +1,4 @@
+{{ "<!-- ENTERING _default summary.html -->" | safeHTML }}
 <article class="post">
   default summery
     <header>
@@ -14,7 +15,7 @@
 		    <span class="post-date-year">{{ .Date.Format "2006" }}</span>
 		  </span>{{ end }}
       {{ if eq .Params.showauthor "true" }}
-        {{ if .Params.author }}<span class="post-author">By 
+        {{ if .Params.author }}<span class="post-author">By
           <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }}>{{ .Params.author }}</a>
         </span>{{ end }}
       {{ end }}
@@ -35,4 +36,4 @@
 		  <a href="{{ .RelPermalink }}"><span class="read-more-separator">&#10087;</span>Read More...</a>
 		</footer>
 </article>
-
+{{ "<!-- LEAVING _default summary.html -->" | safeHTML }}

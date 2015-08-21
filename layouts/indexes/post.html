@@ -1,6 +1,8 @@
 {{ partial "head.html" . }}
+{{ "<!-- ENTERING indexes post.html -->" | safeHTML }}
 <div class="nine columns" id = "nine_blog_txt">
   in-post
 {{ range .Paginator.Pages }}{{ .Render "li" }}{{ end }}
 </div>
+{{ "<!-- LEAVING indexes post.html -->" | safeHTML }}
 {{ partial "foot.html" . }}

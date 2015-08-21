@@ -5,8 +5,6 @@ tags = [ "java" ]
 date = "2014-10-28T14:44:00+05:30"
 categories = ["Technical Notes"]
 keywords = ["Technical Notes", "java"]
-slug = "java-data-types-and-operators"
-draft = false
 +++
 
 **data types in java**

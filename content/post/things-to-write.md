@@ -5,8 +5,6 @@ tags = [ "projection" ]
 date = "2014-10-21T01:56:00+05:30"
 categories = ["Blogging"]
 keywords = ["Blogging", "projection"]
-slug = "why-this-blog-is-impossible"
-draft = false
 +++
 I want to write about lot of things, but, i lack the strength for writing. I know, I am lazy, Still projection is a good thing. And this is the best thing, i am good at. Another thing, where i am best, is thinking about the worse.
 I took a very long time, to start this blog. 7 + years, in the making. What made this delay is a lot of things, but most importantly the comfort. I was not comfortable with the blogging platforms, i didn't had control.

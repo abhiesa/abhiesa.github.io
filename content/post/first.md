@@ -5,8 +5,6 @@ tags = [ ".vimrc", "plugins", "spf13-vim", "vim" ]
 date = "2015-08-08T01:29:56+05:30"
 categories = ["Development","VIM"]
 keywords = ["XX"]
-slug = "spf13-vim-3-0-release-and-new-website"
-draft = true
 +++
 
 # Nitro

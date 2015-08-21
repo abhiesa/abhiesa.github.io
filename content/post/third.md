@@ -1,11 +1,12 @@
----
-date: 2015-08-08T01:30:12+05:30
-draft: true
-title: third
-keywords: ['ZZ']
-categories: ['33']
-description: The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymph
----
++++
+title = "third"
+description = "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymph"
+tags = [ "github" ]
+date = "2015-08-08T01:30:12+05:30"
+categories = ["test"]
+keywords = ["ZZ", "test"]
+draft = false
++++
 
 But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
 

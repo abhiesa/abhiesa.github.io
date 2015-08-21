@@ -1,8 +1,11 @@
----
-date: 2015-08-08T01:29:21+05:30
-draft: true
-title: about
----
++++
+title = "about"
+description = "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pro"
+tags = [ "java" ]
+date = "2015-08-08T01:29:21+05:30"
+categories = ["Technical Notes"]
+keywords = ["Technical Notes", "java"]
++++
 
 A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
 

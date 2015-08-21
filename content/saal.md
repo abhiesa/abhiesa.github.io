@@ -1,8 +1,11 @@
----
-date: 2015-08-08T01:29:35+05:30
-draft: true
-title: saal
----
++++
+title = "saal"
+description = "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pro"
+tags = [ "java" ]
+date = "2015-08-08T01:29:35+05:30"
+categories = ["Technical Notes"]
+keywords = ["Technical Notes", "java"]
++++
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
 

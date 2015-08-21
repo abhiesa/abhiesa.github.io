@@ -5,7 +5,6 @@ tags = [ "github" ]
 date = "2014-10-20T16:56:00+05:30"
 categories = ["Blogging"]
 keywords = ["Hexo", "github", "Blogging"]
-slug = "hexo-travis-config"
 draft = false
 +++
 

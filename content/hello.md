@@ -1,8 +1,11 @@
----
-date: 2015-08-08T01:29:28+05:30
-draft: true
-title: hello
----
++++
+title = "hello"
+description = "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pro"
+tags = [ "java" ]
+date = "2015-08-08T01:29:28+05:30"
+categories = ["Technical Notes"]
+keywords = ["Technical Notes", "java"]
++++
 
 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
 

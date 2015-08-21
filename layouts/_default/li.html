@@ -1,8 +1,10 @@
+{{ "<!-- ENTERING _default li.html -->" | safeHTML }}
 <article class = "default_li_article">
   <li class = "default_li_li">
     <a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
-    <div class = "default_li_date_div split-para">{{ .Date.Format "Mon, 2 Jan, 2006" }} 
+    <div class = "default_li_date_div split-para">{{ .Date.Format "Mon, 2 Jan, 2006" }}
       <span>{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
     </div>
   </li>
 </article>
+{{ "<!-- LEAVING _default li.html -->" | safeHTML }}

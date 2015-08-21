@@ -1,6 +1,8 @@
 {{ partial "head.html" . }}
+{{ "<!-- ENTERING indexes categories.html -->" | safeHTML }}
 <div class="nine columns" id = "nine_blog_txt">
   in-cat
 {{ range .Paginator.Pages }}{{ .Render "li" }}{{ end }}
 </div>
+{{ "<!-- LEAVING indexes categories.html -->" | safeHTML }}
 {{ partial "foot.html" . }}

@@ -1,14 +1,17 @@
 {{ partial "head.html" . }}
-      <div class="nine columns" id = "nine_blog_txt">
-          <article>
-            <div>
-              <h4>404 Not Found</h4>
-              <div><p>What you're looking for isn't here, sorry!</p></div>
-            </div>
-            <h5><a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></h5>
-            or go here
-            <p></p><a href="http://nanogallery.brisbois.fr/">nano gallery</a></p>
-            or
-            <p></p><a href="https://github.com/RickCogley/RCC-Hugo2015/">http://rick.cogley.info/post/</a></p>
-          </article>
-      </div>{{ partial "foot.html" . }}
+{{ "<!-- ENTERING 404.html -->" | safeHTML }}
+  <div class="nine columns" id = "nine_blog_txt">
+    <article>
+      <div>
+        <h4>404 Not Found</h4>
+        <div><p>What you're looking for isn't here, sorry!</p></div>
+      </div>
+      <h5><a href="{{ "/" | absURL }}">&larr; Click here to go back home</a></h5>
+      or go here
+      <p></p><a href="http://nanogallery.brisbois.fr/">nano gallery</a></p>
+      or
+      <p></p><a href="https://github.com/RickCogley/RCC-Hugo2015/">http://rick.cogley.info/post/</a></p>
+    </article>
+  </div>
+{{ "<!-- LEAVING 404.html -->" | safeHTML }}
+{{ partial "foot.html" . }}

@@ -1,3 +1,4 @@
+{{ "<!-- ENTERING partial foot.html -->" | safeHTML }}
       <div class="three columns" id = "sidebar">
         <div id="about_box">
           <div id="about_name_box"><h5>{{ .Site.Author.name }}</h5></div>
@@ -6,9 +7,9 @@
               <img src="https://www.gravatar.com/avatar/{{ . }}" alt="gravatar" style="border:none;">
             {{ end }}
           </div>
-          <p>Abhishek Pandey is a technical integration architect, 
-          on specialized on workflows, quality control with management. In 9 years,  
-          he has scored industry giant clients and employers. He is a father of 
+          <p>Abhishek Pandey is a technical integration architect,
+          on specialized on workflows, quality control with management. In 9 years,
+          he has scored industry giant clients and employers. He is a father of
           a little angel, with whom he shares his birth date. He commits himself as a
           passionate husband and a loving son.</p>
         </div>
@@ -54,3 +55,4 @@
   {{ end }}
 </body>
 </html>
+{{ "<!-- LEAVING partial foot.html -->" | safeHTML }}
