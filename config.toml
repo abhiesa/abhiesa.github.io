@@ -22,7 +22,7 @@ disqusShortname = "abhiesasblog"
     url = "/about/"
 [[menu.main]]
     name = "archive"
-    url = "/archive/"
+    url = "/post/"
 [[menu.main]]
     name = "categories"
     url = "/categories/"
