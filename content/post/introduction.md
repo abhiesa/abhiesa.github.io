@@ -1,14 +1,11 @@
-
 +++ 
 title = "Blog Reborn: Introduction: Control, Automation, Projection & Desire" 
 description = "I want to write about lot of things, but, i lack the strength for writing. I know, I am lazy, Still projection is a good thing. And this is the best thing, i am good at. Another thing, where i am best, is thinking about the worse.I took a very long time, to start this blog. 7 + years, in the making. What made this delay is a lot of things, but most importantly the comfort. I was not comfortable with the blogging platforms, i didn't had control.I can't be online all the time, and working offline was almost impossible for blogspot, wordpress, tumbler etc. Believe it or not, i have tested all." 
-description = "Java Language, Java Data Type, Java Collection, Java Date,Java I/O, Java Reflection, Java JDBC, Java Thread, Java XML, JDK Misc, EJB3, JPA, Java Web Services,Java "
 date = "2014-10-21T01:56:00+05:30" 
 categories = ["Blogging"] 
 keywords = ["Blogging"] 
 tags = [ "projection" ] 
 +++
-
 
 Introduction:
 #Expert from Old deleted Post
