@@ -7,7 +7,7 @@ categories = ["Blogging"]
 keywords = ["Blogging"]
 +++
 Introduction:
-#Expert from Old deleted Post
+# Expert from Old deleted Post
 >I want to write about lot of things, but, i lack the strength for writing. I know, I am lazy, Still projection is a good thing. And this is the best thing, i am good at. Another thing, where i am best, is thinking about the worse.  I took a very long time, to start this blog. 7 + years, in the making. What made this delay is a lot of things, but most importantly the comfort. I was not comfortable with the blogging platforms, i didn't had control. I can't be online all the time, and working offline was almost impossible for blogspot, wordpress, tumbler etc. Believe it or not, i have tested all.
 
 Now, my last experiment with hexo and travis-ci left a bitter taste in my mouth. Reason, It was not for lazy blogger like. A bit slow, and a bit less control.
@@ -35,5 +35,5 @@ Java Language, Java Data Type, Java Collection, Java Date,Java I/O, Java Reflect
 ```
 
 >#Its a non ending job.
-><img src="https://octodex.github.com/images/nyantocat.gif" align="left" />
->######credits: Github
+<img src="https://octodex.github.com/images/nyantocat.gif" align="left" />
+
