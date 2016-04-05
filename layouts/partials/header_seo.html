@@ -1,0 +1,51 @@
+{{ "<!--ENTERING partials/header_seo.html -->" | safeHTML }}
+  <meta name="google-site-verification" content="ju0cul3x9x-7u0KPiNAemW0w-0eREnWaVYZMHOn1Dl8" />
+  <meta name="msvalidate.01" content="88B93CD1A02825E4608843DAE31AE36A" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@abhiesa" />
+  <meta name="twitter:creator" content="@abhiesa" />
+  <meta name="twitter:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
+  <meta name="twitter:url" content="{{ .Permalink }}" />
+  <meta name="twitter:description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="twitter:domain" content="abhiesa.com"/>
+  <meta name="twitter:image" content="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075" />
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075?s=200" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="profile:first_name" content="Abhishek" />
+  <meta property="profile:last_name" content="Pandey" />
+  <meta property="profile:username" content="abhiesa" />
+  <meta property="profile:gender" content="male" />
+  <meta name="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}Content under '{{ .Title }}' at Abhishek Pandey's abhiesa.com, a site about Dream Design Desire Develop.{{ end }}{{ end }}">
+
+  {{ if .IsPage }}{{ if eq .Type "post" }}<script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "Article",
+      "articleSection" : "{{ .Section }}",
+      "name" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
+      "headline" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
+      "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+      "inLanguage" : "en-IN",
+      "license" : "/license",
+      "author": {
+          "@type": "Person",
+          "name": "http://profiles.google.com/113911752918942467189?rel=author"
+      },
+      "creator" : "Abhishek Pandey",
+      "accountablePerson" : "Abhishek Pandey",
+      "copyrightHolder" : "Abhishek Pandey",
+      "copyrightYear" : "{{ .Date.Format "2006" }}",
+      "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}",
+      "dateModified" : "{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}",
+      "url" : "{{ .Permalink }}",
+      "wordCount" : "{{ .WordCount }}",
+      "image" : {{ apply .Params.images "absURL" "." }},
+      "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
+  }
+  </script>{{ end }}{{ end }}
+{{ "<!--EXITING partials/header_seo.html -->" | safeHTML }}

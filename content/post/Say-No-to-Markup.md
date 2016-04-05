@@ -1,8 +1,9 @@
 +++
+date = "2014-10-21T01:56:00+05:30"
 title = "Say No to Markup"
 description = "Why XML, why any specific data defining flat file schema and markup."
+draft = false
 tags = ["markup, XML"]
-date = "2014-10-21T01:56:00+05:30"
 categories = ["I am Rebel"]
 keywords = ["Computer Science, Markup, Data, Schema, Model"]
 +++

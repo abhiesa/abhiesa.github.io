@@ -1,7 +1,0 @@
-{{ partial "head.html" . }}
-{{ "<!-- ENTERING taxonomy tag.html -->" | safeHTML }}
-<div class="nine columns" id = "nine_blog_txt">
-{{ range .Paginator.Pages }}{{ .Render "li" }}{{ end }}
-</div>
-{{ "<!-- LEAVING taxonomy tag.html -->" | safeHTML }}
-{{ partial "foot.html" . }}

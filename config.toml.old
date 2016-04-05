@@ -34,6 +34,19 @@ PostFormat = true
   showTopProfile = true
   showTopSocial = false
 
+[[menu.main]]
+    name = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "archive"
+    url = "/post/"
+[[menu.main]]
+    name = "categories"
+    url = "/categories/"
+[[menu.main]]
+    name = "tags"
+    url = "/tags/"
+
 [taxonomies]
   category = "categories"
   tag = "tags"

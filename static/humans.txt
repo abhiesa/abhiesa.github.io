@@ -1,0 +1,16 @@
+/* humanstxt.org */
+/* TEAM */
+	Author: Abhishek Pandey
+	Contact: abhiesa [at] outlook.com
+	Twitter: @abhiesa
+	From:Lucknow, UP, India
+
+/* SITE */
+	Last update:2016/03/05
+	Language: English / Hindi
+	Doctype: HTML5
+
+  IDE: Brackets
+  Standards: HTML5, CSS3, RSS
+  Components: Twitter Bootstrap 3, highlight, font-awesom, google web fonts, modernizr, html5shiv, jQuery
+  Software: GoHugo, Github, Wercker

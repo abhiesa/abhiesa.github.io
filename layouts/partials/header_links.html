@@ -1,0 +1,41 @@
+<link rel="author" href="humans.txt">
+<link rel="publisher" href="http://plus.google.com/113911752918942467189">
+<link href="http://gmpg.org/xfn/11" rel="profile">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="apple-touch-icon" sizes="57x57" href={{"/img/apple-touch-icon-57x57.png" | absURL }}>
+<link rel="apple-touch-icon" sizes="60x60" href={{"/img/apple-touch-icon-60x60.png" | absURL }}>
+<link rel="apple-touch-icon" sizes="72x72" href={{"/img/apple-touch-icon-72x72.png" | absURL }}>
+<link rel="apple-touch-icon" sizes="76x76" href={{"/img/apple-touch-icon-76x76.png" | absURL }}>
+<link rel="apple-touch-icon" sizes="120x120" href={{"/img/apple-touch-icon-120x120.png" | absURL }}>
+<link rel="apple-touch-icon" sizes="144x144" href={{"/img/apple-touch-icon-144x144.png" | absURL }}>
+<link rel="apple-touch-icon" sizes="152x152" href={{"/img/apple-touch-icon-152x152.png" | absURL }}>
+<link rel="apple-touch-icon" sizes="180x180" href={{"/img/apple-touch-icon-180x180.png" | absURL }}>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href={{"/img/apple-touch-icon-57x57.png" | absURL }}>
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href={{"/img/apple-touch-icon-60x60.png" | absURL }}>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href={{"/img/apple-touch-icon-72x72.png" | absURL }}>
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href={{"/img/apple-touch-icon-76x76.png" | absURL }}>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href={{"/img/apple-touch-icon-120x120.png" | absURL }}>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href={{"/img/apple-touch-icon-144x144.png" | absURL }}>
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href={{"/img/apple-touch-icon-152x152.png" | absURL }}>
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href={{"/img/apple-touch-icon-180x180.png" | absURL }}>
+<link rel="shortcut icon" type="image/png" href={{"/img/favicon-194x194.png" | absURL }} sizes="194x194">
+<link rel="shortcut icon" type="image/png" href={{"/img/favicon-192x192.png" | absURL }} sizes="192x192">
+<link rel="shortcut icon" type="image/png" href={{"/img/favicon-160x160.png" | absURL }} sizes="160x160">
+<link rel="shortcut icon" type="image/png" href={{"/img/favicon-96x96.png" | absURL }} sizes="96x96">
+<link rel="shortcut icon" type="image/png" href={{"/img/favicon-32x32.png" | absURL }} sizes="32x32">
+<link rel="shortcut icon" type="image/png" href={{"/img/favicon-16x16.png" | absURL }} sizes="16x16">
+<link href="{{ "/img/favicon-32x32.png" | absURL }}" rel="shortcut icon" type="image/png" >
+<link rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSlink }}"   />
+{{ if ne .URL "/" }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />{{ else }}<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">{{ end }}
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:900,300&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/{{ with .Site.Params.SyntaxHighlightTheme }}{{ . }}{{ else  }}solarized-light.min.css{{ end }}">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
+{{ "<!--[if lt IE 9]> <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'> </script> <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'> </script> <![endif]-->" | safeHTML }}
+{{ "<!--[if lt IE 8]><div style=' clear: both; text-align:center; position: relative;'><a href='http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode'><img src='http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg' border='0' height='42' width='820' alt='You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.' /></a></div><![endif]-->" | safeHTML }}

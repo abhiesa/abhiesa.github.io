@@ -1,10 +1,12 @@
-{{ "<!-- ENTERING _default li.html -->" | safeHTML }}
-<article class = "default_li_article">
-  <li class = "default_li_li">
-    <a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
-    <div class = "default_li_date_div split-para">{{ .Date.Format "Mon, 2 Jan, 2006" }}
-      <span>{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
+<article class="li">
+  <header>
+    <div class="date">
+      {{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}
+      <span>&middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a></span>
     </div>
-  </li>
+    <div class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+  </header>
+  <div class="body">{{ if .Truncated }}{{ .Summary }}{{ else }}{{ .Content }}{{ end }}</div>
+  {{ if .Truncated }}<footer><a href="{{ .Permalink }}" class="btn btn-default">Read More…</a></footer>{{ end }}
 </article>
-{{ "<!-- LEAVING _default li.html -->" | safeHTML }}
+<hr>

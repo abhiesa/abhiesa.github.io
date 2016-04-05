@@ -1,64 +1,17 @@
-{{ partial "head.html" . }}
-{{ "<!-- ENTERING index.html -->" | safeHTML }}
-  <div class="nine columns" id = "nine_blog_txt">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-      {{ range $paginator.Pages }}
-        <article>
-          <div>
-            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-            <div>
-              {{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read
-              <span>
-                {{ if isset .Params "categories" }}
-                  {{ range .Params.categories }}
-                    <a class="categories" href="{{ "/categories/" | absURL }}{{ . | urlize }}"><strong>{{ . }}</strong></a>
-                  {{ end }}
-                {{ end }}
-              </span>
-            </div>
-          </div>
-          {{ if eq .Site.Params.truncate false }}
-            {{ .Content }}
-            <p class="split-para">&nbsp;
-              <span>{{ if .Site.DisqusShortname }} &middot;
-                <a href="{{ .Permalink }}#disqus_thread">Comments</a>
-              {{ end }}</span>
-            </p>
-          {{ else if .Description }}
-            <p>{{ .Description }}</p>
-            <p class="split-para">
-              <a href="{{ .Permalink }}">Read On &rarr;</a>
-              <span>{{ if .Site.DisqusShortname }} &middot;
-                <a href="{{ .Permalink }}#disqus_thread">Comments</a>
-              {{ end }}</span>
-            </p>
-          {{ else }}
-            {{ .Summary }}
-            <p class="split-para">&nbsp;
-              <span>{{ if .Site.DisqusShortname }} &middot;
-                <a href="{{ .Permalink }}#disqus_thread">Comments</a>
-              {{ end }}</span>
-            </p>
-            {{ if .Truncated }}
-              <p class="split-para">
-                <a href="{{ .Permalink }}">Read On &rarr;</a>
-                <span>{{ if .Site.DisqusShortname }} &middot;
-                  <a href="{{ .Permalink }}#disqus_thread">Comments</a>
-                {{ end }}</span>
-              </p>
+{{ partial "default_head.html" . }}
+{{ "<!--ENTERING index.html -->" | safeHTML }}
+      <div class="index">
+        <div class="row">
+          <div class="col-md-9">
+            {{ range .Paginator.Pages }}
+{{ .Render "li" }}
             {{ end }}
-          {{ end }}
-        </article>
-      {{ end }}
-    {{ template "_internal/pagination.html" . }}
-    {{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};
-      (function () { var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript'; s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-      }());
-    </script>{{ end }}
-  </div>
-{{ "<!-- LEAVING index.html -->" | safeHTML }}
-{{ partial "foot.html" . }}
-<!--<ul id="pagi"><li><a class="current" href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">next</a></li></ul>-->
-
+{{ partial "pagination.html" . }}
+          </div>
+          <div class="col-md-3">
+{{ partial "sidebar.html" . }}
+          </div>
+        </div>
+      </div>
+{{ "<!--EXITING index.html -->" | safeHTML }}
+{{ partial "default_foot.html" . }}

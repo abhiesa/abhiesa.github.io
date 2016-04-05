@@ -1,21 +1,15 @@
-{{ partial "head.html" . }}
-{{ "<!-- ENTERING _default terms.html -->" | safeHTML }}
-<div class="nine columns" id = "nine_blog_txt">
-{{ range .Data.Pages }}
-  <article>
-    <div>
-      <h4>Site {{ .Title }}</h4>
+{{ partial "default_head.html" . }}
+<div class="list terms">
+  <div class="row">
+    <div class="col-md-9">
+      <header class="page-title">{{ .Title }}</header>
+      {{ range $key, $value := .Data.Terms }}
+      <a href="/{{ $.Data.Plural }}/{{ $key | urlize }}/">{{ $key }}</a>
+      {{ end }}
     </div>
-		{{ $data := .Data }}
-          {{ range $key,$value := .Data.Terms.ByCount }}
-            <h5><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> &nbsp; {{ $value.Count }} </h3>
-          {{ end }}
-  </article>{{ end }}
+    <div class="col-md-3">
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
 </div>
-{{ with .Site.DisqusShortname }}<script type="text/javascript">var disqus_shortname = {{ . }};
-  (function () { var s = document.createElement('script');
-  s.src = '//' + disqus_shortname + '.disqus.com/count.js';s.async = true;  s.type = 'text/javascript';
-  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);}());
-</script>{{ end }}
-{{ "<!-- LEAVING _default terms.html -->" | safeHTML }}
-{{ partial "foot.html" . }}
+{{ partial "default_foot.html" . }}
