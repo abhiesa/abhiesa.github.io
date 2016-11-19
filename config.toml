@@ -36,7 +36,6 @@ PostFormat = true
 
 [taxonomies]
   category = "categories"
-  tag = "tags"
 
 [permalinks]
     post = "/:year/:month/:day/:filename/"

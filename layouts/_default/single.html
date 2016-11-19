@@ -27,12 +27,12 @@
         <header class="article-header">
           <time itemprop="datePublished" pubdate="pubdate" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}</time>
           <h1 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+          {{ with .Params.category }}<div class="section">{{ range . }}<a href="{{ $.Site.BaseURL}}category/{{ . }}" class="tag">{{ . }}</a> {{ end }}</div>{{ end }}
         </header>
         <div class="article-body" itemprop="articleBody">
           {{ .Content }}
         </div>
         <aside>
-          {{ with .Params.tags }}<div class="section">{{ range . }}<a href="{{ $.Site.BaseURL}}tags/{{ . }}" class="tag">{{ . }}</a> {{ end }}</div>{{ end }}
           <div class="section share">
             <a href="http://www.facebook.com/sharer.php?src=bm&u={{ .Permalink }}&t={{ .Title }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
             <a href="http://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>

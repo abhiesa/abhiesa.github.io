@@ -7,25 +7,27 @@
           <div class="list-group">
             <a href="http://www.abhiesa.com/rss.xml" target="_blank"><i class="fa fa-rss fa-fw fa-2x" style="color:#555;"></i></a>
             <a href="https://twitter.com/abhiesa" target="_blank"><i class="fa fa-twitter-square fa-fw fa-2x" style="color:#555;"></i></a>
-            <a href="https://facebook.com/abhiesa" target="_blank"><i class="fa fa-facebook-square fa-fw fa-2x" style="color:#555;"></i></a>
             <a href="https://plus.google.com/113911752918942467189" target="_blank"><i class="fa fa-google-plus-square fa-fw fa-2x" style="color:#555;"></i></a>
             <a href="https://linkedin.com/in/abhiesa" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-2x" style="color:#555;"></i></a>
             <a href="https://github.com/abhiesa" target="_blank"><i class="fa fa-github-square fa-fw fa-2x" style="color:#555;"></i></a>
             <a href="https://stackoverflow.com/users/1173520" target="_blank"><i class="fa fa-stack-overflow fa-fw fa-2x" style="color:#555;"></i></a>
           </div>
         </div>
-
         <div class="panel panel-default">
           <div class="panel-heading">
-            <span><img src="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075" alt="gravatar" style="border:none;display: block;margin: 0 auto;"></span>
+            <span><img src="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075" alt="gravatar" style="border:none;display: block;margin: 0 auto;" height="80" width="80"></span>
             <h2 class="panel-title" style="text-align:center;">Abhishek Pandey</h2>
           </div>
           <div class="list-group">
-            <p style="text-align:justify;padding:0.5rem;">Abhishek Pandey is a technical integration architect, on specialized on workflows, quality control with management. In 9+ years, he has scored industry giant clients and employers. He is a father of a little angel, with whom he shares his birth date. He commits himself as a passionate husband and a loving son.</p>
+            <p style="text-align:justify;padding:0.5rem;">
+            A technical enterprise integration architect, with 10+ years of experience with companies like IBM, Deloitte, HCL.
+            Also worked and brushed up as architect in small and medium scale product/ecommerce companies.
+            Bagged high profile financial enterprise clients, throught carrer. 
+            Passionate about high performing, reliable, scalable mordern component software design.
+            Loves to work on stack build on top of Restful design, for microservice on cloud.
+            </p>
           </div>
         </div>
-
-
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">LatestPosts</h2>
@@ -36,6 +38,7 @@
             {{ end }}
           </div>
         </div>
+
         {{ range $key, $value := .Site.Taxonomies }}<div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">{{ $key | singularize }}</h2>
@@ -44,5 +47,6 @@
             {{ range first 10 $value.ByCount }}<a href="{{ $.Site.BaseURL}}{{ $key }}/{{ .Name | urlize }}" class="list-group-item">{{ .Name }}</a>{{ end }}
           </div>
         </div>{{ end }}
+        
       </aside>
 {{ "<!--EXITING partials/sidebar.html -->" | safeHTML }}
