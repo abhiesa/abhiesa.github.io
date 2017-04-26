@@ -1,48 +1,105 @@
 baseurl = "http://abhiesa.com/"
+title = "Project Code Right"
 languageCode = "en-IN"
-title = "Blog @ abhiesa"
-author = "Abhishek Pandey"
-copyright = "This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0)."
-paginate = 3
-canonifyurls =  true
-contentdir = "content"
-datadir = "data"
-publishdir = "public"
+defaultContentLanguage = "en"
+disqusShortname = "abhiesasblog"
+googleAnalytics = "UA-41826196-1"
+paginate = 5
 
-layoutdir = "layouts"
+[menu]
 
-copyrighturl = "http://creativecommons.org/licenses/by/4.0/"
-PostFormat = true
+[[menu.main]]
+    name = "Home"
+    url  = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Blog"
+    url  = "/blog/"
+    weight = 2
+
+[[menu.main]]
+    name = "About Us"
+    identifier = "aboutus"
+    url  = "/aboutus/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 4
 
 [params]
-  disqusShortname = "abhiesasblog" # optional
-  toc = true # optional, When set to TRUE this parameter, table of contents appears in all articles.
-  description = "Abhishek Pandey is a technical integration architect, with emphasis on specialized workflows and quality control with management. He has already scored big clients and employers by his side. He is also a father of little angle, and shares his birth date with his daughter. He commits himself as a passionate husband, loving son, and a proud indian citizen."
-  googleAnalytics = "UA-41826196-1"
-  googleAuthorship = "113911752918942467189"
-  defaultKeywords = "blog, golang, java, ecommerce, web app, spring, best practices, learning, tutorials, apache solr, apache lucene, elastic search, apache spark, apache mesos, apache zookeeper, private cloud, docker, vagrant"
-  github = "abhiesa"
-  linkedin = "abhiesa"
-  googleplus = "113911752918942467189"
-  facebook = "abhiesa"
-  twitter = "abhiesa"
-  youtube = "abhiesa"
-  rss = true
-  gravatarHash = "5dbab16d606f66592c2555df8eab8075"
-  tagline = "Dream Design Desire Develop"
-  author = "Abhishek Pandey"
-  showTopProfile = true
-  showTopSocial = false
+    viewMorePostLink = "/blog/"
+    author = "ABHIESA"
+    defaultKeywords = ["opensource", "quality", "code"]
+    defaultDescription = "We help you write better code"
+    googleMapsApiKey = "AIzaSyDT83XI4g9rKVfx21WeFw-HA14iy09wbcI"
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "green"
+    # Enable the contact form by entering your Formspree.io email
+    email = "abhiesa@outlook.com"
+    about_us = "<p>We are a small group of developer/architects/product manager enthusiasts from india, who ar strive to create value in the Indian IT industry.</p>"
+    copyright = "Copyright &copy; 2017, Zaidsoft; all rights reserved."
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
+    logo = "img/logo.png"
+    address = """<i><strong>Sponser's Address </strong></i>
+        <p><strong>Zaidsoft.com</strong>
+        <br>11B/9, Tashkand Marg, (Opp. Patrika House),
+        <br>Civil Lines, Allahabad,
+        <br>Uttar Pradesh, 211001, <strong>India</strong>
+      </p>
+      """
+    latitude = "25.455265"
+    longitude = "81.838586"
 
-[taxonomies]
-  category = "categories"
+[Permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
 
-[permalinks]
-    post = "/:year/:month/:day/:filename/"
-    page = "/:filename/"
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = false
 
-[blackfriday]
-  angledQuotes = true
-  fractions = false
-  plainIdAnchors = true
-  extensions = ["hardLineBreak","noEmptyLineBeforeBlock"]
+[params.carousel]
+    enable = true
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more informtion take a look at the README.
+
+[params.features]
+    enable = true
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more informtion take a look at the README.
+
+[params.testimonials]
+    enable = false
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more informtion take a look at the README.
+    title = "Testimonials"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+[params.see_more]
+    enable = true
+    icon = "fa fa-file-code-o"
+    title = "Free Scan and Audit Reports"
+    subtitle = "We provide free code scans and provides free audit reports, for your public projects on github/bitbucket *"
+    link_url = "https://form.jotform.me/71127011548448"
+    link_text = "Click here to submit your code"
+
+[params.clients]
+    enable = false
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more informtion take a look at the README.
+    title = "Our Clients"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = true
+    title = "From our blog"
+    subtitle = "We regularly post How to guides, code snipptes, best practices, amazing puzzles and interesting articles to help you code better. Your contributions are and support is highly requested"

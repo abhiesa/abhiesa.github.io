@@ -1,65 +1,43 @@
-{{ partial "default_head.html" . }}
-<div class="single">
-  <div class="row">
-    <div class="col-md-9">
-      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
-        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="{{ .Site.BaseURL }}"/>
-        <meta itemprop="dateModified" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
-        <meta itemprop="headline" content="{{ .Title }}">
-        <meta itemprop="description" content="{{ .Summary }}">
-        <meta itemprop="url" content="{{ .Permalink }}">
-        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="{{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }}" />
-          <meta itemprop="width" content="800">
-          <meta itemprop="height" content="800">
-        </div>
-        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-            <meta itemprop="url" content="{{ .Site.BaseURL }}images/logo.jpg">
-            <meta itemprop="width" content="100">
-            <meta itemprop="height" content="100">
-          </div>
-          <meta itemprop="name" content="{{ .Site.Title }}">
-        </div>
-        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <meta itemprop="name" content="{{ .Site.Params.Author }}">
-        </div>
-        <header class="article-header">
-          <time itemprop="datePublished" pubdate="pubdate" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}</time>
-          <h1 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-          {{ with .Params.category }}<div class="section">{{ range . }}<a href="{{ $.Site.BaseURL}}category/{{ . }}" class="tag">{{ . }}</a> {{ end }}</div>{{ end }}
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  <body>
+    <div id="all">
+        <header>
+          {{ partial "nav.html" . }}
         </header>
-        <div class="article-body" itemprop="articleBody">
-          {{ .Content }}
+        {{ partial "breadcrumbs.html" . }}
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <!-- *** LEFT COLUMN *** -->
+                    <div class="col-md-9" id="blog-post">
+                        <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}{{ .Date.Format .Site.Params.date_format }}</p>
+                        <div id="post-content">
+                          {{ .Content }}
+                        </div>
+                        <!-- /#post-content -->
+                        {{ if .Site.DisqusShortname }}
+                        <div id="comments">
+                            {{ template "_internal/disqus.html" . }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    <!-- /#blog-post -->
+                    <!-- *** LEFT COLUMN END *** -->
+                    <!-- *** RIGHT COLUMN *** -->
+                    <div class="col-md-3">
+                        <!-- *** MENUS AND WIDGETS *** -->
+                        {{ partial "sidebar.html" . }}
+                        <!-- *** MENUS AND FILTERS END *** -->
+                    </div>
+                    <!-- /.col-md-3 -->
+                    <!-- *** RIGHT COLUMN END *** -->
+                </div>
+            </div>
         </div>
-        <aside>
-          <div class="section share">
-            <a href="http://www.facebook.com/sharer.php?src=bm&u={{ .Permalink }}&t={{ .Title }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/share?url={{ .Permalink }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-            <a href="http://getpocket.com/edit?url={{ .Permalink }}&title={{ .Title }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
-          </div>
-          {{ if and (ne .Site.Params.comment false) (ne .Params.comment false) }}
-          <div class="section">
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-              (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                var disqus_shortname = 'abhiesasblog';
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </div>
-          {{ end }}
-        </aside>
-      </article>
+        {{ partial "footer.html" . }}
     </div>
-    <div class="col-md-3">
-      {{ partial "sidebar.html" . }}
-    </div>
-  </div>
-</div>
-{{ partial "default_foot.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

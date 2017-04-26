@@ -1,0 +1,10 @@
+weight: 4
+title: "Blog full of Articles"
+description: >
+  <ul class="list-style-none">
+    <li>Helpful Guides</li>
+    <li>How To's</li>
+    <li>Code Snippets</li>
+    <li>Intesting Q&A</li>
+  </ul>
+image: "img/carousel/pexels-photo-59628.jpg"

@@ -1,20 +1,24 @@
-{{ partial "default_head.html" . }}
-{{ "<!--ENTERING index.html -->" | safeHTML }}
-      <div class="index">
-        <div class="row">
-          <div class="col-md-9">
-    <article>
-      <div>
-        <h4>404 Not Found</h4>
-        <div><p>What you're looking for isn't here, sorry!</p></div>
-      </div>
-      <h5><a href="http://abhiesa.github.io/">&larr; Click here to go back home</a></h5>
-    </article>
-          </div>
-          <div class="col-md-3">
-{{ partial "sidebar.html" . }}
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body>
+  <div id="all">
+    <header>
+      {{ partial "nav.html" . }}
+    </header>
+    <div id="content">
+      <div class="container">
+        <div class="col-sm-6 col-sm-offset-3" id="error-page">
+          <div class="box">
+            <p class="text-center"><a href="index.html"><img src="img/logo.png" alt="abhiesa.com logo"></a></p>
+            <h3>We are sorry - this page is not here anymore</h3>
+            <h4 class="text-muted">Error 404 - Page not found</h4>
+            <p class="buttons"><a href="index.html" class="btn btn-template-main"><i class="fa fa-home"></i> Go to Homepage</a></p>
           </div>
         </div>
       </div>
-{{ "<!--EXITING index.html -->" | safeHTML }}
-{{ partial "default_foot.html" . }}
+    </div>
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>

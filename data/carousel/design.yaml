@@ -1,0 +1,13 @@
+weight: 3
+title: "Supports"
+description: >
+  <ul class="list-style-none">
+    <li>C#, GO</li>
+    <li>Java, JavaScript, </li>
+    <li>Kotlin, TypeScript</li>
+    <li>Reactive, Functional</li>
+    <li>RDBMS, NoSql</li>
+    <li>PHP, Ruby</li>
+    <li>Quality, Testing</li>
+  </ul>
+image: "img/carousel/pexels-photo-90807.jpg"

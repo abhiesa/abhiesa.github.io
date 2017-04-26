@@ -1,12 +1,11 @@
-box: wercker/default
+box: debian
 build:
   steps:
-    - arjen/hugo-build:
-        flags: --buildDrafts=false
-deploy:
-  steps:
-    - uetchy/gh-pages:
+    - arjen/hugo-build@1.16.0:
+        version: "0.17"
+        flags: --disableSitemap=true
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
-        repo: abhiesa/abhiesa.github.io
-        path: public
-        domain: abhiesa.com
+        basedir: public

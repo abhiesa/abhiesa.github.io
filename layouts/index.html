@@ -1,17 +1,19 @@
-{{ partial "default_head.html" . }}
-{{ "<!--ENTERING index.html -->" | safeHTML }}
-      <div class="index">
-        <div class="row">
-          <div class="col-md-9">
-            {{ range .Paginator.Pages }}
-{{ .Render "li" }}
-            {{ end }}
-{{ partial "pagination.html" . }}
-          </div>
-          <div class="col-md-3">
-{{ partial "sidebar.html" . }}
-          </div>
-        </div>
-      </div>
-{{ "<!--EXITING index.html -->" | safeHTML }}
-{{ partial "default_foot.html" . }}
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+<body>
+  <div id="all">
+    <header>
+      {{ partial "nav.html" . }}
+    </header>
+    {{ partial "carousel.html" . }}
+    {{ partial "features.html" . }}
+    {{ partial "testimonials.html" . }}
+    {{ partial "see_more.html" . }}
+    {{ partial "recent_posts.html" . }}
+    {{ partial "clients.html" . }}
+    {{ partial "footer.html" . }}
+  </div>
+  {{ partial "scripts.html" . }}
+</body>
+</html>
