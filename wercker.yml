@@ -4,6 +4,8 @@ build:
     - arjen/hugo-build@1.16.0:
         version: "0.17"
         flags: --disableSitemap=true
+deploy:
+  steps:
     - install-packages:
         packages: git ssh-client
     - lukevivier/gh-pages@0.2.1:
