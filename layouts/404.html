@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-{{ partial "head.html" . }}
-<body>
-  <div id="all">
-    <header>
-      {{ partial "nav.html" . }}
-    </header>
-    <div id="content">
-      <div class="container">
-        <div class="col-sm-6 col-sm-offset-3" id="error-page">
-          <div class="box">
-            <p class="text-center"><a href="index.html"><img src="img/logo.png" alt="abhiesa.com logo"></a></p>
-            <h3>We are sorry - this page is not here anymore</h3>
-            <h4 class="text-muted">Error 404 - Page not found</h4>
-            <p class="buttons"><a href="index.html" class="btn btn-template-main"><i class="fa fa-home"></i> Go to Homepage</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{ partial "footer.html" . }}
-  </div>
-</body>
-</html>
+{{ partial "default_head.html" . }}
+
+<div class="page">
+  <h1 class="page-title">404</h1>
+  <p>Sorry, we&rsquo;ve misplaced that URL or it&rsquo;s pointing to something that doesn&rsquo;t exist. <a href="/">Head back home</a> to try finding it again.</p>
+</div>
+
+{{ partial "default_foot.html" . }}

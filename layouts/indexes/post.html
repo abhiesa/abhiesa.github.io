@@ -2,8 +2,11 @@
 
 <div class="post">
   <h1 class="post-title">{{ .Title }}</h1>
-  <span class="post-date">{{ .Site.Params.DateForm | default "Jan 2, 2006" | .Date.Format }}</span>
-  {{ .Content }}
+  <ul id="list">
+      {{ range .Data.Pages }}
+        {{ .Render "li"}}
+      {{ end }}
+  </ul>
 </div>
 
 {{ partial "default_foot.html" . }}
