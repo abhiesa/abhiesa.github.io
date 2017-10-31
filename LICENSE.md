@@ -1,6 +1,6 @@
 # The MIT License (aka Expat)
 
-Copyright (c) 2014 Stephen Jung
+Copyright (c) 2017 Abhishek Pandey
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
