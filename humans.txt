@@ -1,0 +1,11 @@
+/* humanstxt.org */
+/* TEAM */
+  Author: Abhishek Pandey
+  Contact: abhiesa [at] outlook.com
+  Twitter: @abhiesa
+  From:Noida, UP, India
+
+/* SITE */
+  Last update:2017/12/12
+  Language: English
+  Doctype: HTML5
