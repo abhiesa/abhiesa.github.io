@@ -13,4 +13,3 @@ deploy:
         branch: master
         basedir: public
         domain: abhiesa.com
-        

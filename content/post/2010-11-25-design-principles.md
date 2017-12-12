@@ -1,6 +1,7 @@
 {
     "title": "Design Principles",
     "date": "2010-11-25",
+    "draft": true,
 
   "Generic": "KISS (Keep It Simple Stupid), YAGNI, Do The Simplest Thing That Could Possibly Work, Separation of Concerns, Keep Things DRY, Code For The Maintainer, Avoid Premature Optimization, Boy-Scout Rule",
   "Inter-Module/Class": "Minimise Coupling, Law of Demeter, Composition Over Inheritance, Orthogonality, Robustness Principle",
