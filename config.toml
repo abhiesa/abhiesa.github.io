@@ -5,7 +5,6 @@ title = "abhiesa | Abhishek Pandey"
 disqusShortname = "abhiesasblog"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "UA-41826196-1"
-theme = "hugo-sustain"
 
 [permalinks]
   post = "/:year/:month/:day/:slug"
