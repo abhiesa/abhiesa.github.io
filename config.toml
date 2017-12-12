@@ -1,3 +1,45 @@
-baseURL = "http://abhiesa.com/"
-languageCode = "en-us"
-title = "abhiesa.com"
+baseurl = "http://abhiesa.com/"
+languageCode = "en-US"
+title = "abhiesa | Abhishek Pandey"
+# Enable comments by entering your Disqus shortname
+disqusShortname = "abhiesasblog"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = "UA-41826196-1"
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "abhiesa.jpg"
+  author = "Abhishek Pandey"
+  description = "Describe your website"
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "abhiesa"
+  Email         = "abhiesa@outlook.com"
+  Twitter       = "abhiesa"
+  LinkedIn      = "abhiesa"
+  Stackoverflow = "abhiesa"
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 200
+  url = "/projects/"
+[[menu.main]]
+  name = "resume"
+  identifier = "resume"
+  weight = 300
+  url = "/resume/"
+

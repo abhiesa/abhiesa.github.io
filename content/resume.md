@@ -1,7 +1,8 @@
 {
     "title": "curriculum vitae",
     "sidebar": true,
-    "weight": "2"
+    "weight": "2",
+    "date": "2017-12-12"
 }
 
 # ABHISHEK PANDEY

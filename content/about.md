@@ -10,7 +10,6 @@
 
 # Abhishek Pandey
 
-{{< img src="https://www.gravatar.com/avatar/5dbab16d606f66592c2555df8eab8075" >}}
 
 I am a technical architect, with 10+ years of experience with companies like IBM, Deloitte, HCL, and more.
 
